@@ -1,0 +1,276 @@
+[  
+  {
+      "tabs" : [],
+      "uuid_in_url" : false,
+      "url_base" : "heatmap-proxmox.html",
+      "platform" : "Proxmox",
+      "type" : "heatmap",
+      "title" : "Heatmap",
+      "subsystem" : "PROXMOX",
+      "acl_capable" : true,
+      "singleton" : true,
+      "folder_frontpage" : false
+   },
+   {
+      "tabs":[
+         {
+            "last_day":"Last day"
+         },
+         {
+            "last_week":"Last week"
+         },
+         {
+            "last_month":"Last month"
+         },
+         {
+            "last_year":"Last year"
+         }
+      ],
+      "uuid_in_url" : false,
+      "url_base" : "/lpar2rrd-cgi/detail.sh",
+      "platform" : "Proxmox",
+      "type" : "topten_proxmox",
+      "title" : "VM TOP",
+      "subsystem" : "PROXMOX",
+      "singleton" : true,
+      "folder_frontpage" : false
+   },
+   {
+      "tabs" : [
+	 {
+            "cpu-percent" : "CPU%"
+         },
+	 {
+            "cpu" : "CPU"
+         },
+         {
+            "memory" : "Memory"
+         },
+	 {
+            "swap" : "Swap"
+         },
+	 {
+            "io" : "CPU IO wait"
+         },
+         {
+            "net" : "Net"
+         },
+	 {
+            "disk" : "OS disk"
+         }
+      ],
+      "uuid_in_url" : true,
+      "url_base" : "/lpar2rrd-cgi/detail.sh",
+      "platform" : "Proxmox",
+      "type" : "node",
+      "subsystem" : "NODE",
+      "singleton" : false
+   },
+   {
+      "tabs" : [
+         {
+            "cpu_percent" : "CPU%"
+         },
+	 {
+            "cpu" : "CPU"
+         },
+         {
+            "memory_used" : "Mem used"
+         },
+	 {
+            "memory_free" : "Mem free"
+         },
+	 {
+            "swap_used" : "Swap used"
+         },
+         {
+            "swap_free" : "Swap free"
+         },
+	 {
+            "io" : "CPU IO wait"
+         },
+         {
+            "net" : "Net"
+         },
+	 {
+            "disk_used" : "OS disk used"
+         },
+	 {
+            "disk_free" : "OS disk free"
+         }
+      ],
+      "uuid_in_url" : true,
+      "url_base" : "/lpar2rrd-cgi/detail.sh",
+      "platform" : "Proxmox",
+      "type" : "node-aggr",
+      "title" : "Node Totals",
+      "subsystem" : "CLUSTER",
+      "singleton" : true,
+      "folder_frontpage" : true
+   },
+   {
+      "tabs" : [
+	 {
+            "cpu_percent" : "CPU%"
+         },
+         {
+            "cpu" : "CPU"
+         },
+         {
+            "memory" : "Memory"
+         },
+	 {
+            "data" : "Data"
+         },
+         {
+            "net" : "Net"
+         }
+      ],
+      "uuid_in_url" : true,
+      "url_base" : "/lpar2rrd-cgi/detail.sh",
+      "platform" : "Proxmox",
+      "type" : "vm",
+      "subsystem" : "VM",
+      "singleton" : false
+   },
+   {
+      "tabs" : [
+	 {
+            "cpu_percent" : "CPU%"
+         },
+         {
+            "cpu" : "CPU"
+         },
+	 {
+            "memory_used" : "Mem used"
+         },
+         {
+            "memory_free" : "Mem free"
+         },
+         {
+            "data" : "Data"
+         },
+         {
+            "net" : "Net"
+         }
+      ],
+      "uuid_in_url" : true,
+      "url_base" : "/lpar2rrd-cgi/detail.sh",
+      "platform" : "Proxmox",
+      "type" : "vm-aggr",
+      "title" : "VM Totals",
+      "subsystem" : "CLUSTER",
+      "singleton" : true,
+      "folder_frontpage" : true
+   },
+   {
+      "tabs" : [
+	 {
+            "cpu_percent" : "CPU%"
+         },
+         {
+            "cpu" : "CPU"
+         },
+         {
+            "memory" : "Memory"
+         },
+         {
+            "data" : "Data"
+         },
+         {
+            "net" : "Net"
+         }
+      ],
+      "uuid_in_url" : true,
+      "url_base" : "/lpar2rrd-cgi/detail.sh",
+      "platform" : "Proxmox",
+      "type" : "lxc",
+      "subsystem" : "LXC",
+      "singleton" : false
+   },
+   {
+      "tabs" : [
+	 {
+            "cpu_percent" : "CPU%"
+         },
+         {
+            "cpu" : "CPU"
+         },
+         {
+            "memory_used" : "Mem used"
+         },
+         {
+            "memory_free" : "Mem free"
+         },
+         {
+            "data" : "Data"
+         },
+         {
+            "net" : "Net"
+         }
+      ],
+      "uuid_in_url" : true,
+      "url_base" : "/lpar2rrd-cgi/detail.sh",
+      "platform" : "Proxmox",
+      "type" : "lxc-aggr",
+      "title" : "LXC Totals",
+      "subsystem" : "CLUSTER",
+      "singleton" : true,
+      "folder_frontpage" : true
+   },
+   {
+      "tabs" : [
+         {
+            "size" : "Capacity"
+         }
+      ],
+      "uuid_in_url" : true,
+      "url_base" : "/lpar2rrd-cgi/detail.sh",
+      "platform" : "Proxmox",
+      "type" : "storage",
+      "subsystem" : "STORAGE",
+      "singleton" : false
+   },
+   {
+      "tabs" : [
+         {
+            "size_free" : "Free"
+         },
+         {
+            "size_used" : "Used"
+         }
+      ],
+      "uuid_in_url" : true,
+      "url_base" : "/lpar2rrd-cgi/detail.sh",
+      "platform" : "Proxmox",
+      "type" : "storage-aggr",
+      "title" : "Storage Totals",
+      "subsystem" : "CLUSTER",
+      "singleton" : true,
+      "folder_frontpage" : true
+   },
+   {
+      "tabs" : [
+         {
+            "node" : "Node"
+	 },
+	 {
+            "vm" : "VM"
+         },
+	 {
+            "lxc" : "LXC"
+         },
+	 {
+            "storage" : "Storage"
+	 }
+      ],
+      "uuid_in_url" : false,
+      "url_base" : "/lpar2rrd-cgi/detail.sh",
+      "platform" : "Proxmox",
+      "type" : "configuration",
+      "title" : "Configuration",
+      "subsystem" : "PROXMOX",
+      "singleton" : true,
+      "folder_frontpage" : false
+   }
+]

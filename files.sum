@@ -1,0 +1,8 @@
+#sum <file>|awk '{print \1}':<file>
+41158:Copyright.txt
+33914:install.sh
+19280:lpar2rrd.tar.Z
+49821:perl_aix_ssl.tar.Z
+08652:README
+18850:update.sh
+61496:version.txt

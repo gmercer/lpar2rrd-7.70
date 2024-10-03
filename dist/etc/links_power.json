@@ -1,0 +1,496 @@
+[
+   {
+      "tabs" : [
+         {
+            "lpar" : "LPAR"
+         },
+         {
+            "lpar" : "Server"
+         }
+      ],
+      "url_params" : [],
+      "url_base" : "heatmap-power.html",
+      "platform" : "Power",
+      "type" : "heatmap",
+      "title" : "Heatmap",
+      "uuid_in_url" : false,
+      "subsystem" : "POWER",
+      "acl_capable" : true,
+      "singleton" : true
+   },
+   {
+      "url_params" : [],
+      "url_base" : "/lpar2rrd-cgi/detail.sh",
+      "title" : "Overview",
+      "uuid_in_url" : true,
+      "subsystem" : "CMC",
+      "acl_capable" : true,
+      "singleton" : true,
+      "tabs" : [
+        {
+           "_cmc_overview":"Overview"
+        }
+      ],
+      "platform" : "PowerCMC",
+      "type" : "pep2_overview"
+   },
+   {
+      "tabs" : [
+        {
+           "_cmc_system":"CPU"
+        },
+        {
+           "_credit":"Credits"
+        },
+        {
+           "_metered_core_minutes":"Metered Core Minutes"
+        },
+        {
+           "_metered_memory_minutes":"Metered Memory Minutes"
+        }
+
+      ],
+      "type" : "pep2_pool",
+      "url_params" : [
+        "id"
+      ],
+      "url_base" : "/lpar2rrd-cgi/detail.sh",
+      "platform" : "PowerCMC",
+      "uuid_in_url" : true,
+      "subsystem" : "CMCPOOL",
+      "singleton" : false
+   },
+   {
+      "tabs" : [
+        {
+           "_cmc_system":"CPU"
+        },
+        {
+           "_cmc_system_memory":"Memory"
+        }
+      ],
+      "platform" : "PowerCMC",
+      "type" : "pep2_system",
+      "url_params" : [
+        "id"
+      ],
+      "url_base" : "/lpar2rrd-cgi/detail.sh",
+      "uuid_in_url" : true,
+      "subsystem" : "CMCSERVER",
+      "singleton" : false
+   },
+   {
+      "tabs" : [
+        {
+           "_total_cpu":"CPU"
+        },
+        {
+           "_total_credit":"Credit"
+        }
+      ],
+      "platform" : "PowerCMC",
+      "type" : "pep2_all",
+      "url_params" : [],
+      "url_base" : "/lpar2rrd-cgi/detail.sh",
+      "title" : "Total",
+      "uuid_in_url" : true,
+      "subsystem" : "CMC",
+      "singleton" : true
+   },
+   {
+      "url_params" : [],
+      "url_base" : "/lpar2rrd-cgi/detail.sh",
+      "title" : "Configuration",
+      "uuid_in_url" : "true",
+      "subsystem" : "CMCCONSOLE",
+      "singleton" : "false",
+      "tabs" : [
+        {
+           "_cmc_overview":"CMC title"
+        }
+      ],
+      "platform" : "PowerCMC",
+      "type" : "pep2_cmc_overview"
+   },
+   {
+      "tabs" : [],
+      "url_params" : [],
+      "url_base" : "overview_power.html",
+      "platform" : "Power",
+      "type" : "overview_power",
+      "title" : "Overview",
+      "uuid_in_url" : false,
+      "subsystem" : "POWER",
+      "acl_capable" : true,
+      "singleton" : true
+   },
+   {
+      "tabs" : [],
+      "url_params" : [ "mode" ],
+      "url_base" : "/lpar2rrd-cgi/histrep.sh",
+      "platform" : "Power",
+      "type" : "historical_reports",
+      "title" : "Historical Reports",
+      "uuid_in_url" : false,
+      "subsystem" : "POWER",
+      "singleton" : true
+   },
+   {
+      "tabs" : [],
+      "url_params" : [],
+      "url_base" : "gui-cpu_max_check.html",
+      "platform" : "Power",
+      "type" : "resource_configuration_advisor",
+      "title" : "Resource Configuration Advisor",
+      "uuid_in_url" : false,
+      "subsystem" : "POWER",
+      "singleton" : true
+   },
+   {
+      "tabs" : [
+         {
+            "tab1" : "Tab1"
+         },
+         {
+            "tab2" : "Tab2"
+         },
+         {
+            "tab3" : "Tab3"
+         }
+      ],
+      "url_params" : [],
+      "url_base" : "cpu_workload_estimator.html",
+      "platform" : "Power",
+      "type" : "cpu_workload_estimator",
+      "title" : "CPU Workload Estimator",
+      "uuid_in_url" : false,
+      "subsystem" : "POWER",
+      "singleton" : true
+   },
+   {
+      "tabs" : [
+         { "servers" : "Servers" },
+         { "enterprise_pool" : "Enterprise Pool" },
+         { "interfaces" : "Interfaces" },
+         { "cli" : "CLI" },
+         { "network" : "Network" },
+         { "vscsi" : "VSCSI" },
+         { "npiv" : "NPIV" }
+      ],
+      "url_params" : [],
+      "url_base" : "/lpar2rrd-cgi/detail.sh",
+      "platform" : "Power",
+      "type" : "configuration",
+      "title" : "Configuration",
+      "uuid_in_url" : false,
+      "subsystem" : "POWER",
+      "singleton" : true
+   },
+   {
+      "tabs" : [],
+      "url_params" : [
+         "item"
+      ],
+      "url_base" : "/lpar2rrd-cgi/detail.sh",
+      "platform" : "Power",
+      "type" : "top10_global",
+      "title" : "LPAR TOP",
+      "uuid_in_url" : false,
+      "subsystem" : "POWER",
+      "singleton" : true
+   },
+   {
+      "tabs" : [],
+      "url_params" : [],
+      "url_base" : "nmonfile.html",
+      "platform" : "Power",
+      "type" : "nmon_file_grapher",
+      "title" : "NMON File Grapher",
+      "uuid_in_url" : false,
+      "subsystem" : "POWER",
+      "singleton" : true
+   },
+   {
+      "tabs" : [],
+      "url_params" : [],
+      "url_base" : "gui-rmc.html",
+      "platform" : "Power",
+      "type" : "rmc_check",
+      "title" : "RMC Check",
+      "uuid_in_url" : false,
+      "subsystem" : "POWER",
+      "singleton" : true
+   },
+   {
+      "tabs" : [],
+      "url_params" : [
+        "id"
+      ],
+      "url_base" : "/lpar2rrd-cgi/detail.sh",
+      "platform" : "Power",
+      "type" : "hmc",
+      "uuid_in_url" : true,
+      "subsystem" : "HMC",
+      "singleton" : false
+   },
+   {
+      "tabs" : [],
+      "url_params" : [
+        "id"
+      ],
+      "url_base" : "/lpar2rrd-cgi/detail.sh",
+      "platform" : "Power",
+      "type" : "hmc-totals",
+      "uuid_in_url" : true,
+      "subsystem" : "POWER",
+      "singleton" : false
+   },
+   {
+      "tabs" : [
+         {
+            "cpu" : "CPU Pool"
+         },
+         {
+            "cpu_max" : "CPU Pool Max"
+         },
+         {
+            "lpar_agg" : "LPARs Aggregated"
+         },
+         {
+            "configuration" : "Configuration"
+         }
+      ],
+      "url_params" : [
+        "id"
+      ],
+      "url_base" : "/lpar2rrd-cgi/detail.sh",
+      "platform" : "Power",
+      "type" : "pool",
+      "title" : "CPU",
+      "uuid_in_url" : true,
+      "subsystem" : "SERVER",
+      "singleton" : true
+   },
+   {
+      "tabs" : [
+         {
+            "cpu" : "CPU"
+         }
+      ],
+      "url_params" : [
+         "id"
+      ],
+      "url_base" : "/lpar2rrd-cgi/detail.sh",
+      "platform" : "Power",
+      "type" : "vm",
+      "uuid_in_url" : true,
+      "subsystem" : "VM",
+      "singleton" : false
+   },
+   {
+      "tabs" : [
+         {
+            "cpu" : "CPU Pool"
+         },
+         {
+            "cpu_max" : "CPU Pool Max"
+         },
+         {
+            "lpar_agg" : "LPARs Aggregated"
+         },
+         {
+            "configuration" : "Configuration"
+         }
+      ],
+      "url_params" : [
+        "id"
+      ],
+      "url_base" : "/lpar2rrd-cgi/detail.sh",
+      "platform" : "Power",
+      "type" : "shpool",
+      "uuid_in_url" : true,
+      "subsystem" : "POOL",
+      "singleton" : false
+   },
+   {
+      "tabs" : [],
+      "url_params" : [
+         "id"
+      ],
+      "url_base" : "/lpar2rrd-cgi/detail.sh",
+      "platform" : "Power",
+      "type" : "lan",
+      "uuid_in_url" : true,
+      "subsystem" : "LAN",
+      "singleton" : false
+   },
+   {
+      "tabs" : [],
+      "url_params" : [
+        "id"
+      ],
+      "url_base" : "/lpar2rrd-cgi/detail.sh",
+      "platform" : "Power",
+      "type" : "san",
+      "uuid_in_url" : true,
+      "subsystem" : "SAN",
+      "singleton" : false
+   },
+   {
+      "tabs" : [],
+      "url_params" : [
+         "id"
+      ],
+      "url_base" : "/lpar2rrd-cgi/detail.sh",
+      "platform" : "Power",
+      "type" : "sas",
+      "uuid_in_url" : true,
+      "subsystem" : "SAS",
+      "singleton" : false
+   },
+   {
+      "tabs" : [],
+      "url_params" : [
+         "id"
+      ],
+      "url_base" : "/lpar2rrd-cgi/detail.sh",
+      "platform" : "Power",
+      "type" : "hea",
+      "uuid_in_url" : true,
+      "subsystem" : "HEA",
+      "singleton" : false
+   },
+   {
+      "tabs" : [],
+      "url_params" : [
+         "id"
+      ],
+      "url_base" : "/lpar2rrd-cgi/detail.sh",
+      "platform" : "Power",
+      "type" : "sri",
+      "uuid_in_url" : true,
+      "subsystem" : "SRI",
+      "singleton" : false
+   },
+   {
+      "tabs" : [],
+      "url_params" : [
+         "id"
+      ],
+      "url_base" : "/lpar2rrd-cgi/detail.sh",
+      "platform" : "Power",
+      "type" : "memory",
+      "uuid_in_url" : true,
+      "title" : "Memory",
+      "subsystem" : "SERVER",
+      "singleton" : true
+   },
+   {
+      "tabs" : [],
+      "url_params" : [
+         "id"
+      ],
+      "url_base" : "/lpar2rrd-cgi/detail.sh",
+      "platform" : "Power",
+      "type" : "topten",
+      "uuid_in_url" : true,
+      "title" : "LPAR TOP",
+      "subsystem" : "SERVER",
+      "singleton" : true
+   },
+   {
+      "tabs" : [],
+      "url_params" : [
+         "id"
+      ],
+      "url_base" : "/lpar2rrd-cgi/detail.sh",
+      "platform" : "Power",
+      "type" : "view",
+      "uuid_in_url" : true,
+      "title" : "Overview",
+      "subsystem" : "SERVER",
+      "singleton" : true
+   },
+   {
+     "tabs" : [],
+     "url_params" : [
+       "id"
+     ],
+     "url_base" : "/lpar2rrd-cgi/detail.sh",
+     "platform" : "Power",
+     "type" : "lan-aggr",
+     "uuid_in_url" : true,
+     "title" : "LAN Total",
+     "subsystem" : "LAN",
+     "singleton" : true,
+     "folder_frontpage" : true
+   },
+   {
+      "tabs" : [],
+      "url_params" : [
+         "id"
+      ],
+      "url_base" : "/lpar2rrd-cgi/detail.sh",
+      "platform" : "Power",
+      "type" : "san-aggr",
+      "uuid_in_url" : true,
+      "title" : "SAN Total",
+      "subsystem" : "SAN",
+      "singleton" : true,
+      "folder_frontpage" : true
+   },
+   {
+      "tabs" : [],
+      "url_params" : [
+         "id"
+      ],
+      "url_base" : "/lpar2rrd-cgi/detail.sh",
+      "platform" : "Power",
+      "type" : "sas-aggr",
+      "uuid_in_url" : true,
+      "title" : "SAS Total",
+      "subsystem" : "SAS",
+      "singleton" : true,
+      "folder_frontpage" : true
+   },
+   {
+      "tabs" : [],
+      "url_params" : [
+         "id"
+      ],
+      "url_base" : "/lpar2rrd-cgi/detail.sh",
+      "platform" : "Power",
+      "type" : "hea-aggr",
+      "uuid_in_url" : true,
+      "title" : "HEA Total",
+      "subsystem" : "HEA",
+      "singleton" : true,
+      "folder_frontpage" : true
+   },
+   {
+      "tabs" : [],
+      "url_params" : [
+         "id"
+      ],
+      "url_base" : "/lpar2rrd-cgi/detail.sh",
+      "platform" : "Power",
+      "type" : "sri-aggr",
+      "uuid_in_url" : true,
+      "title" : "SR-IOV Total",
+      "subsystem" : "SRI",
+      "singleton" : true,
+      "folder_frontpage" : true
+   },
+   {
+      "tabs" : [],
+      "url_params" : [
+         "id",
+         "type"
+      ],
+      "url_base" : "/lpar2rrd-cgi/detail.sh",
+      "platform" : "Power",
+      "type" : "another_type",
+      "uuid_in_url" : true,
+      "singleton" : false
+   }
+]

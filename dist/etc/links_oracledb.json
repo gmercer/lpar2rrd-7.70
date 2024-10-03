@@ -1,0 +1,930 @@
+[
+   {
+      "tabs" : [
+         {
+            "main_info" : "Main"
+         },
+         {
+            "_CPU_Usage_Per_Sec_Total" : "CPU Core Per Sec"
+         },
+         {
+            "_DB_Block_Changes_Per_Sec_Total" : "Block Changes"
+         },
+         {
+            "_Logical_Reads_Per_Sec_Total" : "Logical Read"
+         },
+         {
+            "_used_Total" : "Used"
+         },
+         {
+            "_free_Total" : "Free"
+         },
+         {
+            "_logcap_Total" : "Log size"
+         },
+         {
+            "tablespace_info" : "Tablespace"
+         }
+      ],
+      "folder_frontpage" : "true",
+      "uuid_in_url" : "true",
+      "subsystem" :  [
+            "ORACLEDB",
+            "ODB_FOLDER"
+         ],
+      "singleton" : "false",
+      "url_base" : "/lpar2rrd-cgi/detail.sh",
+      "type" : "configuration_Total",
+      "platform" : "OracleDB",
+      "title" : "Total"
+   },
+   {
+      "tabs" : [
+         {
+            "overview" : "Overview"
+         }
+      ],
+      "folder_frontpage" : "false",
+      "uuid_in_url" : "true",
+      "subsystem" : [
+            "INSTANCE",
+            "STANDALONE",
+            "MULTITENANT",
+            "RAC"
+      ],
+      "singleton" : "false",
+      "url_base" : "/lpar2rrd-cgi/detail.sh",
+      "type" : "Overview",
+      "platform" : "OracleDB",
+      "title" : "Overview"
+   },
+   {
+      "tabs" : [
+         {
+            "main_info" : "Main"
+         },
+         {
+            "sga_info" : "SGA"
+         },
+         {
+            "tablespace_info" : "Tablespace"
+         },
+         {
+            "insdbvomp" : "Installed DB components"
+         },
+         {
+            "updowngrade" : "Upgrade, Downgrade info"
+         },
+         {
+            "psu" : "PSU, patches info"
+         }
+      ],
+      "folder_frontpage" : "false",
+      "uuid_in_url" : "true",
+      "subsystem" : "not_needed",
+      "singleton" : "false",
+      "url_base" : "/lpar2rrd-cgi/detail.sh",
+      "type" : "configuration",
+      "platform" : "OracleDB",
+      "title" : "Configuration"
+   },
+   {
+      "tabs" : [
+         {
+            "main_info" : "Main"
+         },
+         {
+            "sga_info" : "SGA"
+         },
+         {
+            "tablespace_info" : "Tablespace"
+         },
+         {
+            "insdbvomp" : "Installed DB components"
+         },
+         {
+            "updowngrade" : "Upgrade, Downgrade info"
+         },
+         {
+            "psu" : "PSU, patches info"
+         },
+         {
+            "Dataguard" : "Dataguard"
+         }
+      ],
+      "folder_frontpage" : "false",
+      "uuid_in_url" : "true",
+      "subsystem" : "STANDALONE",
+      "singleton" : "false",
+      "url_base" : "/lpar2rrd-cgi/detail.sh",
+      "type" : "configuration_dg",
+      "platform" : "OracleDB",
+      "title" : "Configuration"
+   },
+   {
+      "tabs" : [
+         {
+            "pdb_info" : "PDB info"
+         },
+         {
+            "capacity" : "Capacity"
+         },
+         {
+            "_logcap" : "Log size"
+         },
+         {
+            "tablespace_info" : "Tablespace"
+         },
+         {
+            "sga_info" : "SGA"
+         }
+      ],
+      "folder_frontpage" : "true",
+      "uuid_in_url" : "true",
+      "subsystem" : "PDBS",
+      "singleton" : "true",
+      "url_base" : "/lpar2rrd-cgi/detail.sh",
+      "type" : "configuration_PDB",
+      "platform" : "OracleDB",
+      "title" : "Configuration"
+   },
+   {
+      "tabs" : [
+         {
+            "main_info" : "Main"
+         },
+         {
+            "pdb_info" : "PDB info"
+         },
+         {
+            "sga_info" : "SGA"
+         },
+         {
+            "insdbvomp" : "Installed DB components"
+         },
+         {
+            "updowngrade" : "Upgrade, Downgrade info"
+         },
+         {
+            "psu" : "PSU, patches info"
+         }
+      ],
+      "folder_frontpage" : "false",
+      "uuid_in_url" : "true",
+      "subsystem" : "MULTITENANT",
+      "singleton" : "false",
+      "url_base" : "/lpar2rrd-cgi/detail.sh",
+      "type" : "configuration_Multitenant",
+      "platform" : "OracleDB",
+      "title" : "Configuration"
+   },
+   {
+      "tabs" : [
+         {
+            "main_info" : "Main"
+         },
+         {
+            "sga_info" : "SGA"
+         },
+         {
+            "tablespace_info" : "Tablespace"
+         },
+         {
+            "insdbvomp" : "Installed DB components"
+         },
+         {
+            "updowngrade" : "Upgrade, Downgrade info"
+         },
+         {
+            "psu" : "PSU, patches info"
+         }
+      ],
+      "folder_frontpage" : "false",
+      "uuid_in_url" : "true",
+      "subsystem" : "RAC",
+      "singleton" : "false",
+      "url_base" : "/lpar2rrd-cgi/detail.sh",
+      "type" : "configuration_S",
+      "platform" : "OracleDB",
+      "title" : "Configuration"
+   },
+   {
+      "tabs" : [
+         {
+            "io_RW" : "Datafiles"
+         }
+      ],
+      "folder_frontpage" : "false",
+      "uuid_in_url" : "true",
+      "subsystem" : [
+            "STANDALONE",
+            "MULTITENANT",
+            "INSTANCE",
+            "RAC"
+      ],
+      "singleton" : "false",
+      "url_base" : "/lpar2rrd-cgi/detail.sh",
+      "type" : "datafiles",
+      "platform" : "OracleDB",
+      "title" : "Datafiles"
+   },
+   {
+      "tabs" : [
+         {
+            "capacity" : "Used"
+         },
+         {
+            "_logratio" : "Recovery File Destination"
+         },
+         {
+            "ord" : "Online Redo Logs"
+         }
+      ],
+      "folder_frontpage" : "false",
+      "uuid_in_url" : "true",
+      "subsystem" : [
+            "STANDALONE",
+            "MULTITENANT",
+            "INSTANCE"
+      ],
+      "singleton" : "false",
+      "url_base" : "/lpar2rrd-cgi/detail.sh",
+      "type" : "Capacity",
+      "platform" : "OracleDB",
+      "title" : "Capacity"
+   },
+   {
+      "tabs" : [
+         {
+            "_Host_CPU_Utilization" : "Host CPU Utilization"
+         },
+         {
+            "_CPU_Usage_Per_Sec" : "CPU Core Per Sec"
+         },
+         {
+            "_CPU_Usage_Per_Txn" : "CPU Core Per Txn"
+         }
+      ],
+      "folder_frontpage" : "false",
+      "uuid_in_url" : "true",
+      "subsystem" : [
+            "STANDALONE",
+            "MULTITENANT",
+            "INSTANCE"
+      ],
+      "singleton" : "false",
+      "url_base" : "/lpar2rrd-cgi/detail.sh",
+      "type" : "CPU_info",
+      "platform" : "OracleDB",
+      "title" : "CPU"
+   },
+   {
+      "tabs" : [
+         {
+            "_IO_Requests_per_Second" : "Total"
+         },
+         {
+            "physical" : "Physical"
+         }
+      ],
+      "folder_frontpage" : "false",
+      "uuid_in_url" : "true",
+      "subsystem" : [
+            "PDBS",
+            "STANDALONE",
+            "MULTITENANT",
+            "INSTANCE"
+      ],
+      "singleton" : "false",
+      "url_base" : "/lpar2rrd-cgi/detail.sh",
+      "type" : "Data_rate",
+      "platform" : "OracleDB",
+      "title" : "IO"
+   },
+   {
+      "tabs" : [
+         {
+            "_IO_Megabytes_per_Second" : "Total"
+         },
+         {
+            "_Redo_Generated_Per_Sec" : "Redo"
+         },
+         {
+            "physical_bytes" : "Physical Data"
+         }
+      ],
+      "folder_frontpage" : "false",
+      "uuid_in_url" : "true",
+      "subsystem" : [
+            "PDBS",
+            "STANDALONE",
+            "MULTITENANT",
+            "INSTANCE"
+      ],
+      "singleton" : "false",
+      "url_base" : "/lpar2rrd-cgi/detail.sh",
+      "type" : "Datarate",
+      "platform" : "OracleDB",
+      "title" : "Data"
+   },
+   {
+      "tabs" : [
+         {
+            "_DB_Block_Changes_Per_Sec" : "Block Changes"
+         },
+         {
+            "_Logical_Reads_Per_Sec" : "Logical Read"
+         }
+      ],
+      "folder_frontpage" : "false",
+      "uuid_in_url" : "true",
+      "subsystem" : [
+            "PDBS",
+            "TOTAL",
+            "STANDALONE",
+            "MULTITENANT",
+            "INSTANCE"
+      ],
+      "singleton" : "false",
+      "url_base" : "/lpar2rrd-cgi/detail.sh",
+      "type" : "Data_rate_r",
+      "platform" : "OracleDB",
+      "title" : "SGA data"
+   },
+   {
+      "tabs" : [
+         {
+            "info" : "Session"
+         }
+      ],
+      "folder_frontpage" : "true",
+      "uuid_in_url" : "true",
+      "subsystem" : "PDBS",
+      "singleton" : "true",
+      "url_base" : "/lpar2rrd-cgi/detail.sh",
+      "type" : "Session_info_PDB",
+      "platform" : "OracleDB",
+      "title" : "Session"
+   },
+   {
+      "tabs" : [
+         {
+            "info" : "Session"
+         }
+      ],
+      "folder_frontpage" : "false",
+      "uuid_in_url" : "true",
+      "subsystem" : [
+            "STANDALONE",
+            "INSTANCE"
+         ],
+      "singleton" : "false",
+      "url_base" : "/lpar2rrd-cgi/detail.sh",
+      "type" : "Session_info",
+      "platform" : "OracleDB",
+      "title" : "Session"
+   },
+   {
+      "tabs" : [
+         {
+            "user_info" : "User"
+         },
+         {
+            "cursors_info" : "Cursors"
+         },
+         {
+            "_Hard Parse_Count_Per_Sec" : "Hard Parse"
+         },
+         {
+            "_Executions_Per_Sec" : "Executions"
+         }
+      ],
+      "folder_frontpage" : "false",
+      "uuid_in_url" : "true",
+      "subsystem" : [
+            "PDBS",
+            "STANDALONE",
+            "MULTITENANT",
+            "INSTANCE"
+      ],
+      "singleton" : "false",
+      "url_base" : "/lpar2rrd-cgi/detail.sh",
+      "type" : "SQL_query",
+      "platform" : "OracleDB",
+      "title" : "SQL query"
+   },
+   {
+      "tabs" : [
+         {
+            "_Network_Traffic_Volume_Per_Sec" : "Network"
+         }
+      ],
+      "folder_frontpage" : "false",
+      "uuid_in_url" : "true",
+      "subsystem" : [
+            "PDBS",
+            "STANDALONE",
+            "MULTITENANT",
+            "INSTANCE"
+      ],
+      "singleton" : "false",
+      "url_base" : "/lpar2rrd-cgi/detail.sh",
+      "type" : "Network",
+      "platform" : "OracleDB",
+      "title" : "Network"
+   },
+   {
+      "tabs" : [
+         {
+            "_Buffer_Cache Hit_Ratio" : "Buffer Cache Hit"
+         },
+         {
+            "_PGA_Cache_Hit" : "PGA Cache Hit"
+         },
+         {
+            "_Memory_Sorts_Ratio" : "Memory Sorts"
+         },
+         {
+            "_Soft_Parse_Ratio" : "Soft Parse"
+         },
+         {
+            "_Database_CPU_Time_Ratio" : "CPU Time"
+         },
+         {
+            "_Database_Wait_Time_Ratio" : "Wait Time"
+         }
+      ],
+      "folder_frontpage" : "false",
+      "uuid_in_url" : "true",
+      "subsystem" : [
+            "PDBS",
+            "STANDALONE",
+            "MULTITENANT",
+            "INSTANCE"
+      ],
+      "singleton" : "false",
+      "url_base" : "/lpar2rrd-cgi/detail.sh",
+      "type" : "Ratio",
+      "platform" : "OracleDB",
+      "title" : "Ratio"
+   },
+   {
+      "tabs" : [
+         {
+            "db_file_read" : "DB files read"
+         },
+         {
+            "db_file_write" : "DB files write"
+         },
+         {
+            "log_write" : "LOG files write"
+         },
+         {
+            "log_sync" : "Flashback latency"
+         }
+      ],
+      "folder_frontpage" : "false",
+      "uuid_in_url" : "true",
+      "subsystem" : [
+            "TOTAL",
+            "STANDALONE",
+            "MULTITENANT",
+            "INSTANCE"
+      ],
+      "singleton" : "false",
+      "url_base" : "/lpar2rrd-cgi/detail.sh",
+      "type" : "Disk_latency",
+      "platform" : "OracleDB",
+      "title" : "Latency"
+   },
+   {
+      "tabs" : [
+         {
+            "_Host_CPU_Utilization" : "Host CPU Utilization"
+         },
+         {
+            "_CPU_Usage_Per_Sec" : "CPU Core Per Sec"
+         },
+         {
+            "_CPU_Usage_Per_Txn" : "CPU Core Per Txn"
+         }
+      ],
+      "folder_frontpage" : "false",
+      "uuid_in_url" : "true",
+      "subsystem" : "TOTAL",
+      "singleton" : "false",
+      "url_base" : "/lpar2rrd-cgi/detail.sh",
+      "type" : "aggr_CPU_info",
+      "platform" : "OracleDB",
+      "title" : "CPU"
+   },
+   {
+      "tabs" : [
+         {
+            "_IO_Requests_per_Second" : "Total"
+         },
+         {
+            "_Physical_Reads_Per_Sec" : "Physical Read"
+         },
+         {
+            "_Physical_Writes_Per_Sec" : "Physical Write"
+         }
+      ],
+      "folder_frontpage" : "false",
+      "uuid_in_url" : "true",
+      "subsystem" : "TOTAL",
+      "singleton" : "false",
+      "url_base" : "/lpar2rrd-cgi/detail.sh",
+      "type" : "aggr_Data_rate",
+      "platform" : "OracleDB",
+      "title" : "IO"
+   },
+   {
+      "tabs" : [
+         {
+            "_IO_Megabytes_per_Second" : "Total"
+         },
+         {
+            "_Redo_Generated_Per_Sec" : "Redo"
+         },
+         {
+            "_Physical_Read_Bytes_Per_Sec" : "Physical Read"
+         },
+         {
+            "_Physical_Write_Bytes_Per_Sec" : "Physical Write"
+         }
+      ],
+      "folder_frontpage" : "false",
+      "uuid_in_url" : "true",
+      "subsystem" : "TOTAL",
+      "singleton" : "false",
+      "url_base" : "/lpar2rrd-cgi/detail.sh",
+      "type" : "aggr_Datarate",
+      "platform" : "OracleDB",
+      "title" : "Data"
+   },
+   {
+      "tabs" : [
+         {
+            "Session_info" : "Session"
+         }
+      ],
+      "folder_frontpage" : "false",
+      "uuid_in_url" : "true",
+      "subsystem" : "TOTAL",
+      "singleton" : "false",
+      "url_base" : "/lpar2rrd-cgi/detail.sh",
+      "type" : "aggr_Session_info",
+      "platform" : "OracleDB",
+      "title" : "Session"
+   },
+   {
+      "tabs" : [
+         {
+            "user_info" : "User"
+         },
+         {
+            "cursors_info" : "Cursors"
+         },
+         {
+            "_Hard_Parse_Count_Per_Sec" : "Hard Parse"
+         },
+         {
+            "_Executions_Per_Sec" : "Executions"
+         }
+      ],
+      "folder_frontpage" : "false",
+      "uuid_in_url" : "true",
+      "subsystem" : "TOTAL",
+      "singleton" : "false",
+      "url_base" : "/lpar2rrd-cgi/detail.sh",
+      "type" : "aggr_SQL_query",
+      "platform" : "OracleDB",
+      "title" : "SQL query"
+   },
+   {
+      "tabs" : [
+         {
+            "_Network_Traffic_Volume_Per_Sec" : "Network"
+         }
+      ],
+      "folder_frontpage" : "false",
+      "uuid_in_url" : "true",
+      "subsystem" : "TOTAL",
+      "singleton" : "false",
+      "url_base" : "/lpar2rrd-cgi/detail.sh",
+      "type" : "aggr_Network",
+      "platform" : "OracleDB",
+      "title" : "Network"
+   },
+   {
+      "tabs" : [
+         {
+            "_Buffer_Cache Hit_Ratio" : "Buffer Cache Hit"
+         },
+         {
+            "_PGA_Cache_Hit" : "PGA Cache Hit"
+         },
+         {
+            "_Memory_Sorts_Ratio" : "Memory Sorts"
+         },
+         {
+            "_Soft_Parse_Ratio" : "Soft Parse"
+         },
+         {
+            "_Database_CPU_Time_Ratio" : "CPU Time"
+         },
+         {
+            "_Database_Wait_Time_Ratio" : "Wait Time"
+         }
+      ],
+      "folder_frontpage" : "false",
+      "uuid_in_url" : "true",
+      "subsystem" : "TOTAL",
+      "singleton" : "false",
+      "url_base" : "/lpar2rrd-cgi/detail.sh",
+      "type" : "aggr_Ratio",
+      "platform" : "OracleDB",
+      "title" : "Ratio"
+   },
+   {   
+      "tabs" : [ 
+         {
+            "Cache" : "Avg get time"
+         },
+         {
+            "Blocks_recieved" : "Blocks received"
+         }
+      ],  
+      "folder_frontpage" : "true",
+      "uuid_in_url" : "true",
+      "subsystem" : "GLOBAL_CACHE",
+      "singleton" : "true",
+      "url_base" : "/lpar2rrd-cgi/detail.sh",
+      "type" : "Cache",
+      "platform" : "OracleDB",
+      "title" : "Global Cache"
+   }, 
+   {
+      "tabs" : [
+         {
+            "block_x-way" : "Block x-way"
+         },
+         {
+            "gchvone" : "Histograms"
+         }
+      ],
+      "folder_frontpage" : "false",
+      "uuid_in_url" : "true",
+      "subsystem" : "GLOBAL_CACHE",
+      "singleton" : "false",
+      "url_base" : "/lpar2rrd-cgi/detail.sh",
+      "type" : "viewone",
+      "platform" : "OracleDB",
+      "title" : "View 1"
+   },
+   {
+      "tabs" : [
+         {
+            "viewtwo" : "View two"
+         },
+         {
+            "viewtwo" : "Histograms"
+         }
+      ],
+      "folder_frontpage" : "false",
+      "uuid_in_url" : "true",
+      "subsystem" : "GLOBAL_CACHE",
+      "singleton" : "false",
+      "url_base" : "/lpar2rrd-cgi/detail.sh",
+      "type" : "viewtwo",
+      "platform" : "OracleDB",
+      "title" : "View 2"
+   },
+   {
+      "tabs" : [
+         {
+            "viewthree" : "View three"
+         },
+         {
+            "viewthree" : "Histograms"
+         }
+      ],
+      "folder_frontpage" : "false",
+      "uuid_in_url" : "true",
+      "subsystem" : "GLOBAL_CACHE",
+      "singleton" : "false",
+      "url_base" : "/lpar2rrd-cgi/detail.sh",
+      "type" : "viewthree",
+      "platform" : "OracleDB",
+      "title" : "View 3"
+   },
+   {
+      "tabs" : [
+         {
+            "viewfour" : "View four"
+         },
+         {
+            "viewfour" : "Histograms"
+         }
+      ],
+      "folder_frontpage" : "false",
+      "uuid_in_url" : "true",
+      "subsystem" : "GLOBAL_CACHE",
+      "singleton" : "false",
+      "url_base" : "/lpar2rrd-cgi/detail.sh",
+      "type" : "viewfour",
+      "platform" : "OracleDB",
+      "title" : "View 4"
+   },
+   {
+      "tabs" : [
+         {
+            "viewfive" : "View five"
+         },
+         {
+            "viewfive" : "Histograms"
+         }
+      ],
+      "folder_frontpage" : "false",
+      "uuid_in_url" : "true",
+      "subsystem" : "GLOBAL_CACHE",
+      "singleton" : "false",
+      "url_base" : "/lpar2rrd-cgi/detail.sh",
+      "type" : "viewfive",
+      "platform" : "OracleDB",
+      "title" : "View 5"
+   },
+   {
+      "tabs" : [
+         {
+            "_Cell_Physical_IO_Interconnect_Bytes" : "Traffic"
+         }, 
+         {
+            "intcon" : "Configuration"
+         }
+      ],
+      "folder_frontpage" : "false",
+      "uuid_in_url" : "true",
+      "subsystem" : "RAC",
+      "singleton" : "false",
+      "url_base" : "/lpar2rrd-cgi/detail.sh",
+      "type" : "Interconnect",
+      "platform" : "OracleDB",
+      "title" : "Interconnect"
+   },
+   {
+      "tabs" : [
+         {
+            "_Host_CPU_Utilization_Htotal" : "Host CPU"
+         },
+         {
+            "_CPU_Usage_Per_Sec_Htotal" : "CPU Core Per Sec"
+         },
+         {
+            "_DB_Block_Changes_Per_Sec_Htotal" : "Block Changes"
+         },
+         {
+            "_Logical_Reads_Per_Sec_Htotal" : "Logical Read"
+         },
+         {
+            "_used_Htotal" : "Used"
+         },
+         {
+            "_free_Htotal" : "Free"
+         },
+         {
+            "_logcap_Htotal" : "Log size"
+         }
+      ],
+      "folder_frontpage" : "true",
+      "uuid_in_url" : "true",
+      "subsystem" : "HOSTS",
+      "singleton" : "true",
+      "url_base" : "/lpar2rrd-cgi/detail.sh",
+      "type" : "hosts_Total",
+      "platform" : "OracleDB",
+      "title" : "Total"
+   },
+   {
+      "tabs" : [
+         {
+            "_CPU_Usage_Per_Sec" : "CPU Core Per Sec"
+         },
+         {
+            "_DB_Block_Changes_Per_Sec" : "Block Changes"
+         },
+         {
+            "_Logical_Reads_Per_Sec" : "Logical Read"
+         },
+         {
+            "_used" : "Used"
+         },
+         {
+            "_free" : "Free"
+         },
+         {
+            "_logcap" : "Log size"
+         }
+      ],
+      "url_params" : [
+         "id" 
+      ], 
+      "url_base" : "/lpar2rrd-cgi/detail.sh",
+      "platform" : "OracleDB",
+      "type" : "host_metrics",
+      "uuid_in_url" : true,
+      "subsystem" : "ITEMS",
+      "singleton" : false
+   },
+   {
+      "tabs" : [
+         {
+            "_AvgwtFGms" : "Average wait FG"
+         },
+         {
+            "_Avgwtms" : "Average wait"
+         }
+      ],
+      "folder_frontpage" : "false",
+      "uuid_in_url" : "true",
+      "subsystem" : [
+            "PDBS",
+            "TOTAL",
+            "STANDALONE",
+            "MULTITENANT",
+            "INSTANCE"
+      ],
+      "singleton" : "false",
+      "url_base" : "/lpar2rrd-cgi/detail.sh",
+      "type" : "Wait_class_Main",
+      "platform" : "OracleDB",
+      "title" : "Wait class"
+   },
+   {
+      "tabs" : [
+         {
+            "_physW" : "Physical Writes"
+         },
+         {
+            "_physR" : "Physical Reads"
+         }
+      ],
+      "folder_frontpage" : "false",
+      "uuid_in_url" : "true",
+      "subsystem" : [
+            "TOTAL",
+            "STANDALONE",
+            "MULTITENANT",
+            "INSTANCE"
+      ],
+      "singleton" : "false",
+      "url_base" : "/lpar2rrd-cgi/detail.sh",
+      "type" : "Services",
+      "platform" : "OracleDB",
+      "title" : "Services"
+   },
+   {
+      "tabs" : [
+         {
+            "healthstatus" : "Health Status"
+         },
+         {
+            "alerthistory" : "Alert History"
+         }
+      ],
+      "folder_frontpage" : "true",
+      "uuid_in_url" : "true",
+      "subsystem" : "ORACLEDB",
+      "singleton" : "true",
+      "url_base" : "/lpar2rrd-cgi/health-status.sh",
+      "type" : "healthstatus",
+      "platform" : "OracleDB",
+      "title" : "Health Status"
+   },
+   {
+      "tabs":[
+          {
+            "last_day":"Last day"
+          },
+          {
+            "last_week":"Last week"
+          },
+          {
+            "last_month":"Last month"
+          },
+          {
+            "last_year":"Last year"
+          }
+      ],
+      "uuid_in_url" : false,
+      "url_base" : "/lpar2rrd-cgi/detail.sh",
+      "platform" : "OracleDB",
+      "type" : "topten_oracledb",
+      "title" : "DB TOP",
+      "subsystem" : "ORACLEDB",
+      "singleton" : true,
+      "folder_frontpage" : false
+   }
+]
+

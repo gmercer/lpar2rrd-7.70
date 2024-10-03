@@ -1,0 +1,63 @@
+[
+   {
+      "tabs" : [
+         {
+            "Overview" : "Overview"
+         }
+      ],
+      "platform" : "PowerCMC",
+      "type" : "pep2_overview"
+   },
+   {
+      "tabs" : [
+        {
+           "_total_cpu":"CPU"
+        },
+        {
+           "_total_credit":"Credit"
+        }
+      ],
+      "platform" : "PowerCMC",
+      "type" : "pep2_all"
+   },
+   {
+      "tabs" : [
+        {
+           "_cmc_overview":"CMC Overview"
+        }
+      ],
+      "platform" : "PowerCMC",
+      "type" : "pep2_cmc_overview"
+   },
+   {
+      "tabs" : [
+        {
+           "_cmc_system":"CPU"
+        },
+        {
+           "_credit":"Credits"
+        },
+        {
+           "_metered_core_minutes":"Metered Core Minutes"
+        },
+        {
+           "_metered_memory_minutes":"Metered Memory Minutes"
+        }
+
+      ],
+      "platform" : "PowerCMC",
+      "type" : "pep2_pool"
+   },
+   {
+      "tabs" : [
+        {
+           "_cmc_system":"CPU"
+        },
+        {
+           "_cmc_system_memory":"Memory"
+        }
+      ],
+      "platform" : "PowerCMC",
+      "type" : "pep2_system"
+   }
+]

@@ -1,0 +1,319 @@
+[ {
+      "tabs" : [
+         {
+            "overview" : "Overview"
+         },
+         {
+            "running" : "Running"
+         },
+         {
+            "stopped" : "Stopped"
+         }
+      ],
+      "uuid_in_url" : true,
+      "url_base" : "/lpar2rrd-cgi/detail.sh",
+      "platform" : "AWS",
+      "title" : "Region Overview",
+      "type" : "region-aggr",
+      "subsystem" : "AWS",
+      "singleton" : true
+   }, 
+  {
+      "tabs" : [
+         {
+            "count" : "Count"
+         },
+         {
+            "five" : "5xx Error"
+         },
+	 {
+            "four" : "4xx Error"
+         },
+	 {
+            "latency" : "Latency"
+         },
+	 {
+            "integration_latency" : "Integration Latency"
+         }
+      ],
+      "uuid_in_url" : true,
+      "url_base" : "/lpar2rrd-cgi/detail.sh",
+      "platform" : "AWS",
+      "type" : "api",
+      "subsystem" : "API",
+      "singleton" : false
+   },
+   {
+      "tabs" : [
+         {
+            "invocations" : "Invocations"
+         },
+         {
+            "errors" : "Errors"
+         },
+         {
+            "duration" : "Duration"
+         },
+         {
+            "throttles" : "Throttles"
+         },
+         {
+            "concurrent-executions" : "ConcurrentExecutions"
+         }
+      ],
+      "uuid_in_url" : true,
+      "url_base" : "/lpar2rrd-cgi/detail.sh",
+      "platform" : "AWS",
+      "type" : "lambda",
+      "subsystem" : "LAMBDA",
+      "singleton" : false
+   },
+   {
+      "tabs" : [
+         {
+            "count" : "Count"
+         },
+         {
+            "five" : "5xx Error"
+         },
+         {
+            "four" : "4xx Error"
+         },
+         {
+            "latency" : "Latency"
+         },
+         {
+            "integration_latency" : "Integration Latency"
+         }
+      ],
+      "uuid_in_url" : true,
+      "url_base" : "/lpar2rrd-cgi/detail.sh",
+      "platform" : "AWS",
+      "type" : "api-aggr",
+      "title" : "API totals",
+      "subsystem" : "REGION",
+      "singleton" : true,
+      "folder_frontpage" : true
+   },
+   {
+      "tabs" : [
+         {
+            "invocations" : "Invocations"
+         },
+         {
+            "errors" : "Errors"
+         },
+         {
+            "duration" : "Duration"
+         },
+         {
+            "throttles" : "Throttles"
+         },
+         {
+            "concurrent-executions" : "ConcurrentExecutions"
+         }
+      ],
+      "uuid_in_url" : true,
+      "url_base" : "/lpar2rrd-cgi/detail.sh",
+      "platform" : "AWS",
+      "type" : "lambda-aggr",
+      "title" : "Lambda totals",
+      "subsystem" : "REGION",
+      "singleton" : true,
+      "folder_frontpage" : true
+   },
+  {
+      "tabs" : [
+         {
+            "storage" : "Data"
+         },
+         {
+            "iops" : "IOPS"
+         }
+      ],
+      "uuid_in_url" : true,
+      "url_base" : "/lpar2rrd-cgi/detail.sh",
+      "platform" : "AWS",
+      "type" : "ebs-aggr",
+      "title" : "EBS totals",
+      "subsystem" : "REGION",
+      "singleton" : true,
+      "folder_frontpage" : true
+   },
+   {
+      "tabs" : [
+         {
+            "storage" : "Data"
+         },
+         {
+            "iops" : "IOPS"
+         }
+      ],
+      "uuid_in_url" : true,
+      "url_base" : "/lpar2rrd-cgi/detail.sh",
+      "platform" : "AWS",
+      "type" : "ebs",
+      "subsystem" : "EBS",
+      "singleton" : false
+   },
+   {
+      "tabs" : [
+         {
+            "cpu_percent" : "CPU %"
+         },
+	 {
+            "db_connection" : "DB Connection"
+         },
+	 {
+            "mem_free" : "Free memory"
+         },
+	 {
+            "disk_free" : "Free storage"
+         },
+         {
+            "storage" : "Data"
+         },
+         {
+            "iops" : "IOPS"
+         },
+         {
+            "net" : "Net"
+         },
+	 {
+            "latency" : "Latency"
+         }
+      ],
+      "uuid_in_url" : true,
+      "url_base" : "/lpar2rrd-cgi/detail.sh",
+      "platform" : "AWS",
+      "type" : "rds",
+      "subsystem" : "RDS",
+      "singleton" : false
+   },
+   {
+      "tabs" : [
+         {
+            "cpu_percent" : "CPU %"
+         },
+         {
+            "db_connection" : "DB Connection"
+         },
+         {
+            "mem_free" : "Free memory"
+         },
+         {
+            "disk_free" : "Free storage"
+         },
+         {
+            "storage" : "Data"
+         },
+         {
+            "iops" : "IOPS"
+         },
+         {
+            "net" : "Net"
+         },
+	 {
+            "latency" : "Latency"
+         }
+      ],
+      "uuid_in_url" : true,
+      "url_base" : "/lpar2rrd-cgi/detail.sh",
+      "platform" : "AWS",
+      "type" : "rds-aggr",
+      "title" : "RDS totals",
+      "subsystem" : "REGION",
+      "singleton" : true
+   },
+  {
+      "tabs" : [
+         {
+            "cpu_cores" : "CPU"
+         },
+         {
+            "cpu_percent" : "CPU %"
+         },
+         {
+            "storage" : "Data"
+         },
+         {
+            "iops" : "IOPS"
+         },
+         {
+            "net" : "Net"
+         }
+      ],
+      "uuid_in_url" : true,
+      "url_base" : "/lpar2rrd-cgi/detail.sh",
+      "platform" : "AWS",
+      "type" : "ec2",
+      "subsystem" : "EC2",
+      "singleton" : false
+   },
+   {
+      "tabs" : [
+         {
+            "cpu_cores" : "CPU"
+         },
+         {
+            "cpu_percent" : "CPU %"
+         },
+         {
+            "storage" : "Data"
+         },
+         {
+            "iops" : "IOPS"
+         },
+         {
+            "net" : "Net"
+         }
+      ],
+      "uuid_in_url" : true,
+      "url_base" : "/lpar2rrd-cgi/detail.sh",
+      "platform" : "AWS",
+      "type" : "ec2-aggr",
+      "title" : "EC2 totals",
+      "subsystem" : "REGION",
+      "singleton" : true,
+      "folder_frontpage" : true
+   },
+   {
+      "tabs" : [
+         {
+            "ec2" : "Elastic Compute Cloud"
+         },
+	 {
+            "volumes" : "Elastic Block Store"
+         },
+	 {
+            "rds" : "Relational Database Service"
+         },
+	 {
+            "api" : "Api Gateway"
+         },
+	 {
+            "lambda" : "Lambda"
+         }
+      ],
+      "uuid_in_url" : false,
+      "url_base" : "/lpar2rrd-cgi/detail.sh",
+      "platform" : "AWS",
+      "type" : "configuration",
+      "title" : "Configuration",
+      "subsystem" : "AWS",
+      "singleton" : true,
+      "folder_frontpage" : false
+   },
+   {
+      "tabs" : [
+      ],
+      "uuid_in_url" : false,
+      "url_base" : "/lpar2rrd-cgi/detail.sh",
+      "platform" : "AWS",
+      "type" : "health",
+      "title" : "Health Status",
+      "subsystem" : "AWS",
+      "singleton" : true,
+      "folder_frontpage" : false
+   }
+]

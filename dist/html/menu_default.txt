@@ -1,0 +1,8 @@
+O:1:::::::
+T:doc:Documentation:gui-help.html:::::
+T:dcheck:Data check:/lpar2rrd-cgi/detail.sh?host=&server=&lpar=cod&item=data_check&entitle=0&none=none:::::
+T:lcfg:Configuration:gui-cfg.html:::::
+T:logs:Logs:gui-log.html:::::
+T:ACL:Access Control:/lpar2rrd-cgi/acl.sh:::::
+T:upgrade:Product upgrade:/lpar2rrd-cgi/upgrade.sh?cmd=form:::::
+T:clogs:Collect Logs:/lpar2rrd-cgi/collect_logs.sh?cmd=page:::::

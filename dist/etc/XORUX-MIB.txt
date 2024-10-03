@@ -1,0 +1,183 @@
+XORUX-MIB DEFINITIONS ::= BEGIN
+
+IMPORTS
+	OBJECT-TYPE   FROM RFC-1212
+	TRAP-TYPE     FROM RFC-1215
+	DisplayString FROM RFC1213-MIB
+	enterprises   FROM RFC1155-SMI  ;
+
+	LPAR2RRD			OBJECT IDENTIFIER ::= { enterprises 40540 }
+--	XoruXApplications	OBJECT IDENTIFIER ::= { XoruX 1 }
+--	LPAR2RRD			OBJECT IDENTIFIER ::= { XoruXApplications 1 }
+	lpar2rrdSendSnmpMsg	OBJECT IDENTIFIER ::= { LPAR2RRD 1 }
+	stor2rrdSendSnmpMsg	OBJECT IDENTIFIER ::= { LPAR2RRD 2 }
+
+-- LPAR2RRD definitions
+
+lpar2rrdHmcName OBJECT-TYPE
+	SYNTAX DisplayString
+	ACCESS read-only
+	STATUS mandatory
+	DESCRIPTION
+	"HMC name.  Type = char[100]."
+	::= { lpar2rrdSendSnmpMsg 1}
+
+lpar2rrdServerName OBJECT-TYPE
+	SYNTAX DisplayString
+	ACCESS read-only
+	STATUS mandatory
+	DESCRIPTION
+	"Server name.  Type = char[100]."
+	::= { lpar2rrdSendSnmpMsg 2}
+
+lpar2rrdLparName OBJECT-TYPE
+	SYNTAX DisplayString
+	ACCESS read-only
+	STATUS mandatory
+	DESCRIPTION
+	"LPAR name.  Type = char[100]."
+	::= { lpar2rrdSendSnmpMsg 3}
+
+lpar2rrdAlertType OBJECT-TYPE
+	SYNTAX DisplayString
+	ACCESS read-only
+	STATUS mandatory
+	DESCRIPTION
+	"Alert type.  Type = char[6]."
+	::= { lpar2rrdSendSnmpMsg 4}
+
+lpar2rrdValue OBJECT-TYPE
+	SYNTAX DisplayString
+	ACCESS read-only
+	STATUS mandatory
+	DESCRIPTION
+	"Alerted value.  Type = char[10]."
+	::= { lpar2rrdSendSnmpMsg 5}
+
+lpar2rrdLimit OBJECT-TYPE
+	SYNTAX DisplayString
+	ACCESS read-only
+	STATUS mandatory
+	DESCRIPTION
+	"Limit value that was overloaded.  Type = char[10]."
+	::= { lpar2rrdSendSnmpMsg 6}
+
+lpar2rrdSubsystem OBJECT-TYPE
+	SYNTAX DisplayString
+	ACCESS read-only
+	STATUS mandatory
+	DESCRIPTION
+	"Subsystem name.  Type = char[100]."
+	::= { lpar2rrdSendSnmpMsg 7}
+
+lpar2rrdODBName OBJECT-TYPE
+        SYNTAX DisplayString
+        ACCESS read-only
+        STATUS mandatory
+        DESCRIPTION
+        "OracleDB name.  Type = char[100]."
+        ::= { lpar2rrdSendSnmpMsg 8}
+
+lpar2rrdODBInstanceName OBJECT-TYPE
+        SYNTAX DisplayString
+        ACCESS read-only
+        STATUS mandatory
+        DESCRIPTION
+        "InstanceOne name.  Type = char[100]."
+        ::= { lpar2rrdSendSnmpMsg 9}
+
+lpar2rrdODBInstanceValue OBJECT-TYPE
+        SYNTAX DisplayString
+        ACCESS read-only
+        STATUS mandatory
+        DESCRIPTION
+        "InstanceOne value.  Type = char[100]."
+        ::= { lpar2rrdSendSnmpMsg 10}
+
+-- STOR2RRD definitions
+
+stor2rrdStorageName OBJECT-TYPE
+	SYNTAX DisplayString
+	ACCESS read-only
+	STATUS mandatory
+	DESCRIPTION
+	"Storage name.  Type = char[100]."
+	::= { stor2rrdSendSnmpMsg 1}
+
+stor2rrdType OBJECT-TYPE
+	SYNTAX DisplayString
+	ACCESS read-only
+	STATUS mandatory
+	DESCRIPTION
+	"Subsystem name.  Type = char[100]."
+	::= { stor2rrdSendSnmpMsg 2}
+
+stor2rrdVolume OBJECT-TYPE
+	SYNTAX DisplayString
+	ACCESS read-only
+	STATUS mandatory
+	DESCRIPTION
+	"Volume name.  Type = char[100]."
+	::= { stor2rrdSendSnmpMsg 3}
+
+stor2rrdValue OBJECT-TYPE
+	SYNTAX DisplayString
+	ACCESS read-only
+	STATUS mandatory
+	DESCRIPTION
+	"Alerted value.  Type = char[10]."
+	::= { stor2rrdSendSnmpMsg 4}
+
+stor2rrdErrorMessage OBJECT-TYPE
+  SYNTAX DisplayString
+  ACCESS read-only
+  STATUS mandatory
+  DESCRIPTION
+  "Error Message.  Type = char[1024]."
+  ::= { stor2rrdSendSnmpMsg 5}
+
+stor2rrdItem OBJECT-TYPE
+    SYNTAX DisplayString
+    ACCESS read-only
+    STATUS mandatory
+    DESCRIPTION
+    "Item.  Type = char[100]."
+    ::= { stor2rrdSendSnmpMsg 6}
+
+--
+-- Trap definitions
+--
+
+lpar2rrdSendTrap TRAP-TYPE
+	ENTERPRISE lpar2rrdSendSnmpMsg
+	VARIABLES {
+		lpar2rrdHmcName,
+		lpar2rrdServerName,
+		lpar2rrdLparName,
+		lpar2rrdSubsystem,
+		lpar2rrdValue,
+		lpar2rrdLimit,
+                lpar2rrdODBName,
+                lpar2rrdODBInstance,
+                lpar2rrdODBInstanceValue
+	}
+	DESCRIPTION
+		"XoruX application LPAR2RRD SNMP agent is providing message data."
+	::= 1
+
+stor2rrdSendTrap TRAP-TYPE
+	ENTERPRISE stor2rrdSendSnmpMsg
+	VARIABLES {
+		stor2rrdStorageName,
+		stor2rrdType,
+		stor2rrdVolume,
+		stor2rrdValue,
+		stor2rrdItem,
+    stor2rrdErrorMessage
+	}
+	DESCRIPTION
+		"XoruX application STOR2RRD SNMP agent is providing message data."
+	::= 1
+
+END
+

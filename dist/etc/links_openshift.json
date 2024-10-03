@@ -1,0 +1,296 @@
+[ 
+
+  {
+      "tabs" : [],
+      "uuid_in_url" : true,
+      "url_base" : "/lpar2rrd-cgi/detail.sh",
+      "platform" : "Openshift",
+      "title" : "Infrastructure",
+      "type" : "infrastructure",
+      "subsystem" : "OPENSHIFT",
+      "singleton" : true
+  },
+  {
+      "tabs" : [
+         {
+            "node" : "Node"
+         },
+         {
+            "pod" : "Pod"
+         }
+      ],
+      "uuid_in_url" : false,
+      "url_base" : "/lpar2rrd-cgi/detail.sh",
+      "platform" : "Openshift",
+      "type" : "configuration",
+      "title" : "Configuration",
+      "subsystem" : "OPENSHIFT",
+      "singleton" : true,
+      "folder_frontpage" : false
+  },
+  {
+      "tabs" : [
+         {
+            "pod" : "Pod"
+         }
+      ],
+      "uuid_in_url" : false,
+      "url_base" : "/lpar2rrd-cgi/detail.sh",
+      "platform" : "Openshift",
+      "type" : "top",
+      "title" : "Pods TOP",
+      "subsystem" : "OPENSHIFT",
+      "singleton" : true,
+      "folder_frontpage" : false
+  },
+  {
+      "tabs" : [
+         {
+            "pod" : "Pod"
+         }
+      ],
+      "uuid_in_url" : true,
+      "url_base" : "/lpar2rrd-cgi/detail.sh",
+      "platform" : "Openshift",
+      "title" : "Pods Top",
+      "type" : "top-cluster",
+      "subsystem" : "CLUSTER",
+      "singleton" : true
+   },
+  {
+      "tabs" : [
+         {
+            "overview" : "Overview"
+         }
+      ],
+      "uuid_in_url" : true,
+      "url_base" : "/lpar2rrd-cgi/detail.sh",
+      "platform" : "Openshift",
+      "title" : "Pods Overview",
+      "type" : "pods-overview",
+      "subsystem" : "OPENSHIFT",
+      "singleton" : true
+   },
+   {
+      "tabs" : [
+         {
+            "overview" : "Overview"
+         }
+      ],
+      "uuid_in_url" : true,
+      "url_base" : "/lpar2rrd-cgi/detail.sh",
+      "platform" : "Openshift",
+      "title" : "Pods Overview",
+      "type" : "pods-overview-cluster",
+      "subsystem" : "CLUSTER",
+      "singleton" : true
+   },
+   {
+      "tabs" : [
+         {
+            "cpu_percent" : "CPU %"
+         },
+         {
+            "cpu" : "CPU"
+         },
+         {
+            "memory" : "Memory"
+         },
+         {
+            "pods" : "Pods"
+         },
+	 {
+            "data" : "Containers Data"
+         },
+	 {
+            "iops" : "Containers IOPS"
+         },
+	 {
+            "latency" : "Containers Latency"
+         },
+	 {
+            "net" : "Pods Net"
+         }
+      ],
+      "uuid_in_url" : true,
+      "url_base" : "/lpar2rrd-cgi/detail.sh",
+      "platform" : "Openshift",
+      "type" : "node",
+      "subsystem" : "NODE",
+      "singleton" : false
+   },
+   {
+      "tabs" : [
+	 {
+            "cpu_percent" : "CPU %"
+         },
+         {
+            "cpu" : "CPU"
+         },
+         {
+            "memory" : "Memory"
+         },
+         {
+            "pods" : "Pods"
+         },
+	 {
+            "data" : "Containers Data"
+         },
+	 {
+            "iops" : "Containers IOPS"
+         },
+	 {
+            "latency" : "Containers Latency"
+         },
+	 {
+            "net" : "Pods Net"
+         }
+      ],
+      "uuid_in_url" : true,
+      "url_base" : "/lpar2rrd-cgi/detail.sh",
+      "title" : "Node Totals",
+      "platform" : "Openshift",
+      "type" : "node-aggr",
+      "subsystem" : "CLUSTER",
+      "singleton" : true
+   },
+   {
+      "tabs" : [
+         {
+            "cpu" : "CPU"
+         },
+         {
+            "memory" : "Memory"
+         }
+      ],
+      "uuid_in_url" : true,
+      "url_base" : "/lpar2rrd-cgi/detail.sh",
+      "title" : "Totals",
+      "platform" : "Openshift",
+      "type" : "namespace",
+      "subsystem" : "PROJECT",
+      "singleton" : true
+   },
+   {
+      "tabs" : [
+         {
+            "cpu" : "CPU"
+         },
+         {
+            "memory" : "Memory"
+         }
+      ],
+      "uuid_in_url" : true,
+      "url_base" : "/lpar2rrd-cgi/detail.sh",
+      "title" : "Namespace Totals",
+      "platform" : "Openshift",
+      "type" : "namespace-aggr",
+      "subsystem" : "CLUSTER",
+      "singleton" : true
+   },
+   {
+      "tabs" : [],
+      "uuid_in_url" : true,
+      "url_base" : "/lpar2rrd-cgi/detail.sh",
+      "platform" : "Openshift",
+      "title" : "Conditions",
+      "type" : "conditions-pod",
+      "subsystem" : "POD",
+      "singleton" : true
+   },
+   {
+      "tabs" : [
+         {
+            "cpu" : "CPU"
+         },
+         {
+            "memory" : "Memory"
+         },
+         {
+            "data" : "Data"
+         },
+         {
+            "iops" : "IOPS"
+         },
+         {
+            "latency" : "Latency"
+         }
+      ],
+      "uuid_in_url" : true,
+      "url_base" : "/lpar2rrd-cgi/detail.sh",
+      "platform" : "Openshift",
+      "type" : "container",
+      "subsystem" : "CONTAINER",
+      "singleton" : false
+   },
+   {
+      "tabs" : [
+         {
+            "cpu" : "CPU"
+         },
+         {
+            "cpu_container" : "CPU Containers"
+         },
+         {
+            "memory" : "Memory"
+         },
+         {
+            "memory_container" : "Memory Containers"
+         },
+         {
+            "net" : "Network"
+         },
+         {
+            "data" : "Containers Data"
+         },
+         {
+            "iops" : "Containers IOPS"
+         },
+         {
+            "latency" : "Containers Latency"
+         }
+      ],
+      "uuid_in_url" : true,
+      "url_base" : "/lpar2rrd-cgi/detail.sh",
+      "title" : "Totals",
+      "platform" : "Openshift",
+      "type" : "pod",
+      "subsystem" : "POD",
+      "singleton" : true
+   },
+   {
+      "tabs" : [
+         {
+            "cpu" : "CPU"
+         },
+         {
+            "cpu_container" : "CPU Containers"
+         },
+         {
+            "memory" : "Memory"
+         },
+         {
+            "memory_container" : "Memory Containers"
+         },
+         {
+            "data" : "Containers Data"
+         },
+         {
+            "iops" : "Containers IOPS"
+         },
+         {
+            "latency" : "Containers Latency"
+         },
+         {
+            "net" : "Pods Net"
+         }
+      ],
+      "uuid_in_url" : true,
+      "url_base" : "/lpar2rrd-cgi/detail.sh",
+      "title" : "Pod Totals",
+      "platform" : "Openshift",
+      "type" : "project-pod-aggr",
+      "subsystem" : "PROJECT",
+      "singleton" : true
+   }
+]

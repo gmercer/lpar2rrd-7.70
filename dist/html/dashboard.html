@@ -1,0 +1,77 @@
+<div style="position: relative; text-align: center">
+	<p id="emptydash" style="display:none">Please select some graphs you want to see here!</br>
+	Use this <img src="css/images/favoff.gif" alt="Add to dashboard icon" style="vertical-align: text-bottom;" /> at top right corner of each graph to place the graph into the dashboard.<br><br>
+	<a href='https://www.lpar2rrd.com/dashboard.php' target="_blank">More info...</a>
+	</p>
+	<div id ="dbcontent" style="display: none">
+		<div id="tabs"> 
+			<ul>
+				<li><a href="#tabs-1">Custom Group</a></li>
+				<li><a href="#tabs-2">Server</a></li>
+				<li><a href="#tabs-3">LPAR/VM</a></li>
+				<li><a href="#tabs-4">AS/400</a></li>
+				<li><a href="#tabs-5">Storage</a></li>
+				<li><a href="#tabs-6">Cluster</a></li>
+				<li><a href="#tabs-99">Others</a></li>
+			</ul>
+			<div id="tabs-1">
+				<ul id="dashboard-cust" class="dashlist">
+				<p>Custom Group</p>
+				</ul>
+				<br style="clear:both">
+			</div>
+			<div id="tabs-2">
+				<ul id="dashboard-srv" class="dashlist">
+				<p>Server</p>
+				</ul>
+				<br style="clear:both">
+			</div>
+			<div id="tabs-3">
+				<ul id="dashboard-lpar" class="dashlist">
+				<p>LPAR/VM</p>
+				</ul>
+				<br style="clear:both">
+			</div>
+			<div id="tabs-4">
+				<ul id="dashboard-as400" class="dashlist">
+				<p>AS/400</p>
+				</ul>
+				<br style="clear:both">
+			</div>
+			<div id="tabs-5">
+				<ul id="dashboard-dstr" class="dashlist">
+				<p>Storage</p>
+				</ul>
+				<br style="clear:both">
+			</div>
+			<div id="tabs-6">
+				<ul id="dashboard-clstr" class="dashlist">
+				<p>Cluster</p>
+				</ul>
+				<br style="clear:both">
+			</div>
+			<div id="tabs-99">
+				<ul id="dashboard-other" class="dashlist">
+				<p>Others</p>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<p><br style="clear:both"></p>
+	<div id="dashfooter" style="padding-top: 1em; border-top: 1px dotted grey; clear: both">
+		<button id="dbstyle" class="olddbbutton" title="Switch Dashboard style">Switch to Flat Style</button>
+		<button id="clrcookies" class="olddbbutton" title="Remove all DashBoard items (destructive!)">Clear DashBoard</button>
+		<button id="filldash" class="olddbbutton" title="Append predefined items: Custom groups, Totals for all servers and LPARs aggregates">Add predefined</button>
+		<button id="savedash" class="olddbbutton" title="Save DashBoard state for later use on other machine/browser">Save DashBoard</button>
+		<button id="loaddash" class="olddbbutton" title="Restore DashBoard items from previously saved file (current state will be lost!)">Restore DashBoard</button>
+		<input type="image" id="stor2rrd" style="display: none; float: right" title="Visit STOR2RRD (STORAGE performance and capacity monitoring)" onclick="window.open('https://stor2rrd.com', '_blank')" src="css/images/logo-stor2rrd.png">
+		<input type="image" id="xormon" style="display: none; height: 21px; float: right; margin-right: 1em; margin-top: 2px;" title="Xormon: performance Monitoring for Server, Storage, DB, SAN and LAN" onclick="window.open('https://xormon.com', '_blank')" src="css/images/xormon_logo_final_392x96.png">
+	</div>
+	<div id="fullscreendb" class="newdbbutton fas fa-expand" title="FullScreen Toggle"></div>
+	<div id="dbexport" class="newdbbutton fas fa-upload" title="Export Dashboard layout"></div>
+	<div id="dbimport" class="newdbbutton fas fa-download" title="Import Dashboard layout"></div>
+	<div id="demo-notice" class="hidden">
+		<p>Would you be interested in live Webex session with our expert to explain all product features?</p>
+		<p><a target="_blank" href="https://lpar2rrd.com/live_form.html">Apply here</a></p>
+	</div>
+</div>

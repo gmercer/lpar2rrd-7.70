@@ -1,0 +1,66 @@
+  <style>
+  #upload { 
+	  display: block; 
+	  margin: 20px; 
+	  margin-left: 0; 
+	  background: #fcfcfc; 
+	  border: 1px solid #c0ccdf; 
+	  border-radius: 10px; 
+	  padding: 15px; 
+	  width: 404px;
+  }
+  #status { 
+	  display: block; 
+	  margin: 20px; 
+	  background: #fcfcfc; 
+	  border: 1px solid #c0ccdf; 
+	  border-radius: 10px; 
+	  padding: 15px; 
+  }
+  .progress { 
+	  position: relative; 
+	  width: 400px; 
+	  border: 1px solid #ddd; 
+	  padding: 1px; 
+	  border-radius: 3px; 
+  }
+  .bar { 
+	  background-color: #E0ECFF;
+	  width: 0%; 
+	  height: 20px; 
+	  border-radius: 3px; 
+  }
+  .percent { 
+	  position: absolute; 
+	  display: inline-block; 
+	  top: 3px; 
+	  left: 48%; 
+  }
+  </style>
+  <div id="extnmon" style="display: none">
+  <p style="margin-left: 1em">When you provide here data collected from NMON you will get this data graphed.<br>
+  Below is described how it works.</p>
+
+  <ol>
+    <li>Use <b>your NMON data file</b> as the input file for this form:
+
+      <form id="upload" action="/lpar2rrd-cgi/ext-nmon.sh" method="post" enctype="multipart/form-data">
+        <input type="file" name="file" accept=".nmon" style="width: 100%" onchange="return CheckExtension(this);">
+		<p><input type="submit" value="Upload NMON file"></p>
+		<div class="progress">
+			<div class="bar"></div >
+			<div class="percent">0%</div >
+		</div>
+      </form>
+    </li>
+
+    <li>Follow the link which will appear after processing as a starting point to your graphed data.<br>
+    Each run will be under independent location, this assure privacy of graphed data.</li>
+
+	<li>If you get an error then snap the screenshot and send it to <a href="mailto:support@lpar2rrd.com">support@lpar2rrd.com</a></li>
+
+    <li>Uploaded files and web pages created by this application are regularly removed from the web server.<br>
+    If you want to keep it then save it as web page (complete).</li>
+  </ol>
+  </div>
+	<div id="status"></div>

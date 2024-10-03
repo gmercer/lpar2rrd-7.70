@@ -1,0 +1,37 @@
+[
+   {
+      "tabs" : [
+         {
+            "oscpu" : "CPU OS"
+         },
+         {
+            "queue_cpu" : "CPU QUEUE"
+         },
+         {
+            "jobs" : "JOB"
+         },
+         {
+            "mem" : "Memory"
+         },
+         {
+            "pg1" : "Paging 1"
+         },
+         {
+            "pg2" : "Paging 2"
+         },
+         {
+            "lan" : "LAN"
+         },
+         {
+            "fs" : "FS"
+         }
+      ],
+      "url_params" : [ "uid" ],
+      "uuid_in_url" : true,
+      "url_base" : "/lpar2rrd-cgi/detail.sh",
+      "platform" : "Linux",
+      "type" : "linux",
+      "subsystem" : "SERVER",
+      "singleton" : false
+   }
+]

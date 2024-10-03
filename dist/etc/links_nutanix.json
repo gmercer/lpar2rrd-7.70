@@ -1,0 +1,388 @@
+[
+   {
+      "tabs" : [
+         {
+            "cpu_cores" : "CPU"
+         },
+         {
+            "cpu_percent" : "CPU %"
+         },
+         {
+            "vm_cpu_cores" : "VM CPU"
+         },
+         {
+            "vm_cpu_percent" : "VM CPU %"
+         },
+         {
+            "memory_used" : "MEM used"
+         },
+         {
+            "memory_free" : "MEM free"
+         },
+         {
+            "memory_used" : "VM MEM used"
+         },
+         {
+            "memory_free" : "VM MEM free"
+         }
+      ],
+      "uuid_in_url" : true,
+      "url_base" : "/lpar2rrd-cgi/detail.sh",
+      "platform" : "Nutanix",
+      "type" : "pool-aggr",
+      "title" : "Server totals",
+      "subsystem" : "POOL",
+      "singleton" : true,
+      "folder_frontpage" : true
+   },
+   {
+      "tabs" : [
+         {
+            "cpu_cores" : "CPU"
+         },
+         {
+            "cpu_percent" : "CPU %"
+         },
+         {
+            "vm_cpu_cores" : "VM CPU"
+         },
+         {
+            "vm_cpu_percent" : "VM CPU %"
+         },
+         {
+            "memory" : "MEM"
+         },
+         {
+            "memory_used" : "VM MEM used"
+         },
+         {
+            "memory_free" : "VM MEM free"
+         }
+      ],
+      "uuid_in_url" : true,
+      "url_base" : "/lpar2rrd-cgi/detail.sh",
+      "platform" : "Nutanix",
+      "type" : "host",
+      "subsystem" : "HOST",
+      "singleton" : false,
+      "folder_frontpage" : true
+   },
+   {
+      "tabs" : [
+         {
+            "storage" : "Data"
+         },
+         {
+            "iops" : "IOPS"
+         },
+         {
+            "latency" : "Latency"
+         }
+      ],
+      "uuid_in_url" : true,
+      "url_base" : "/lpar2rrd-cgi/detail.sh",
+      "platform" : "Nutanix",
+      "type" : "sc",
+      "subsystem" : "STORAGE_CONTAINER",
+      "singleton" : false,
+      "folder_frontpage" : true
+   },
+      {
+      "tabs" : [
+         {
+            "storage" : "Data"
+         },
+         {
+            "iops" : "IOPS"
+         },
+         {
+            "latency" : "Latency"
+         }
+      ],
+      "uuid_in_url" : true,
+      "url_base" : "/lpar2rrd-cgi/detail.sh",
+      "platform" : "Nutanix",
+      "type" : "vd",
+      "subsystem" : "VIRTUAL_DISK",
+      "singleton" : false,
+      "folder_frontpage" : true
+   },
+   {
+      "tabs" : [
+         {
+            "storage" : "Data"
+         },
+         {
+            "iops" : "IOPS"
+         },
+         {
+            "latency" : "Latency"
+         }
+      ],
+      "uuid_in_url" : true,
+      "url_base" : "/lpar2rrd-cgi/detail.sh",
+      "platform" : "Nutanix",
+      "type" : "storage",
+      "subsystem" : "PHYSICAL_DISK",
+      "singleton" : false
+   },
+   {
+      "tabs" : [
+         {
+            "storage" : "Data"
+         },
+         {
+            "iops" : "IOPS"
+         },
+         {
+            "latency" : "Latency"
+         }
+      ],
+      "uuid_in_url" : true,
+      "url_base" : "/lpar2rrd-cgi/detail.sh",
+      "platform" : "Nutanix",
+      "type" : "vg",
+      "subsystem" : "VOLUME_GROUP",
+      "singleton" : false
+   },
+   {
+      "tabs" : [
+         {
+            "storage" : "Data"
+         },
+         {
+            "iops" : "IOPS"
+         },
+         {
+            "latency" : "Latency"
+         }
+      ],
+      "uuid_in_url" : true,
+      "url_base" : "/lpar2rrd-cgi/detail.sh",
+      "platform" : "Nutanix",
+      "type" : "sp",
+      "subsystem" : "STORAGE_POOL",
+      "singleton" : false
+   },
+   {
+      "tabs" : [
+         {
+            "storage" : "Pool Data"
+         },
+         {
+            "iops" : "Pool IOPS"
+         },
+         {
+            "latency" : "Pool Latency"
+         },
+	 {
+            "sc_storage" : "SC Data"
+         },
+         {
+            "sc_iops" : "SC IOPS"
+         },
+         {
+            "sc_latency" : "SC Latency"
+         },
+	 {
+            "vd_storage" : "vdisk Data"
+         },
+         {
+            "vd_iops" : "vdisk IOPS"
+         },
+         {
+            "vd_latency" : "vdisk Latency"
+         },
+         {
+            "pd_storage" : "disk Data"
+         },
+         {
+            "pd_iops" : "disk IOPS"
+         },
+         {
+            "pd_latency" : "disk Latency"
+         }
+      ],
+      "uuid_in_url" : true,
+      "url_base" : "/lpar2rrd-cgi/detail.sh",
+      "platform" : "Nutanix",
+      "title" : "Storage totals",
+      "type" : "sr-aggr",
+      "subsystem" : "POOL",
+      "singleton" : true
+   },
+   {
+      "tabs" : [
+         {
+            "cpu_cores" : "CPU"
+         },
+         {
+            "cpu_percent" : "CPU %"
+         },
+         {
+            "memory" : "MEM"
+         },
+         {
+            "storage" : "Data"
+         },
+         {
+            "iops" : "IOPS"
+         },
+         {
+            "latency" : "Latency"
+         },
+         {
+            "net" : "Net"
+         }
+      ],
+      "uuid_in_url" : true,
+      "url_base" : "/lpar2rrd-cgi/detail.sh",
+      "platform" : "Nutanix",
+      "type" : "vm",
+      "subsystem" : "VM",
+      "singleton" : false
+   },
+      {
+      "tabs" : [
+         {
+            "cpu_cores" : "CPU"
+         },
+         {
+            "cpu_percent" : "CPU %"
+         },
+         {
+            "memory_used" : "MEM used"
+         },
+         {
+            "memory_free" : "MEM free"
+         },
+	 {
+            "storage" : "Data"
+         },
+         {
+            "iops" : "IOPS"
+         },
+         {
+            "latency" : "Latency"
+         },
+         {
+            "net" : "Net"
+         }
+      ],
+      "uuid_in_url" : true,
+      "url_base" : "/lpar2rrd-cgi/detail.sh",
+      "platform" : "Nutanix",
+      "title" : "VM totals",
+      "type" : "vm-aggr",
+      "subsystem" : "POOL",
+      "singleton" : true
+   },
+   {
+      "tabs" : [],
+      "uuid_in_url" : false,
+      "url_base" : "heatmap-nutanix.html",
+      "platform" : "Nutanix",
+      "type" : "heatmap",
+      "title" : "Heatmap",
+      "subsystem" : "NUTANIX",
+      "acl_capable" : true,
+      "singleton" : true,
+      "folder_frontpage" : false
+   },
+   {
+      "tabs" : [
+         {
+            "hosts" : "Host"
+         },
+         {
+            "vms" : "VM"
+         },
+         {
+            "storage" : "Physical Disks"
+         },
+	 {
+            "vd" : "Virtual Disks"
+         },
+	 {
+            "sc" : "Storage Containers"
+         },
+	 {
+            "sp" : "Storage Pools"
+         }
+      ],
+      "uuid_in_url" : false,
+      "url_base" : "/lpar2rrd-cgi/detail.sh",
+      "platform" : "Nutanix",
+      "type" : "configuration",
+      "title" : "Configuration",
+      "subsystem" : "NUTANIX",
+      "singleton" : true,
+      "folder_frontpage" : false
+   },
+   {
+      "tabs" : [
+        {
+           "last_day":"Last day"
+        },
+        {
+           "last_week":"Last week"
+        },
+        {
+           "last_month":"Last month"
+        },
+        {
+           "last_year":"Last year"
+        }
+      ],
+      "uuid_in_url" : false,
+      "url_base" : "/lpar2rrd-cgi/detail.sh",
+      "platform" : "Nutanix",
+      "type" : "topten_nutanix",
+      "title" : "VM TOP",
+      "subsystem" : "NUTANIX",
+      "singleton" : true,
+      "folder_frontpage" : false
+   },
+   {
+      "tabs" : [
+	 {
+           "health" : "Health Status"
+	 },
+         {
+            "alerts" : "Alerts"
+         },
+         {
+            "events" : "Events"
+         }
+      ],
+      "uuid_in_url" : false,
+      "url_base" : "/lpar2rrd-cgi/detail.sh",
+      "platform" : "Nutanix",
+      "type" : "health-central",
+      "title" : "Health Status",
+      "subsystem" : "NUTANIX",
+      "singleton" : true,
+      "folder_frontpage" : false
+   },
+   {
+      "tabs" : [
+         {
+           "health" : "Health Status"
+         },
+         {
+            "alerts" : "Alerts"
+         },
+         {
+            "events" : "Events"
+         }
+      ],
+      "uuid_in_url" : true,
+      "url_base" : "/lpar2rrd-cgi/detail.sh",
+      "platform" : "Nutanix",
+      "type" : "health",
+      "title" : "Health Status",
+      "subsystem" : "POOL",
+      "singleton" : true,
+      "folder_frontpage" : false
+   }
+]

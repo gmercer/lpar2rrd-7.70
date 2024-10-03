@@ -1,0 +1,451 @@
+[
+   {
+      "tabs" : [
+         {
+            "vm" : "VM"
+         },
+         {
+            "server" : "Server"
+         },
+         {
+            "vm_cpu_table" : "VM CPU Table"
+         },
+         {
+            "vm_mem_table" : "VM MEM Table"
+         },
+         {
+            "server_cpu_table" : "Server CPU Table"
+         },
+         {
+            "server_mem_table" : "Server MEM Table"
+         }
+      ],
+      "url_params" : [],
+      "uuid_in_url" : false,
+      "url_base" : "heatmap-vmware.html",
+      "platform" : "Vmware",
+      "type" : "Heatmap",
+      "title" : "Heatmap",
+      "subsystem" : "VMWARE",
+      "acl_capable" : true,
+      "singleton" : true
+   },
+   {
+      "tabs" : [
+         {
+            "vmware_overview_clusters" : "Clusters"
+         }
+      ],
+      "url_params" : [],
+      "uuid_in_url" : false,
+      "url_base" : "overview_vmware.html",
+      "platform" : "Vmware",
+      "type" : "vmware_overview",
+      "title" : "Overview",
+      "subsystem" : "VMWARE",
+      "singleton" : true
+   },
+   {
+      "tabs" : [],
+      "url_params" : [ "type" ],
+      "url_base" : "/lpar2rrd-cgi/histrep.sh",
+	  "uuid_in_url" : false,
+      "platform" : "Vmware",
+      "type" : "historical_reports",
+      "title" : "Historical Reports",
+      "subsystem" : "VMWARE",
+      "singleton" : true
+   },
+   {
+      "tabs" : [
+         {
+            "cpu_day" : "CPU day"
+         },
+         {
+            "cpu_week" : "CPU week"
+         },
+         {
+            "cpu_month" : "CPU month"
+         },
+         {
+            "mem_day" : "Mem day"
+         },
+         {
+            "mem_week" : "Mem week"
+         },
+         {
+            "mem_month" : "Mem month"
+         }
+      ],
+      "url_params" : [],
+      "uuid_in_url" : false,
+      "url_base" : "gui-cpu_max_check_vm.html",
+      "platform" : "Vmware",
+      "type" : "resource_configuration_advisor",
+      "title" : "Resource Configuration Advisor",
+      "subsystem" : "VMWARE",
+      "singleton" : true
+   },
+   {
+      "tabs" : [
+         {
+            "configuration" : "Configuration"
+         }
+      ],
+      "url_params" : [],
+      "uuid_in_url" : false,
+      "url_base" : "/lpar2rrd-cgi/detail.sh",
+      "platform" : "Vmware",
+      "type" : "serversvm",
+      "title" : "Configuration",
+      "subsystem" : "VMWARE",
+      "singleton" : true
+   },
+   {
+      "tabs" : [
+         {
+            "top" : "TOP"
+         },
+         {
+            "iops_read" : "IOPS Read"
+         },
+         {
+            "iops_write" : "IOPS Write"
+         },
+         {
+            "data_read" : "Data Read"
+         },
+         {
+            "data_write" : "Data Write"
+         },
+         {
+            "used_space" : "Used Space"
+         }
+      ],
+      "url_params" : [],
+      "uuid_in_url" : false,
+      "url_base" : "/lpar2rrd-cgi/detail.sh",
+      "platform" : "Vmware",
+      "type" : "dstr-table-top",
+      "title" : "Datastores TOP",
+      "subsystem" : "VMWARE",
+      "singleton" : true
+   },
+   {
+      "tabs" : [
+         {
+            "last_day" : "Last Day"
+         },
+         {
+            "last_week" : "Last Week"
+         },
+         {
+            "last_month" : "Last Month"
+         },
+         {
+            "last_year" : "Last Year"
+         }
+      ],
+      "url_params" : [],
+      "uuid_in_url" : false,
+      "url_base" : "/lpar2rrd-cgi/detail.sh",
+      "platform" : "Vmware",
+      "type" : "topten_vm",
+      "title" : "VM TOP",
+      "subsystem" : "VMWARE",
+      "singleton" : true
+   },
+   {
+	  "tabs" : [
+	     {
+	        "multihmc" : "SERVER"
+	     },
+	     {
+	        "multihmclpar" : "CPU VMs"
+	     }
+	  ],
+      "url_params" : [ "uid" ],
+      "url_base" : "/lpar2rrd-cgi/detail.sh",
+	  "uuid_in_url" : true,
+      "platform" : "Vmware",
+      "type" : "hmctotals",
+      "title" : "Totals",
+      "subsystem" : "VCENTER",
+      "singleton" : true
+   },
+   {
+      "tabs" : [
+         {
+            "last_day" : "Last Day"
+         },
+         {
+            "last_week" : "Last Week"
+         },
+         {
+            "last_month" : "Last Month"
+         },
+         {
+            "last_year" : "Last Year"
+         }
+      ],
+      "url_params" : [ "uid" ],
+      "url_base" : "/lpar2rrd-cgi/detail.sh",
+	  "uuid_in_url" : true,
+      "platform" : "Vmware",
+      "type" : "topten_vm_vcenter",
+      "title" : "VM TOP",
+      "subsystem" : "VCENTER",
+      "singleton" : true
+   },
+   {
+	  "tabs" : [
+	     {
+	        "clustcpu" : "CPU"
+	     },
+	     {
+	        "clustlpar" : "CPU VMs"
+	     },
+	     {
+	        "clustmem" : "MEMORY"
+	     },
+	     {
+	        "clustser" : "SERVER"
+	     },
+	     {
+	        "clustlpardy" : "CPU READY"
+	     },
+	     {
+	        "clustlan" : "LAN"
+	     },
+	     {
+	        "vm_space" : "VM SPACE"
+	     }
+	  ],
+      "url_params" : [ "uid","cluster_moref" ],
+      "url_base" : "/lpar2rrd-cgi/detail.sh",
+	  "uuid_in_url" : true,
+      "platform" : "Vmware",
+      "type" : "cluster",
+      "title" : "Totals",
+      "subsystem" : "CLUSTER",
+      "singleton" : true
+   },
+   {
+      "tabs" : [
+         {
+            "rpcpu" : "CPU"
+         },
+         {
+            "rplpar" : "CPU VMs"
+         },
+         {
+            "rpmem" : "MEMORY"
+         }
+      ],
+      "url_params" : [ "uid","cluster_moref","resourcepool_moref","folder_moref" ],
+      "uuid_in_url" : true,
+      "url_base" : "/lpar2rrd-cgi/detail.sh",
+      "platform" : "Vmware",
+      "type" : "resourcepool",
+      "subsystem" : "RESOURCEPOOL",
+      "singleton" : false
+   },
+   {
+      "tabs" : [
+         {
+            "rpcpu" : "CPU"
+         },
+         {
+            "rplpar" : "CPU VMs"
+         },
+         {
+            "rpmem" : "MEMORY"
+         }
+      ],
+      "url_params" : [ "uid","cluster_moref","resourcepool_moref","folder_moref" ],
+      "uuid_in_url" : true,
+      "url_base" : "/lpar2rrd-cgi/detail.sh",
+      "platform" : "Vmware",
+      "type" : "resourcepool",
+	  "title" : "Totals",
+      "subsystem" : "RESOURCEPOOL_FOLDER",
+      "singleton" : true 
+   },
+   {
+      "tabs" : [],
+      "url_params" : [ "uid","cluster_moref","host" ],
+      "uuid_in_url" : true,
+      "url_base" : "/lpar2rrd-cgi/detail.sh",
+      "platform" : "Vmware",
+      "type" : "esxi",
+	  "title" : "ESXI",
+      "subsystem" : "ESXI",
+      "singleton" : false 
+   },
+   {
+      "tabs" : [
+         {
+            "pool" : "CPU"
+         },
+         {
+            "lparagg" : "VMs aggegated"
+         },
+         {
+            "configuration" : "Configuration"
+         }
+      ],
+      "url_params" : [ "uid","cluster_moref","host" ],
+      "uuid_in_url" : true,
+      "url_base" : "/lpar2rrd-cgi/detail.sh",
+      "platform" : "Vmware",
+      "type" : "esxi-cpu",
+      "title" : "CPU",
+      "subsystem" : "ESXI",
+      "singleton" : true
+   },
+   {
+      "tabs" : [
+         {
+            "memalloc" : "Allocation"
+         },
+         {
+            "memaggreg" : "Aggregated"
+         }
+      ],
+      "url_params" : [ "uid","cluster_moref","host" ],
+      "uuid_in_url" : true,
+      "url_base" : "/lpar2rrd-cgi/detail.sh",
+      "platform" : "Vmware",
+      "type" : "esxi-mem",
+	  "title" : "Memory",
+      "subsystem" : "ESXI",
+      "singleton" : true
+   },
+   {
+      "tabs" : [
+         {
+            "vmdiskrw" : "vmdiskrw"
+         },
+         {
+            "space" : "space"
+         }
+      ],
+      "url_params" : [ "uid","cluster_moref","host" ],
+      "uuid_in_url" : true,
+      "url_base" : "/lpar2rrd-cgi/detail.sh",
+      "platform" : "Vmware",
+      "type" : "esxi-space",
+	  "title" : "Disk",
+      "subsystem" : "ESXI",
+      "singleton" : true
+   },
+   {
+      "tabs" : [
+         {
+            "vmnetrw" : "LAN"
+         }
+      ],
+      "url_params" : [ "uid","cluster_moref","host" ],
+      "uuid_in_url" : true,
+      "url_base" : "/lpar2rrd-cgi/detail.sh",
+      "platform" : "Vmware",
+      "type" : "esxi-lan",
+	  "title" : "LAN",
+      "subsystem" : "ESXI",
+      "singleton" : true
+   },
+   {
+      "tabs" : [
+         {
+            "last_day" : "Last Day"
+         },
+         {
+            "last_week" : "Last Week"
+         },
+         {
+            "last_month" : "Last Month"
+         },
+         {
+            "last_year" : "Last Year"
+         }
+      ],
+      "url_params" : ["uid","cluster_moref","host"],
+      "uuid_in_url" : true,
+      "url_base" : "/lpar2rrd-cgi/detail.sh",
+      "platform" : "Vmware",
+      "type" : "view",
+      "title" : "VIEW",
+      "subsystem" : "ESXI",
+      "singleton" : true
+   },
+   {
+      "tabs" : [
+         {
+            "vmw-proc" : "CPU"
+         },
+         {
+            "lpar" : "CPU GHz"
+         },
+         {
+            "vmw-mem" : "MEM"
+         },
+         {
+            "vmw-diskrw" : "DISK"
+         },
+         {
+            "vmw-iops" : "IOPS"
+         },
+         {
+            "vmw-netrw" : "LAN"
+         },
+         {
+            "vmw-swap" : "SWAP"
+         },
+         {
+            "vmw-comp" : "COMP"
+         },
+         {
+            "vmw-ready" : "CPU READY"
+         },
+         {
+            "vmw-vmotion" : "vMotion"
+         }
+      ],
+      "url_params" : [ "uid","cluster_moref","vm_uuid","folder_moref" ],
+      "uuid_in_url" : true,
+      "url_base" : "/lpar2rrd-cgi/detail.sh",
+      "platform" : "Vmware",
+      "type" : "vm",
+      "subsystem" : "VM",
+      "singleton" : false
+   },
+   {
+      "tabs" : [
+         {
+            "vmw-proc" : "CPU"
+         },
+         {
+            "lpar" : "CPU GHz"
+         },
+         {
+            "vmw-mem" : "MEM"
+         },
+         {
+            "vmw-diskrw" : "DISK"
+         },
+         {
+            "vmw-iops" : "IOPS"
+         },
+         {
+            "vmw-netrw" : "LAN"
+         }
+      ],
+      "url_params" : [ "uid","datacenter_moref","datastore_moref" ],
+      "uuid_in_url" : true,
+      "url_base" : "/lpar2rrd-cgi/detail.sh",
+      "platform" : "Vmware",
+      "type" : "datastore",
+      "subsystem" : "DATASTORE",
+      "singleton" : false
+   }
+]

@@ -1,0 +1,31 @@
+<img src="css/images/cgcfg/cgcfghlp01.png" alt="" border="0">
+<ol>
+<li>Push <b>Add New</b> button to create new custom group.</li>
+<li>Type some name for that group and confirm it with <b>[Enter]</b>.</li>
+<li>Select group type (LPAR/POOL). <i>Note: new group type can only be changed before saving configuration.</i></li>
+</ol>
+
+<img src="css/images/cgcfg/cgcfghlp02.png" alt="" border="0">
+<ol>
+<li><b>Right click</b> on group/item name field to open the context menu.</li>
+<li>Use context menu to Edit/Create/Delete items, <i>Tip: press [F2] key or double click on the row to enter edit mode, press [Del] key to delete row.</i></li>
+<li>You can see live preview of group content on the right </li>
+</ol>
+
+<p>
+<img src="css/images/cgcfg/cgcfghlp03.png" alt="" border="0"><br />
+Both server and LPAR/POOL name fields have context sensible <b>autocomplete</b>, just start typing to see it in action.
+</p>
+
+<p>You can use regular expressions in server name and pool/lpar name. </p>
+
+<h5>Examples:</h5>
+<pre>
+.*
+ |__  .*      group will contain all LPARs/pools from all servers
+
+p[67].* 
+ |__  vio.*   group will contain lpars started vio* 
+              from servers starting with p6 or p7 string
+</pre>
+

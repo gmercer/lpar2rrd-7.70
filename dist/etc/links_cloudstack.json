@@ -1,0 +1,231 @@
+[
+   {
+      "tabs" : [
+	 {
+            "cpu" : "CPU"
+         },
+         {
+            "cpu_ghz" : "CPU Ghz"
+         },
+         {
+            "memory" : "Memory"
+         },
+         {
+            "net" : "Net"
+         }
+      ],
+      "uuid_in_url" : true,
+      "url_base" : "/lpar2rrd-cgi/detail.sh",
+      "platform" : "Cloudstack",
+      "type" : "host",
+      "subsystem" : "HOST",
+      "singleton" : false
+   },
+   {
+      "tabs" : [
+         {
+            "cpu" : "CPU"
+         },
+	 {
+            "cpu_ghz" : "CPU Ghz"
+         },
+         {
+            "memory_used" : "Mem used"
+         },
+	 {
+            "memory_free" : "Mem free"
+         },
+         {
+            "net" : "Net"
+         }
+      ],
+      "uuid_in_url" : true,
+      "url_base" : "/lpar2rrd-cgi/detail.sh",
+      "platform" : "Cloudstack",
+      "type" : "host-aggr",
+      "title" : "Host Totals",
+      "subsystem" : "CLOUD",
+      "singleton" : true,
+      "folder_frontpage" : true
+   },
+   {
+      "tabs" : [
+         {
+            "cpu" : "CPU Mhz"
+         },
+         {
+            "memory" : "Memory"
+         },
+         {
+            "iops" : "IOPS"
+         },
+	 {
+            "data" : "Data"
+         },
+         {
+            "net" : "Net"
+         }
+      ],
+      "uuid_in_url" : true,
+      "url_base" : "/lpar2rrd-cgi/detail.sh",
+      "platform" : "Cloudstack",
+      "type" : "instance",
+      "subsystem" : "INSTANCE",
+      "singleton" : false
+   },
+   {
+      "tabs" : [
+         {
+            "cpu" : "CPU Ghz"
+         },
+	 {
+            "memory_used" : "Mem used"
+         },
+         {
+            "memory_free" : "Mem free"
+         },
+	 {
+            "iops" : "IOPS"
+         },
+         {
+            "data" : "Data"
+         },
+         {
+            "net" : "Net"
+         }
+      ],
+      "uuid_in_url" : true,
+      "url_base" : "/lpar2rrd-cgi/detail.sh",
+      "platform" : "Cloudstack",
+      "type" : "instance-aggr",
+      "title" : "Instance Totals",
+      "subsystem" : "CLOUD",
+      "singleton" : true,
+      "folder_frontpage" : true
+   },
+   {
+      "tabs" : [
+         {
+            "size" : "Capacity"
+         },
+	 {
+            "allocated" : "Allocated"
+         }
+      ],
+      "uuid_in_url" : true,
+      "url_base" : "/lpar2rrd-cgi/detail.sh",
+      "platform" : "Cloudstack",
+      "type" : "primaryStorage",
+      "subsystem" : "PRIMARY_STORAGE",
+      "singleton" : false
+   },
+   {
+      "tabs" : [
+         {
+            "size_free" : "Free"
+         },
+         {
+            "size_used" : "Used"
+         },
+	 {
+            "size_allocated" : "Allocated"
+         }
+      ],
+      "uuid_in_url" : true,
+      "url_base" : "/lpar2rrd-cgi/detail.sh",
+      "platform" : "Cloudstack",
+      "type" : "primaryStorage-aggr",
+      "title" : "Primary Storage Totals",
+      "subsystem" : "CLOUD",
+      "singleton" : true,
+      "folder_frontpage" : true
+   },
+   {
+      "tabs" : [
+         {
+            "size" : "Capacity"
+         },
+         {
+            "iops" : "IOPS"
+         },
+         {
+            "data" : "Data"
+         }
+      ],
+      "uuid_in_url" : true,
+      "url_base" : "/lpar2rrd-cgi/detail.sh",
+      "platform" : "Cloudstack",
+      "type" : "volume",
+      "subsystem" : "VOLUME",
+      "singleton" : false
+   },
+   {
+      "tabs" : [
+         {
+            "size_free" : "Free"
+         },
+	 {
+            "size_used" : "Used"
+         },
+         {
+            "iops" : "IOPS"
+         },
+         {
+            "data" : "Data"
+         }
+      ],
+      "uuid_in_url" : true,
+      "url_base" : "/lpar2rrd-cgi/detail.sh",
+      "platform" : "Cloudstack",
+      "type" : "volume-aggr",
+      "title" : "Volume Totals",
+      "subsystem" : "CLOUD",
+      "singleton" : true,
+      "folder_frontpage" : true
+   },
+   {
+      "tabs" : [
+         {
+            "host" : "Host"
+	 },
+	 {
+            "instance" : "Instance"
+         },
+	 {
+            "volume" : "Volume"
+         },
+	 {
+            "primary_storage" : "Primary storage"
+         },
+         {
+            "secondary_storage" : "Secondary storage"
+         },
+	 {
+            "system_vm" : "System VMs"
+         }
+      ],
+      "uuid_in_url" : false,
+      "url_base" : "/lpar2rrd-cgi/detail.sh",
+      "platform" : "Cloudstack",
+      "type" : "configuration",
+      "title" : "Configuration",
+      "subsystem" : "CLOUDSTACK",
+      "singleton" : true,
+      "folder_frontpage" : false
+   },
+   {
+      "tabs" : [
+         {
+            "alerts" : "Alerts"
+         }
+      ],
+      "uuid_in_url" : false,
+      "url_base" : "/lpar2rrd-cgi/detail.sh",
+      "platform" : "Cloudstack",
+      "type" : "alert",
+      "title" : "Alerts",
+      "subsystem" : "CLOUDSTACK",
+      "singleton" : true,
+      "folder_frontpage" : false
+   }
+]

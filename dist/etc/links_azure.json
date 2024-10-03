@@ -1,0 +1,170 @@
+[ {
+      "tabs" : [
+         {
+            "overview" : "Overview"
+         },
+         {
+            "running" : "Running"
+         },
+         {
+            "stopped" : "Stopped"
+         }
+      ],
+      "uuid_in_url" : true,
+      "url_base" : "/lpar2rrd-cgi/detail.sh",
+      "platform" : "Azure",
+      "title" : "Instance Overview",
+      "type" : "region-aggr",
+      "subsystem" : "AZURE",
+      "singleton" : true
+   },
+  {
+      "tabs" : [
+         {
+            "cpu_percent" : "CPU %"
+         },
+         {
+            "storage" : "Data"
+         },
+         {
+            "iops" : "IOPS"
+         },
+         {
+            "net" : "Net"
+         },
+	 {
+            "mem" : "Memory"
+         }
+      ],
+      "uuid_in_url" : true,
+      "url_base" : "/lpar2rrd-cgi/detail.sh",
+      "platform" : "Azure",
+      "type" : "vm",
+      "subsystem" : "VM",
+      "singleton" : false
+   },
+    {
+      "tabs" : [
+         {
+            "cpu_time" : "CPU Time"
+         },
+         {
+            "data" : "Data"
+         },
+         {
+            "iops" : "IOPS"
+         },
+         {
+            "net" : "Net"
+         },
+         {
+            "http" : "HTTP"
+         },
+	 {
+            "response" : "Response"
+         },
+	 {
+            "connections" : "Connections"
+         }
+      ],
+      "uuid_in_url" : true,
+      "url_base" : "/lpar2rrd-cgi/detail.sh",
+      "platform" : "Azure",
+      "type" : "appService",
+      "subsystem" : "APPSERVICE",
+      "singleton" : false
+   },
+   {
+      "tabs" : [
+         {
+            "cpu_percent" : "CPU %"
+         },
+         {
+            "storage" : "Data"
+         },
+         {
+            "iops" : "IOPS"
+         },
+         {
+            "net" : "Net"
+         },
+	 {
+            "mem_free" : "Mem free"
+         },
+	 {
+            "mem_used" : "Mem used"
+         }
+      ],
+      "uuid_in_url" : true,
+      "url_base" : "/lpar2rrd-cgi/detail.sh",
+      "platform" : "Azure",
+      "type" : "vm-aggr",
+      "title" : "VM totals",
+      "subsystem" : "LOCATION",
+      "singleton" : true,
+      "folder_frontpage" : true
+   },
+   {
+      "tabs" : [
+         {
+            "cpu_percent" : "CPU %"
+         },
+         {
+            "storage" : "Data"
+         },
+         {
+            "iops" : "IOPS"
+         },
+         {
+            "net" : "Net"
+         },
+         {
+            "mem_free" : "Mem free"
+         },
+         {
+            "mem_used" : "Mem used"
+         }
+      ],
+      "uuid_in_url" : true,
+      "url_base" : "/lpar2rrd-cgi/detail.sh",
+      "platform" : "Azure",
+      "type" : "vm-aggr-res",
+      "title" : "VM totals",
+      "subsystem" : "RESOURCE",
+      "singleton" : true,
+      "folder_frontpage" : true
+   },
+   {
+      "tabs" : [
+         {
+            "compute" : "Virtual Machine"
+	 },
+	 {
+            "database" : "SQL Databases"
+         }
+      ],
+      "uuid_in_url" : false,
+      "url_base" : "/lpar2rrd-cgi/detail.sh",
+      "platform" : "Azure",
+      "type" : "configuration",
+      "title" : "Configuration",
+      "subsystem" : "AZURE",
+      "singleton" : true,
+      "folder_frontpage" : false
+   },
+   {
+      "tabs" : [
+         {
+            "compute" : "Virtual Machine"
+         }
+      ],
+      "uuid_in_url" : false,
+      "url_base" : "/lpar2rrd-cgi/detail.sh",
+      "platform" : "Azure",
+      "type" : "statuses",
+      "title" : "Statuses",
+      "subsystem" : "AZURE",
+      "singleton" : true,
+      "folder_frontpage" : false
+   }
+]

@@ -1,0 +1,174 @@
+[ {
+      "tabs" : [
+	 {
+            "overview" : "Overview"
+         },
+         {
+            "running" : "Running"
+         },
+	 {
+            "stopped" : "Stopped"
+         }
+      ],
+      "uuid_in_url" : true,
+      "url_base" : "/lpar2rrd-cgi/detail.sh",
+      "platform" : "GCloud",
+      "title" : "Instance Overview",
+      "type" : "engine-running",
+      "subsystem" : "GCLOUD",
+      "singleton" : true
+   },
+  {
+      "tabs" : [
+         {
+            "cpu_percent" : "CPU %"
+         },
+         {
+            "storage" : "Data"
+         },
+         {
+            "iops" : "IOPS"
+         },
+         {
+            "net" : "Net"
+         },
+	 {
+            "mem" : "Memory"
+         },
+	 {
+            "proc" : "Processes"
+         }
+      ],
+      "uuid_in_url" : true,
+      "url_base" : "/lpar2rrd-cgi/detail.sh",
+      "platform" : "GCloud",
+      "type" : "compute",
+      "subsystem" : "COMPUTE",
+      "singleton" : false
+   },
+   {
+      "tabs" : [
+         {
+            "cpu_percent" : "CPU %"
+         },
+         {
+            "storage" : "Data"
+         },
+         {
+            "iops" : "IOPS"
+         },
+         {
+            "net" : "Net"
+         },
+	 {
+            "mem_free" : "Mem free"
+         },
+	 {
+            "mem_used" : "Mem used"
+         }
+      ],
+      "uuid_in_url" : true,
+      "url_base" : "/lpar2rrd-cgi/detail.sh",
+      "platform" : "GCloud",
+      "type" : "compute-aggr",
+      "title" : "Compute engine totals",
+      "subsystem" : "REGION",
+      "singleton" : true,
+      "folder_frontpage" : true
+   },
+   {
+      "tabs" : [
+         {
+            "compute" : "Compute Engine"
+         },
+	 {
+            "database" : "Google SQL"
+         }
+      ],
+      "uuid_in_url" : false,
+      "url_base" : "/lpar2rrd-cgi/detail.sh",
+      "platform" : "GCloud",
+      "type" : "configuration",
+      "title" : "Configuration",
+      "subsystem" : "GCLOUD",
+      "singleton" : true,
+      "folder_frontpage" : false
+   },
+   {
+      "tabs" : [
+         {
+            "cpu_percent" : "CPU %"
+         },
+         {
+            "iops" : "IOPS"
+         },
+         {
+            "net" : "Net"
+         },
+         {
+            "mem" : "Memory"
+         },
+         {
+            "storage" : "Storage"
+         },
+	 {
+            "connections" : "Connections"
+         },
+	 {
+            "queries" : "Queries"
+         },
+	 {
+            "questions" : "Questions"
+         },
+	 {
+            "innodb_pages" : "InnoDB Pages"
+         },
+	 {
+            "innodb_buffer" : "InnoDB Buffer"
+         },
+	 {
+            "innodb_data" : "InnoDB Data fsync"
+         },
+	 {
+            "innodb_log" : "InnoDB Log fsync"
+         }
+      ],
+      "uuid_in_url" : true,
+      "url_base" : "/lpar2rrd-cgi/detail.sh",
+      "platform" : "GCloud",
+      "type" : "database-mysql",
+      "subsystem" : "MYSQL",
+      "singleton" : false
+   },
+   {
+      "tabs" : [
+         {
+            "cpu_percent" : "CPU %"
+         },
+         {
+            "iops" : "IOPS"
+         },
+         {
+            "net" : "Net"
+         },
+         {
+            "mem" : "Memory"
+         },
+         {
+            "storage" : "Storage"
+         },
+         {
+            "connections" : "Connections"
+         },
+         {
+            "transaction_count" : "Transactions"
+         }
+      ],
+      "uuid_in_url" : true,
+      "url_base" : "/lpar2rrd-cgi/detail.sh",
+      "platform" : "GCloud",
+      "type" : "database-postgres",
+      "subsystem" : "POSTGRES",
+      "singleton" : false
+   }
+]

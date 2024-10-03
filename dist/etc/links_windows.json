@@ -1,0 +1,189 @@
+[
+{
+	"tabs" : [
+	{
+		"vm" : "VM"
+	},
+	{
+		"server" : "Server"
+	},
+	{
+		"vm_cpu_table" : "VM CPU Table"
+	},
+	{
+		"vm_mem_table" : "VM MEM Table"
+	},
+	{
+		"server_cpu_table" : "Server CPU Table"
+	},
+	{
+		"server_mem_table" : "Server MEM Table"
+	}
+	],
+		"url_params" : [],
+		"uuid_in_url" : false,
+		"url_base" : "heatmap-windows.html",
+		"platform" : "Windows",
+		"type" : "Heatmap",
+		"title" : "Heatmap",
+		"subsystem" : "WINDOWS",
+                "acl_capable" : true,
+		"singleton" : true
+},
+{
+  "tabs":[
+  {
+    "last_day":"Last day"
+  },
+  {
+    "last_week":"Last week"
+  },
+  {
+    "last_month":"Last month"
+  },
+  {
+    "last_year":"Last year"
+  }
+  ],
+    "uuid_in_url" : false,
+    "url_base" : "/lpar2rrd-cgi/detail.sh",
+    "platform" : "Windows",
+    "type" : "topten_windows",
+    "title" : "VM TOP",
+    "subsystem" : "WINDOWS",
+    "singleton" : true,
+    "folder_frontpage" : false
+},
+{
+	"tabs" : [
+	{
+		"pool" : "CPU"
+	},
+	{
+		"configuration" : "Configuration"
+	},
+	{
+		"allocation" : "Allocation"
+	},
+	{
+		"paging" : "Paging"
+	},
+	{
+		"lan" : "LAN"
+	},
+	{
+		"data" : "Data"
+	},
+	{
+		"io" : "IO"
+	}
+	],
+		"url_params" : [ "uid","domain" ],
+		"uuid_in_url" : true,
+		"url_base" : "/lpar2rrd-cgi/detail.sh",
+		"platform" : "Windows",
+		"type" : "pool",
+    "title" : "Totals",
+		"subsystem" : "SERVER",
+		"singleton" : true 
+},
+{
+	"tabs" : [
+	{
+		"vmw-proc" : "CPU"
+	},
+	{
+		"vmw-mem" : "MEM"
+	},
+	{
+		"vmw-diskrw" : "DISK"
+	},
+	{
+		"vmw-netrw" : "LAN"
+	}
+	],
+		"url_params" : [ "vm_uuid","domain","server" ],
+		"uuid_in_url" : true,
+		"url_base" : "/lpar2rrd-cgi/detail.sh",
+		"platform" : "Windows",
+		"type" : "wvm",
+		"subsystem" : "VM",
+		"singleton" : false
+},
+{
+	"tabs" : [
+	{
+		"vmw-proc" : "CPU"
+	},
+	{
+		"vmw-mem" : "MEM"
+	},
+	{
+		"vmw-diskrw" : "DISK"
+	},
+	{
+		"vmw-netrw" : "LAN"
+	}
+	],
+		"url_params" : [ "vm_uuid","domain","server" ],
+		"uuid_in_url" : true,
+		"url_base" : "/lpar2rrd-cgi/detail.sh",
+		"platform" : "Windows",
+		"type" : "wvm",
+		"subsystem" : "CLUSTER_VM",
+		"singleton" : false
+},
+{
+    "url_params" : [ "vol_uuid" ],
+    "uuid_in_url" : true,
+    "url_base" : "/lpar2rrd-cgi/detail.sh",
+    "platform" : "Windows",
+    "type" : "s2dvolume",
+    "subsystem" : "S2D_VOLUME",
+    "singleton" : false
+},
+{
+    "url_params" : [ "pd_uuid" ],
+    "uuid_in_url" : true,
+    "url_base" : "/lpar2rrd-cgi/detail.sh",
+    "platform" : "Windows",
+    "type" : "physdisk",
+    "subsystem" : "S2D_PD",
+    "singleton" : false
+},
+{
+	"tabs" : [
+	{
+		"capacity" : "Capacity"
+	},
+	{
+		"data" : "Data"
+	},
+	{
+		"io" : "IO"
+	},
+	{
+		"latency" : "Latency"
+	}
+	],
+		"url_params" : [ "uid","domain","server" ],
+		"uuid_in_url" : true,
+		"url_base" : "/lpar2rrd-cgi/detail.sh",
+		"platform" : "Windows",
+		"type" : "wstorage",
+		"subsystem" : "STORAGE",
+		"singleton" : false
+},
+{
+	"tabs" : [
+	],
+		"url_params" : [ "uid" ],
+		"url_base" : "/lpar2rrd-cgi/detail.sh",
+		"uuid_in_url" : true,
+		"platform" : "Windows",
+		"type" : "cluster_totals",
+		"title" : "Totals",
+		"subsystem" : "WINDOWS_CLUSTER",
+		"singleton" : true
+}
+]

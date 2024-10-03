@@ -1,0 +1,122 @@
+[  
+   {
+      "tabs" : [
+	 {
+            "cpu_cores" : "CPU"
+         },
+	 {
+            "cpu_real" : "CPU%"
+         },
+	 {
+            "cpu" : "DockerStats CPU%"
+         },
+	 {
+            "memory" : "Mem usage"
+         },
+         {
+            "data" : "Data"
+         },
+	 {
+            "io" : "IO"
+         },
+	 {
+            "net" : "Net"
+         },
+         {
+            "size" : "Size"
+         },
+	 {
+            "size_rw" : "Size RW"
+         }
+      ],
+      "uuid_in_url" : true,
+      "url_base" : "/lpar2rrd-cgi/detail.sh",
+      "platform" : "Docker",
+      "type" : "container",
+      "subsystem" : "CONTAINER",
+      "singleton" : false
+   },
+   {
+      "tabs" : [
+         {
+            "cpu" : "CPU"
+         },
+         {
+            "memory" : "Mem usage"
+         },
+         {
+            "data" : "Data"
+         },
+         {
+            "io" : "IO"
+         },
+         {
+            "net" : "Net"
+         },
+         {
+            "size" : "Size"
+         },
+         {
+            "size_rw" : "Size RW"
+         },
+	 {
+            "volume_size" : "Volume size"
+         }
+      ],
+      "uuid_in_url" : true,
+      "url_base" : "/lpar2rrd-cgi/detail.sh",
+      "platform" : "Docker",
+      "type" : "host-aggr",
+      "title" : "Totals",
+      "subsystem" : "HOST",
+      "singleton" : true
+   },
+   {
+      "tabs" : [
+         {
+            "cpu" : "CPU"
+         },
+         {
+            "memory" : "Mem usage"
+         },
+         {
+            "data" : "Data"
+         },
+         {
+            "io" : "IO"
+         },
+         {
+            "net" : "Net"
+         },
+         {
+            "size" : "Size"
+         },
+         {
+            "size_rw" : "Size RW"
+         },
+         {
+            "volume_size" : "Volume size"
+         }
+      ],
+      "uuid_in_url" : true,
+      "url_base" : "/lpar2rrd-cgi/detail.sh",
+      "platform" : "Docker",
+      "type" : "hosts-aggr",
+      "title" : "Totals",
+      "subsystem" : "DOCKER",
+      "singleton" : true
+   },
+   {
+      "tabs" : [
+         {
+            "size" : "Size"
+         }
+      ],
+      "uuid_in_url" : true,
+      "url_base" : "/lpar2rrd-cgi/detail.sh",
+      "platform" : "Docker",
+      "type" : "volume",
+      "subsystem" : "VOLUME",
+      "singleton" : false
+   }
+]

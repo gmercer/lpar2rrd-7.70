@@ -1,0 +1,51 @@
+<div id="globoverview" style="font-size: 0.8em">
+	<label for="overview_platform">Platform: </label>
+	<select id="overview_platform">
+		<option value="">--- choose one ---</option>
+		<option value="power">IBM Power Systems</option>
+		<option value="vmware">VMware</option>
+		<option value="xen">XenServer</option>
+		<option value="nutanix">Nutanix</option>
+		<option value="aws">AWS</option>
+		<option value="gcloud">GCloud</option>
+		<option value="azure">Azure</option>
+		<option value="kubernetes">Kubernetes</option>
+		<option value="openshift">Red Hat OpenShift</option>
+		<option value="cloudstack">Apache CloudStack</option>
+		<option value="proxmox">Proxmox</option>
+		<option value="hyperv">Hyper-V</option>
+		<option value="kvm">KVM</option>
+		<option value="ovirt">RHV (oVirt)</option>
+		<option value="oraclevm">OracleVM</option>
+		<option value="oracledb">OracleDB</option>
+	</select>
+	<label for="overview_src">Source: </label>
+	<select id="overview_src"></select>
+	<!--
+	<label for="overview_item">Item: </label>
+	<select id="overview_item"></select>
+	-->
+	<label for="overview_time">Time range: </label>
+	<select id="overview_time">
+		<option value="">--- choose one ---</option>
+		<optgroup label="Previous">
+			<option value="prevHour">Previous hour</option>
+			<option value="prevDay">Previous day</option>
+			<option value="prevWeek">Previous week</option>
+		</optgroup>
+		<optgroup label="Last">
+			<option value="lastHour">Last 60 minutes</option>
+			<option value="lastDay">Last 24 hours</option>
+			<option value="lastWeek">Last 7 days</option>
+		</optgroup>
+		<option value="custom"><b>Custom range</b></option>
+	</select>
+
+	<label for="fromRange" class="customrange">From</label>
+	<input type="text" id="fromRange" size="14" class="customrange">
+	<label for="toRange" class="customrange">to</label>
+	<input type="text" id="toRange" size="14" class="customrange">
+	<button id="customoverview" class="customrange">Go</button>
+
+</div>
+<div id="overviewdiv" style="margin-top: 3em;"> </div>

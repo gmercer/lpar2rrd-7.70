@@ -1,0 +1,530 @@
+{
+	"POWER" : {
+		"SERVER" : {
+			"IMG" : {
+				"ITEMS" : {
+					"pool" : ["memalloc", "trendmemalloc", "memaggreg"],
+					"all" : ["memalloc", "trendmemalloc", "memaggreg"]
+				},
+				"AGGREGATES" : {
+				}
+			},
+			"CSV" : {
+				"ITEMS" : {
+					"pool" : ["memalloc", "memaggreg"],
+					"all" : ["memalloc", "memaggreg"]
+				},
+				"AGGREGATES" : {
+				}
+			}
+		},
+		"POOL" : {
+			"IMG" : {
+				"ITEMS" : {
+					"pool" : ["pool-total", "pool-total-max", "pool", "trendpool", "pool-max", "trendpool-max", "lparagg"],
+					"shpool" : ["shpool", "trendshpool", "shpool-max", "trendshpool-max", "poolagg"],
+					"all" : ["pool-total", "pool-total-max","pool", "trendpool", "pool-max", "trendpool-max", "lparagg", "shpool", "trendshpool", "shpool-max", "trendshpool-max", "poolagg"]
+				},
+				"AGGREGATES" : {
+				}
+			},
+			"CSV" : {
+				"ITEMS" : {
+					"pool" : ["pool", "pool-max", "lparagg"],
+					"shpool" : ["shpool", "shpool-max"],
+					"all" : ["pool", "pool-max", "lparagg", "shpool", "shpool-max"]
+				},
+				"AGGREGATES" : {
+				}
+			}
+		},
+		"LPAR" : {
+			"IMG" : {
+				"ITEMS" : {
+					"A": ["lpar", "trend", "oscpu", "mem", "pg1", "pg2", "lan", "san1", "san2", "san_resp", "queue_cpu"],
+					"B": ["lpar", "trend", "oscpu", "mem", "pg1", "pg2", "lan", "queue_cpu"],
+					"C": ["lpar", "trend"],
+					"L": ["oscpu", "mem", "pg1", "pg2", "lan", "san1", "san2", "san_resp", "queue_cpu"],
+					"M": ["oscpu", "mem", "pg1", "pg2", "lan", "queue_cpu"],
+					"S": ["oscpu", "mem", "pg1", "pg2", "lan", "queue_cpu"],
+					"V": ["lpar", "trend", "oscpu", "mem", "pg1", "pg2", "lan", "san1", "san2", "san_resp", "sea", "queue_cpu"],
+					"U": ["lpar", "trend", "oscpu", "mem", "pg1", "pg2", "lan", "sea", "queue_cpu"],
+					"W": ["oscpu", "mem", "pg1", "pg2", "queue_cpu"],
+					"X": ["lpar", "trend", "oscpu", "mem", "pg1", "pg2", "lan", "san1", "san2", "san_resp", "queue_cpu"],
+					"Y": ["lpar", "trend", "oscpu", "mem", "pg1", "pg2", "lan", "san1", "san2", "queue_cpu"],
+					"all": ["lpar", "trend", "oscpu", "mem", "pg1", "pg2", "lan", "san1", "san2", "san_resp", "sea", "queue_cpu"]
+				},
+				"AGGREGATES" : {
+				}
+			},
+			"CSV" : {
+				"ITEMS" : {
+					"A": ["lpar", "lparmemalloc", "oscpu", "mem", "pg1", "pg2", "lan", "san1", "san2", "san_resp", "queue_cpu"],
+					"B": ["lpar", "lparmemalloc", "oscpu", "mem", "pg1", "pg2", "lan", "queue_cpu"],
+					"C": ["lpar", "lparmemalloc"],
+					"L": ["oscpu", "mem", "pg1", "pg2", "lan", "san1", "san2", "san_resp", "queue_cpu"],
+					"M": ["oscpu", "mem", "pg1", "pg2", "lan", "queue_cpu"],
+					"S": ["oscpu", "mem", "pg1", "pg2", "lan", "queue_cpu"],
+					"V": ["lpar", "lparmemalloc", "oscpu", "mem", "pg1", "pg2", "lan", "san1", "san2", "san_resp", "sea", "queue_cpu"],
+					"U": ["lpar", "lparmemalloc", "oscpu", "mem", "pg1", "pg2", "lan", "sea", "queue_cpu"],
+					"W": ["oscpu", "mem", "pg1", "pg2", "queue_cpu"],
+					"X": ["lpar", "lparmemalloc", "oscpu", "mem", "pg1", "pg2", "lan", "san1", "san2", "san_resp", "queue_cpu"],
+					"Y": ["lpar", "lparmemalloc", "oscpu", "mem", "pg1", "pg2", "lan", "san1", "san2", "queue_cpu"],
+					"all": ["lpar", "lparmemalloc", "oscpu", "mem", "pg1", "pg2", "lan", "san1", "san2", "san_resp", "sea", "queue_cpu"]
+				},
+				"AGGREGATES" : {
+				}
+			}
+		}
+	},
+	"CUSTOM" : {
+		"LPAR" : {
+			"IMG" : {
+				"ITEMS" : {
+					"LPAR" : ["custom", "custom_cpu_trend", "custommem", "customosmem", "customoslan", "customossan1", "customossan2"]
+				},
+				"AGGREGATES" : {
+				}
+			},
+			"CSV" : {
+				"ITEMS" : {
+					"LPAR" : ["custom", "custommem", "customosmem", "customoslan", "customossan1", "customossan2"]
+				},
+				"AGGREGATES" : {
+				}
+			}
+		},
+		"VM" : {
+			"IMG" : {
+				"ITEMS" : {
+					"VM" : ["custom", "custom_cpu_trend", "customvmmemactive", "customvmmemconsumed", "customdisk", "customnet"]
+				}
+			},
+			"CSV" : {
+				"ITEMS" : {
+					"VM" : ["custom", "customvmmemactive", "customvmmemconsumed", "customdisk", "customnet"]
+				}
+			}
+		},
+		"OVIRTVM" : {
+			"IMG" : {
+				"ITEMS" : {
+					"OVIRTVM" : ["custom_ovirt_vm_cpu_percent", "custom_ovirt_vm_cpu_core", "custom_ovirt_vm_memory_used", "custom_ovirt_vm_memory_free"]
+				}
+			},
+			"CSV" : {
+				"ITEMS" : {
+					"POOL" : []
+				}
+			}
+		},
+		"NUTANIXVM" : {
+			"IMG" : {
+				"ITEMS" : {
+					"NUTANIXVM" : ["custom-nutanixvm-cpu-cores", "custom-nutanixvm-cpu-percent", "custom-nutanixvm-memory-used", "custom-nutanixvm-memory-free", "custom-nutanixvm-vbd", "custom-nutanixvm-vbd-iops", "custom-nutanixvm-vbd-latency"]
+				}
+			},
+			"CSV" : {
+				"ITEMS" : {
+					"POOL" : []
+				}
+			}
+		},
+		"SOLARISLDOM" : {
+			"IMG" : {
+				"ITEMS" : {
+					"SOLARISLDOM" : ["custom_solaris_cpu", "custom_solaris_mem"]
+				}
+			},
+			"CSV" : {
+				"ITEMS" : {
+					"POOL" : []
+				}
+			}
+		},
+		"SOLARISZONE" : {
+			"IMG" : {
+				"ITEMS" : {
+					"SOLARISZONE" : ["custom_solaris_cpu", "custom_solaris_mem"]
+				}
+			},
+			"CSV" : {
+				"ITEMS" : {
+					"POOL" : []
+				}
+			}
+		},
+		"XENVM" : {
+			"IMG" : {
+				"ITEMS" : {
+					"XENVM" : ["custom-xenvm-cpu-percent", "custom-xenvm-cpu-cores", "custom-xenvm-memory-used", "custom-xenvm-memory-free", "custom-xenvm-vbd", "custom-xenvm-vbd-iops", "custom-xenvm-vbd-latency", "custom-xenvm-lan"]
+				}
+			},
+			"CSV" : {
+				"ITEMS" : {
+					"POOL" : []
+				}
+			}
+		},
+		"ESXI" : {
+			"IMG" : {
+				"ITEMS" : {
+					"ESXI" : ["custom_esxi_cpu"]
+				}
+			},
+			"CSV" : {
+				"ITEMS" : {
+					"ESXI" : ["custom_esxi_cpu"]
+				}
+			}
+		},
+		"HYPERVM" : {
+			"IMG" : {
+				"ITEMS" : {
+					"HYPERVM" : ["custom_hyperv_cpu"]
+				}
+			},
+			"CSV" : {
+				"ITEMS" : {
+					"HYPERVM" : []
+				}
+			}
+		},
+		"LINUX" : {
+			"IMG" : {
+				"ITEMS" : {
+					"LINUX" : ["custom_linux_cpu","custom_linux_mem","custom_linux_lan","custom_linux_san1"]
+				}
+			},
+			"CSV" : {
+				"ITEMS" : {
+					"LINUX" : []
+				}
+			}
+		},
+		"POOL" : {
+			"IMG" : {
+				"ITEMS" : {
+					"POOL" : ["custom", "custom_cpu_trend", "custommem"]
+				},
+				"AGGREGATES" : {
+				}
+			},
+			"CSV" : {
+				"ITEMS" : {
+					"POOL" : ["custom", "custommem"]
+				},
+				"AGGREGATES" : {
+				}
+			}
+		}
+	},
+	"VMWARE" : {
+		"CLUSTER" : {
+			"IMG" : {
+				"ITEMS" : ["clustcpu", "clustlpar", "clustmem", "clustser", "clustlpardy", "clustlan"]
+			},
+			"CSV" : {
+				"ITEMS" : ["clustcpu", "clustlpar", "clustmem", "clustser", "clustlpardy", "clustlan"]
+			}
+		},
+		"VM" : {
+			"IMG" : {
+				"ITEMS" : ["vmw-proc", "lpar", "vmw-mem", "vmw-disk", "vmw-iops", "vmw-net", "vmw-swap", "vmw-comp", "vmw-ready"]
+			},
+			"CSV" : {
+				"ITEMS" : ["vmw-proc", "lpar", "vmw-mem", "vmw-disk", "vmw-iops", "vmw-net", "vmw-swap", "vmw-comp", "vmw-ready"]
+			}
+		},
+		"DATASTORE" : {
+			"IMG" : {
+				"ITEMS" : ["dsmem", "dsrw", "dsarw", "dslat", "ds-vmiops"]
+			},
+			"CSV" : {
+				"ITEMS" : ["dsmem", "dsrw", "dsarw", "dslat", "ds-vmiops"]
+			}
+		},
+		"ESXI" : {
+			"IMG" : {
+				"ITEMS" : ["pool", "lparagg", "memalloc", "memaggreg", "vmdiskrw", "vmnetrw"]
+			},
+			"CSV" : {
+				"ITEMS" : ["pool", "lparagg", "memalloc", "memaggreg", "vmdiskrw", "vmnetrw"]
+			}
+		},
+		"RESPOOL" : {
+			"IMG" : {
+				"ITEMS" : ["rpcpu", "rplpar", "rpmem"]
+			},
+			"CSV" : {
+				"ITEMS" : ["rpcpu", "rplpar", "rpmem"]
+			}
+		}
+	},
+	"NUTANIX" : {
+		"SERVERTOTALS" : {
+			"IMG" : {
+				"ITEMS" : ["nutanix-host-cpu-cores-aggr", "nutanix-host-cpu-percent-aggr", "nutanix-vm-cpu-cores-aggr", "nutanix-vm-cpu-percent-aggr", "nutanix-host-memory-used-aggr", "nutanix-host-memory-free-aggr", "nutanix-vm-memory-used-aggr", "nutanix-vm-memory-free-aggr"]
+			},
+			"CSV" : {
+				"ITEMS" : []
+			}
+		},
+		"STORAGETOTALS" : {
+			"IMG" : {
+				"ITEMS" : ["nutanix-disk-vbd-sp-aggr", "nutanix-disk-vbd-iops-sp-aggr", "nutanix-disk-vbd-latency-sp-aggr", "nutanix-disk-vbd-sc-aggr", "nutanix-disk-vbd-iops-sc-aggr", "nutanix-disk-vbd-latency-sc-aggr", "nutanix-disk-vbd-vd-aggr", "nutanix-disk-vbd-iops-vd-aggr", "nutanix-disk-vbd-latency-vd-aggr", "nutanix-disk-vbd-sr-aggr", "nutanix-disk-vbd-iops-sr-aggr", "nutanix-disk-vbd-latency-sr-aggr"]
+			},
+			"CSV" : {
+				"ITEMS" : []
+			}
+		},
+		"VMTOTALS" : {
+			"IMG" : {
+				"ITEMS" : ["nutanix-vm-cpu-cores-aggr", "nutanix-vm-cpu-percent-aggr", "nutanix-vm-memory-used-aggr", "nutanix-vm-memory-free-aggr", "nutanix-vm-vbd-aggr", "nutanix-vm-vbd-iops-aggr", "nutanix-vm-vbd-latency-aggr", "nutanix-vm-lan-aggr"]
+			},
+			"CSV" : {
+				"ITEMS" : []
+			}
+		},
+		"SERVER" : {
+			"IMG" : {
+				"ITEMS" : []
+			},
+			"CSV" : {
+				"ITEMS" : []
+			}
+		},
+		"VM" : {
+			"IMG" : {
+				"ITEMS" : []
+			},
+			"CSV" : {
+				"ITEMS" : []
+			}
+		},
+		"STORAGEPOOL" : {
+			"IMG" : {
+				"ITEMS" : []
+			},
+			"CSV" : {
+				"ITEMS" : []
+			}
+		},
+		"STORAGECONTAINER" : {
+			"IMG" : {
+				"ITEMS" : []
+			},
+			"CSV" : {
+				"ITEMS" : []
+			}
+		},
+		"VIRTUALDISK" : {
+			"IMG" : {
+				"ITEMS" : []
+			},
+			"CSV" : {
+				"ITEMS" : []
+			}
+		},
+		"PHYSICALDISK" : {
+			"IMG" : {
+				"ITEMS" : []
+			},
+			"CSV" : {
+				"ITEMS" : []
+			}
+		}
+	},
+	"OVIRT" : {
+		"STORAGEDOMAINS" : {
+			"IMG" : {
+				"ITEMS" : ["ovirt_storage_domains_total_aggr_data", "ovirt_storage_domains_total_aggr_latency"]
+			},
+			"CSV" : {
+				"ITEMS" : []
+			}
+		},
+		"CLUSTER" : {
+			"IMG" : {
+				"ITEMS" : ["ovirt_cluster_aggr_host_cpu_core", "ovirt_cluster_aggr_host_cpu_percent", "ovirt_cluster_aggr_host_mem_used", "ovirt_cluster_aggr_host_mem_free", "ovirt_cluster_aggr_host_mem_used_percent", "ovirt_cluster_aggr_vm_cpu_core", "ovirt_cluster_aggr_vm_cpu_percent", "ovirt_cluster_aggr_vm_mem_used", "ovirt_cluster_aggr_vm_mem_free", "ovirt_cluster_aggr_vm_mem_used_percent"]
+			},
+			"CSV" : {
+				"ITEMS" : []
+			}
+		},
+		"HOST" : {
+			"IMG" : {
+				"ITEMS" : ["ovirt_host_cpu_core", "ovirt_host_cpu_percent", "ovirt_host_mem"]
+			},
+			"CSV" : {
+				"ITEMS" : []
+			}
+		},
+		"LAN-TOTAL" : {
+			"IMG" : {
+				"ITEMS" : ["ovirt_host_nic_aggr_net"]
+			},
+			"CSV" : {
+				"ITEMS" : []
+			}
+		},
+		"LAN" : {
+			"IMG" : {
+				"ITEMS" : ["ovirt_host_nic_net"]
+			},
+			"CSV" : {
+				"ITEMS" : []
+			}
+		},
+		"VM" : {
+			"IMG" : {
+				"ITEMS" : ["ovirt_vm_cpu_core", "ovirt_vm_cpu_percent", "ovirt_vm_mem", "ovirt_vm_aggr_net", "ovirt_vm_aggr_data", "ovirt_vm_aggr_latency"]
+			},
+			"CSV" : {
+				"ITEMS" : ["ovirt_vm_cpu_core", "ovirt_vm_cpu_percent"]
+			}
+		},
+		"STORAGEDOMAIN" : {
+			"IMG" : {
+				"ITEMS" : ["ovirt_storage_domain_space", "ovirt_storage_domain_aggr_data", "ovirt_storage_domain_aggr_latency"]
+			},
+			"CSV" : {
+				"ITEMS" : ["ovirt_storage_domain_space"]
+			}
+		},
+		"DISK" : {
+			"IMG" : {
+				"ITEMS" : ["ovirt_disk_data", "ovirt_disk_latency"]
+			},
+			"CSV" : {
+				"ITEMS" : ["ovirt_disk_data", "ovirt_disk_latency"]
+			}
+		}
+	},
+	"XENVM" : {
+		"CLUSTER" : {
+			"IMG" : {
+				"ITEMS" : {
+					"cluster" : ["clustcpu", "clustlpar", "clustmem", "clustser", "clustlpardy"]
+				},
+				"AGGREGATES" : {
+				}
+			},
+			"CSV" : {
+				"ITEMS" : {
+					"cluster" : []
+				},
+				"AGGREGATES" : {
+				}
+			}
+		},
+		"VM" : {
+			"IMG" : {
+				"ITEMS" : {
+					"vm" : ["vmw-proc", "lpar", "vmw-mem", "vmw-disk", "vmw-net", "vmw-swap", "vmw-comp", "vmw-ready"]
+				},
+				"AGGREGATES" : {
+				}
+			},
+			"CSV" : {
+				"ITEMS" : {
+					"vm" : []
+				},
+				"AGGREGATES" : {
+				}
+			}
+		},
+		"DATASTORE" : {
+			"IMG" : {
+				"ITEMS" : {
+					"datastore" : ["dsmem", "dsrw", "dsarw", "dslat"]
+				},
+				"AGGREGATES" : {
+				}
+			},
+			"CSV" : {
+				"ITEMS" : {
+					"datastore" : []
+				},
+				"AGGREGATES" : {
+				}
+			}
+		},
+		"ESXi" : {
+			"IMG" : {
+				"ITEMS" : {
+					"esxi" : ["pool", "memalloc", "vmdiskrw", "vmnetrw"]
+				},
+				"AGGREGATES" : {
+				}
+			},
+			"CSV" : {
+				"ITEMS" : {
+					"esxi" : []
+				},
+				"AGGREGATES" : {
+				}
+			}
+		}
+	},
+	"HYPERV" : {
+		"CLUSTER" : {
+			"IMG" : {
+				"ITEMS" : ["hyp_clustsercpu", "hyp_clustservms", "hyp_clustsermem", "hyp_clustser"]
+			},
+			"CSV" : {
+				"ITEMS" : []
+			}
+		},
+		"VM" : {
+			"IMG" : {
+				"ITEMS" : ["hyp-cpu", "hyp-mem", "hyp-disk", "hyp-net"]
+			},
+			"CSV" : {
+				"ITEMS" : []
+			}
+		},
+		"STORAGE" : {
+			"IMG" : {
+				"ITEMS" : ["lfd_cat_", "lfd_dat_", "lfd_io_", "lfd_lat_"]
+			},
+			"CSV" : {
+				"ITEMS" : []
+			}
+		},
+		"SERVER" : {
+			"IMG" : {
+				"ITEMS" : ["pool", "lparagg", "memalloc", "hyppg1", "vmnetrw", "hdt_data", "hdt_io"]
+			},
+			"CSV" : {
+				"ITEMS" : []
+			}
+		}
+	},
+	"SOLARIS" : {
+		"TOTAL" : {
+			"IMG" : {
+				"ITEMS" : ["solaris_ldom_agg_c","solaris_ldom_agg_m"]
+			},
+			"CSV" : {
+				"ITEMS" : []
+			}
+		},
+		"LDOM" : {
+			"IMG" : {
+				"ITEMS" : ["oscpu","jobs","jobs_mem","mem","pg1","pg2","lan","solaris_ldom_san1","solaris_ldom_san2","solaris_ldom_san_resp","solaris_ldom_cpu","solaris_ldom_mem","solaris_ldom_net","solaris_ldom_vnet"]
+			},
+			"CSV" : {
+				"ITEMS" : []
+			}
+		},
+		"ZONE" : {
+			"IMG" : {
+				"ITEMS" : ["solaris_zone_cpu","solaris_zone_os_cpu","solaris_zone_mem","solaris_zone_net","oscpu","pg1","pg2","lan"]
+			},
+			"CSV" : {
+				"ITEMS" : []
+			}
+		}
+	}
+}

@@ -1,0 +1,381 @@
+[  
+  {
+      "tabs" : [],
+      "uuid_in_url" : false,
+      "url_base" : "heatmap-fusioncompute.html",
+      "platform" : "FusionCompute",
+      "type" : "heatmap",
+      "title" : "Heatmap",
+      "subsystem" : "FUSIONCOMPUTE",
+      "acl_capable" : true,
+      "singleton" : true,
+      "folder_frontpage" : false
+   },
+   {
+      "tabs":[
+         {
+            "last_day":"Last day"
+         },
+         {
+            "last_week":"Last week"
+         },
+         {
+            "last_month":"Last month"
+         },
+         {
+            "last_year":"Last year"
+         }
+      ],
+      "uuid_in_url" : false,
+      "url_base" : "/lpar2rrd-cgi/detail.sh",
+      "platform" : "FusionCompute",
+      "type" : "topten_fusioncompute",
+      "title" : "VM TOP",
+      "subsystem" : "FUSIONCOMPUTE",
+      "singleton" : true,
+      "folder_frontpage" : false
+   },
+   {
+      "tabs" : [
+	 {
+            "cpu_percent" : "CPU%"
+         },
+         {
+            "mem_percent" : "MEM%"
+         },
+         {
+            "data" : "Data"
+         },
+	 {
+            "disk" : "Disk usage"
+         },
+	 {
+            "net" : "Net"
+         },
+	 {
+            "net_usage" : "Net usage"
+         }
+      ],
+      "uuid_in_url" : true,
+      "url_base" : "/lpar2rrd-cgi/detail.sh",
+      "platform" : "FusionCompute",
+      "type" : "cluster",
+      "subsystem" : "CLUSTER",
+      "singleton" : false
+   },
+   {
+      "tabs" : [
+         {
+            "capacity" : "Capacity"
+         }
+      ],
+      "uuid_in_url" : true,
+      "url_base" : "/lpar2rrd-cgi/detail.sh",
+      "platform" : "FusionCompute",
+      "type" : "datastore",
+      "subsystem" : "DATASTORE",
+      "singleton" : false
+   },
+   {
+      "tabs" : [
+         {  
+            "cpu_percent" : "CPU%"
+         },
+	 {
+            "vm_cpu_percent" : "VM CPU%"
+         },
+	 {
+            "cpu" : "CPU"
+         },
+	 {
+            "vm_cpu" : "VM CPU"
+         },
+	 {
+            "mem_percent" : "MEM%"
+         },
+	 {
+            "vm_mem_percent" : "VM MEM%"
+         },
+	 {
+            "mem" : "MEM"
+         },
+	 {
+            "vm_mem_used" : "VM MEM used"
+         },
+	 {
+            "vm_mem_free" : "VM MEM free"
+         },
+	 {
+            "data" : "Data"
+         },
+	 {
+            "iops" : "IOPS"
+         },
+	 {
+            "net" : "Net"
+         },
+	 {
+            "net_usage" : "Net usage"
+         },
+	 {
+            "packet" : "Packets"
+         },
+	 {
+            "packet_drop" : "Packets drop"
+         },
+	 {
+            "disk" : "Disk usage"
+         }
+      ],
+      "uuid_in_url" : true,
+      "url_base" : "/lpar2rrd-cgi/detail.sh",
+      "platform" : "FusionCompute",
+      "type" : "host",
+      "subsystem" : "HOST",
+      "singleton" : false
+   },
+   {
+      "tabs" : [
+         {
+            "cpu_percent" : "CPU%"
+         },
+	 {
+            "cpu" : "CPU"
+         },
+	 {
+            "mem_percent" : "MEM%"
+         },
+	 {
+            "mem" : "MEM"
+         },
+         {
+            "disk_io" : "Data"
+         },
+	 {
+            "disk_req" : "Disk req"
+         },
+	 {
+            "disk_ios" : "Disk iops"
+         },
+	 {
+            "disk_ticks" : "Disk latency"
+         },
+	 {
+            "disk_sectors" : "Disk sectors"
+         },
+	 {
+            "disk_usage" : "Disk usage"
+         },
+         {
+            "nic_byte" : "Net"
+         },
+	 {
+            "nic_drop_pkt" : "Packet drop"
+         }
+      ],
+      "uuid_in_url" : true,
+      "url_base" : "/lpar2rrd-cgi/detail.sh",
+      "platform" : "FusionCompute",
+      "type" : "vm",
+      "subsystem" : "VM",
+      "singleton" : false
+   },
+   {
+      "tabs" : [
+         {
+            "cpu_percent" : "CPU%"
+         },
+	 {
+            "cpu" : "CPU"
+         },
+         {
+            "mem_percent" : "MEM%"
+         },
+         {
+            "mem_used" : "MEM used"
+         },
+         {
+            "mem_free" : "MEM free"
+         },
+	 {
+            "data" : "Data"
+         },
+         {
+            "iops" : "IOPS"
+         },
+         {
+            "net" : "Net"
+         },
+         {
+            "net_usage" : "Net usage"
+         },
+         {
+            "packet" : "Packets"
+         },
+         {
+            "packet_drop" : "Packets drop"
+         },
+         {
+            "disk" : "Disk usage"
+         }
+      ],
+      "uuid_in_url" : true,
+      "url_base" : "/lpar2rrd-cgi/detail.sh",
+      "platform" : "FusionCompute",
+      "type" : "host-aggr",
+      "title" : "Hots Totals",
+      "subsystem" : "CLUSTER",
+      "singleton" : true,
+      "folder_frontpage" : true
+   },
+   {
+      "tabs" : [
+         {
+            "cpu_percent" : "CPU%"
+         },
+	 {
+            "cpu" : "CPU"
+         },
+         {
+            "mem_percent" : "MEM%"
+         },
+	 {
+            "mem_used" : "MEM used"
+         },
+	 {
+            "mem_free" : "MEM free"
+         },
+         {
+            "disk_io" : "Data"
+         },
+         {
+            "disk_req" : "Disk req"
+         },
+         {
+            "disk_ios" : "Disk iops"
+         },
+         {
+            "disk_ticks" : "Disk latency"
+         },
+         {
+            "disk_sectors" : "Disk sectors"
+         },
+         {
+            "disk_usage" : "Disk usage"
+         },
+         {
+            "nic_byte" : "Net"
+         },
+         {
+            "nic_drop_pkt" : "Packet drop"
+         }
+      ],
+      "uuid_in_url" : true,
+      "url_base" : "/lpar2rrd-cgi/detail.sh",
+      "platform" : "FusionCompute",
+      "type" : "vm-aggr",
+      "title" : "VMs Totals",
+      "subsystem" : "CLUSTER",
+      "singleton" : true,
+      "folder_frontpage" : true
+   },
+   {
+      "tabs" : [
+	 {
+            "cpu_percent" : "CPU%"
+         },
+         {
+            "mem_percent" : "MEM%"
+         },
+         {
+            "data" : "Data"
+         },
+         {
+            "disk" : "Disk usage"
+         },
+         {
+            "net" : "Net"
+         },
+         {
+            "net_usage" : "Net usage"
+         }
+      ],
+      "uuid_in_url" : true,
+      "url_base" : "/lpar2rrd-cgi/detail.sh",
+      "platform" : "FusionCompute",
+      "type" : "cluster-aggr",
+      "title" : "Cluster Totals",
+      "subsystem" : "SITE",
+      "singleton" : true,
+      "folder_frontpage" : true
+   },
+   {
+      "tabs" : [
+         {
+            "Used" : "Used"
+         },
+         {
+            "free" : "Free"
+         }
+      ],
+      "uuid_in_url" : true,
+      "url_base" : "/lpar2rrd-cgi/detail.sh",
+      "platform" : "FusionCompute",
+      "type" : "datastore-aggr",
+      "title" : "Datastore Totals",
+      "subsystem" : "SITE",
+      "singleton" : true,
+      "folder_frontpage" : true
+   },
+   {
+      "tabs" : [
+	 {
+            "host" : "Host"
+         },
+	 {
+            "vm" : "VM"
+         },
+	 {
+            "datastore" : "Datastore"
+         }
+      ],
+      "uuid_in_url" : false,
+      "url_base" : "/lpar2rrd-cgi/detail.sh",
+      "platform" : "FusionCompute",
+      "type" : "configuration",
+      "title" : "Configuration",
+      "subsystem" : "FUSIONCOMPUTE",
+      "singleton" : true,
+      "folder_frontpage" : false
+   },
+   {
+      "tabs" : [
+         {
+            "hs" : "Health status"
+         }
+      ],
+      "uuid_in_url" : false,
+      "url_base" : "/lpar2rrd-cgi/detail.sh",
+      "platform" : "FusionCompute",
+      "type" : "health",
+      "title" : "Health Status",
+      "subsystem" : "FUSIONCOMPUTE",
+      "singleton" : true,
+      "folder_frontpage" : false
+   },
+   {
+      "tabs" : [
+         {
+            "alerts" : "Alerts"
+         }
+      ],
+      "uuid_in_url" : false,
+      "url_base" : "/lpar2rrd-cgi/detail.sh",
+      "platform" : "FusionCompute",
+      "type" : "alerts",
+      "title" : "Alerts",
+      "subsystem" : "FUSIONCOMPUTE",
+      "singleton" : true,
+      "folder_frontpage" : false
+   }
+]

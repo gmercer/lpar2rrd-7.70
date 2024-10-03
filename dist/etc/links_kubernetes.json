@@ -1,0 +1,241 @@
+[ {
+      "tabs" : [
+         {
+            "overview" : "Overview"
+         }
+      ],
+      "uuid_in_url" : true,
+      "url_base" : "/lpar2rrd-cgi/detail.sh",
+      "platform" : "Kubernetes",
+      "title" : "Pods Overview",
+      "type" : "pods-overview",
+      "subsystem" : "KUBERNETES",
+      "singleton" : true
+   },
+   {
+      "tabs" : [],
+      "uuid_in_url" : true,
+      "url_base" : "/lpar2rrd-cgi/detail.sh",
+      "platform" : "Kubernetes",
+      "title" : "Containers Info",
+      "type" : "containers-info",
+      "subsystem" : "POD",
+      "singleton" : true
+   },
+   {
+      "tabs" : [
+         {
+            "node" : "Node"
+         },
+         {
+            "pod" : "Pod"
+         }
+      ],
+      "uuid_in_url" : false,
+      "url_base" : "/lpar2rrd-cgi/detail.sh",
+      "platform" : "Kubernetes",
+      "type" : "configuration",
+      "title" : "Configuration",
+      "subsystem" : "KUBERNETES",
+      "singleton" : true,
+      "folder_frontpage" : false
+   },
+   {
+      "tabs" : [
+         {
+            "pod" : "Pod"
+         }
+      ],
+      "uuid_in_url" : false,
+      "url_base" : "/lpar2rrd-cgi/detail.sh",
+      "platform" : "Kubernetes",
+      "type" : "top",
+      "title" : "Pod TOP",
+      "subsystem" : "KUBERNETES",
+      "singleton" : true,
+      "folder_frontpage" : false
+   },
+   {
+      "tabs" : [
+         {
+            "cpu_percent" : "CPU %"
+         },
+         {
+            "cpu" : "CPU"
+         },
+         {
+            "memory" : "Memory"
+         },
+         {
+            "pods" : "Pods"
+         },
+	 {
+            "data" : "Containers Data"
+         },
+	 {
+            "iops" : "Containers IOPS"
+         },
+	 {
+            "latency" : "Containers Latency"
+         },
+	 {
+            "net" : "Pods Net"
+         }
+      ],
+      "uuid_in_url" : true,
+      "url_base" : "/lpar2rrd-cgi/detail.sh",
+      "platform" : "Kubernetes",
+      "type" : "node",
+      "subsystem" : "NODE",
+      "singleton" : false
+   },
+   {
+      "tabs" : [
+         {
+            "cpu" : "CPU"
+         },
+         {
+            "memory" : "Memory"
+         },
+	 {
+            "data" : "Data"
+         },
+	 {
+            "iops" : "IOPS"
+         },
+	 {
+            "latency" : "Latency"
+         }
+      ],
+      "uuid_in_url" : true,
+      "url_base" : "/lpar2rrd-cgi/detail.sh",
+      "platform" : "Kubernetes",
+      "type" : "container",
+      "subsystem" : "CONTAINER",
+      "singleton" : false
+   },
+   {
+      "tabs" : [
+         {
+            "cpu" : "CPU"
+         },
+	 {
+            "cpu_container" : "CPU Containers"
+         },
+         {
+            "memory" : "Memory"
+         },
+	 {
+            "memory_container" : "Memory Containers"
+         },
+	 {
+            "net" : "Network"
+         },
+	 {
+            "data" : "Containers Data"
+         },
+	 {
+            "iops" : "Containers IOPS"
+         },
+	 {
+            "latency" : "Containers Latency"
+         }
+      ],
+      "uuid_in_url" : true,
+      "url_base" : "/lpar2rrd-cgi/detail.sh",
+      "title" : "Totals",
+      "platform" : "Kubernetes",
+      "type" : "pod",
+      "subsystem" : "POD",
+      "singleton" : true
+   },
+   {
+      "tabs" : [
+         {
+            "cpu" : "CPU"
+         },
+         {
+            "memory" : "Memory"
+         }
+      ],
+      "uuid_in_url" : true,
+      "url_base" : "/lpar2rrd-cgi/detail.sh",
+      "title" : "Totals",
+      "platform" : "Kubernetes",
+      "type" : "namespace",
+      "subsystem" : "NAMESPACE",
+      "singleton" : true
+   },
+   {
+      "tabs" : [
+         {
+            "cpu" : "CPU"
+         },
+         {
+            "memory" : "Memory"
+         }
+      ],
+      "uuid_in_url" : true,
+      "url_base" : "/lpar2rrd-cgi/detail.sh",
+      "title" : "Namespace Totals",
+      "platform" : "Kubernetes",
+      "type" : "namespace-aggr",
+      "subsystem" : "CLUSTER",
+      "singleton" : true
+   },
+   {
+      "tabs" : [
+         {
+            "cpu" : "CPU"
+         },
+         {
+            "memory" : "Memory"
+         },
+         {
+            "net" : "Pods Net"
+         }
+      ],
+      "uuid_in_url" : true,
+      "url_base" : "/lpar2rrd-cgi/detail.sh",
+      "title" : "Pod Totals",
+      "platform" : "Kubernetes",
+      "type" : "pod-aggr",
+      "subsystem" : "CLUSTER",
+      "singleton" : true
+   },
+   {
+      "tabs" : [
+	 {
+            "cpu_percent" : "CPU %"
+         },
+         {
+            "cpu" : "CPU"
+         },
+         {
+            "memory" : "Memory"
+         },
+         {
+            "pods" : "Pods"
+         },
+	 {
+            "data" : "Containers Data"
+         },
+	 {
+            "iops" : "Containers IOPS"
+         },
+	 {
+            "latency" : "Containers Latency"
+         },
+	 {
+            "net" : "Pods Net"
+         }
+      ],
+      "uuid_in_url" : true,
+      "url_base" : "/lpar2rrd-cgi/detail.sh",
+      "title" : "Node Totals",
+      "platform" : "Kubernetes",
+      "type" : "node-aggr",
+      "subsystem" : "CLUSTER",
+      "singleton" : true
+   }
+]

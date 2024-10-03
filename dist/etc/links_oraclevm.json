@@ -1,0 +1,141 @@
+[
+{
+  "tabs" : [],
+  "uuid_in_url" : false,
+  "url_base" : "heatmap-oraclevm.html",
+  "platform" : "OracleVM",
+  "type" : "heatmap",
+  "title" : "Heatmap",
+  "subsystem" : "ORACLEVM",
+  "acl_capable" : true,
+  "singleton" : true,
+  "folder_frontpage" : false
+},
+{
+  "tabs":[
+  {
+    "server_pool_conf":"Server Pool"
+  },
+  {
+    "vm_conf":"VM"
+  }
+  ],
+    "uuid_in_url" : false,
+    "url_base" : "/lpar2rrd-cgi/detail.sh",
+    "platform" : "OracleVM",
+    "type" : "configuration",
+    "title" : "Configuration",
+    "subsystem" : "ORACLEVM",
+    "singleton" : true,
+    "folder_frontpage" : false
+},
+{
+  "tabs":[
+  {
+    "last_day":"Last day"
+  },
+  {
+    "last_week":"Last week"
+  },
+  {
+    "last_month":"Last month"
+  },
+  {
+    "last_year":"Last year"
+  }
+  ],
+    "uuid_in_url" : false,
+    "url_base" : "/lpar2rrd-cgi/detail.sh",
+    "platform" : "OracleVM",
+    "type" : "topten_oraclevm",
+    "title" : "VM TOP",
+    "subsystem" : "ORACLEVM",
+    "singleton" : true,
+    "folder_frontpage" : false
+},
+{
+  "tabs" : [],
+  "uuid_in_url" : false,
+  "url_base" : "/lpar2rrd-cgi/histrep.sh",
+  "platform" : "OracleVM",
+  "type" : "histrep-oraclevm",
+  "title" : "Historical reports",
+  "subsystem" : "ORACLEVM",
+  "acl_capable" : true,
+  "singleton" : true,
+  "folder_frontpage" : false
+},
+{
+  "tabs":[
+  { "cpu_core":"CPU" },
+  { "cpu_percent":"CPU %" },
+  { "mem":"MEM" },
+  { "mem":"MEM %" },
+  { "net_used":"NET" },
+  { "disk_used":"DISK" }
+  ],
+    "uuid_in_url" : true,
+    "type" : "server",
+    "subsystem" : "SERVER",
+    "platform" : "OracleVM",
+    "url_base" : "/lpar2rrd-cgi/detail.sh",
+    "singleton" : false
+},
+{
+  "tabs":[
+  { "cpu_core":"CPU" },
+  { "cpu_percent":"CPU %" },
+  { "mem_orvm":"MEM" },
+  { "net_used":"NET" },
+  { "disk_used":"DISK" },
+  { "oscpu" : "CPU OS" },
+  { "queue_cpu" : "CPU QUEUE" },
+  { "jobs" : "JOB" },
+  { "mem" : "Memory" },
+  { "pg1" : "Paging 1" },
+  { "pg2" : "Paging 2" },
+  { "lan" : "LAN" },
+  { "file_sys" : "FS" }
+  ],
+    "uuid_in_url" : true,
+    "type" : "vm",
+    "subsystem" : "VM",
+    "platform" : "OracleVM",
+    "url_base" : "/lpar2rrd-cgi/detail.sh",
+    "singleton" : false
+},
+{
+  "tabs":[
+  { "cpu_core":"CPU" },
+  { "mem":"MEM" },
+  { "cpu":"VM aggregated" },
+  { "net_used":"NET" },
+  { "disk_used":"DISK" }
+  ],
+    "uuid_in_url" : true,
+    "title" : "Totals",
+    "type" : "total_server",
+    "platform" : "OracleVM",
+    "subsystem" : "SERVERPOOL",
+    "url_base" : "/lpar2rrd-cgi/detail.sh",
+    "singleton" : true,
+    "folder_frontpage" : true
+},
+{
+  "tabs":[
+  { "cpu_core":"CPU" },
+  { "mem":"MEM" },
+  { "cpu":"VM aggregated" },
+  { "net_used":"NET" },
+  { "disk_used":"DISK" }
+  ],
+    "uuid_in_url" : true,
+    "title" : "Totals",
+    "type" : "total_serverpools",
+    "platform" : "OracleVM",
+    "subsystem" : "MANAGER",
+    "url_base" : "/lpar2rrd-cgi/detail.sh",
+    "singleton" : true,
+    "folder_frontpage" : true
+}
+]

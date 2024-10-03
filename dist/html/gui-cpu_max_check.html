@@ -1,0 +1,277 @@
+
+   <div id="tabs">
+    <ul>
+    <li class="tabhmc"><a href="#fragment-0"><span>CPU day</span></a></li>
+    <li class="tabhmc"><a href="#fragment-1"><span>CPU week</span></a></li>
+    <li class="tabhmc"><a href="#fragment-2"><span>CPU month</span></a></li>
+    <li class="tabagent"><a href="#fragment-3"><span>Mem day</span></a></li>
+    <li class="tabagent"><a href="#fragment-4"><span>Mem week</span></a></li>
+    <li class="tabagent"><a href="#fragment-5"><span>Mem month</span></a></li>
+    <li class="tabagent"><a href="#fragment-6"><span>IO day</span></a></li>
+    <li class="tabagent"><a href="#fragment-7"><span>IO week</span></a></li>
+    <li class="tabagent"><a href="#fragment-8"><span>IO month</span></a></li>
+    </ul>
+    <br>
+
+<div id="fragment-0">
+  <table><tr>
+	         <td>Change is</td>
+                 <td title="this change saves CPU entitlement" bgcolor="#40FF40"> <b>noted</b></td>
+                 <td title="this change could bring some speed up" bgcolor="#FFFF80"> <b>recommended</b></td>
+	         <td title="this change probably brings speed up" bgcolor="#FFAAAA"> <b>strongly recommended</b></td>
+	         <td title="this change definitely brings speed up" bgcolor="#FF4040"><b> a must</b></td></tr></table> 
+<table width="100%"><tr><td><font size="-1">(last day) <a href="cpu_config_advisor_daily.csv"><div class="csvexport">CSV</div></a></font></td><td  valign="top" nowrap align="right"><font size="-1"> 
+                      <a href="http://www.lpar2rrd.com/cpu_configuration_advisor.html" target="_blank" valign="center">How it works</a></font></td></tr></table>
+<TABLE class="tabadvisor tablesorter" SUMMARY="MAX CPU error last day">
+<thead><tr><th title="LPAR / POOL / Shared POOL " 
+                        rowspan="2" valign="center" class="sortable">Type&nbsp;&nbsp;&nbsp;&nbsp;</th>
+	     <th rowspan="2" valign="center" class="sortable">Name&nbsp;&nbsp;&nbsp;&nbsp;</th>
+	     <th rowspan="2" valign="center" class="sortable">Server&nbsp;&nbsp;&nbsp;&nbsp;</th>
+             <th colspan="4" align="center">CPU cores</th>
+	     <th title="Virtual processor / Entitlement ratio" 
+                 align="center" rowspan="2" valign="center">&nbsp;VP:Ent&nbsp;<br>ratio</th>
+             <th title="Maximal CPU peak in given period / Entitlement ratio " 
+                 align="center" rowspan="2" valign="center">&nbsp;Max:Ent&nbsp;<br>ratio</th>
+             <th title="Average CPU load in given period / Entitlement ratio " 
+                 align="center" rowspan="2" valign="center">&nbsp;Avg:Ent&nbsp;<br>ratio</th>
+             <th title="LPAR2RRD recommendation for changes " 
+                 align="center" colspan="2">&nbsp;&nbsp;Recommended&nbsp;&nbsp;</th></tr><tr>
+
+ 	     <th title="Maximal CPU peak in given time period " align="center">&nbsp;&nbsp;&nbsp;Max&nbsp;&nbsp;&nbsp;</th>
+             <th title="LPAR: configured Virtual Processors / POOL: configured CPU cores in the pool" 
+                 align="center">&nbsp;&nbsp;&nbsp;VP&nbsp;&nbsp;&nbsp;</th>
+             <th title="Average CPU load in given time period " align="center">&nbsp;&nbsp;&nbsp;Avg&nbsp;&nbsp;&nbsp;</th>
+	     <th title="LPAR: configured CPU entitlement / POOL: configured reserved CPU pool units" 
+                 align="center">&nbsp;&nbsp;&nbsp;Ent&nbsp;&nbsp;&nbsp;</th>
+             <th title="Recommended CPU entitlement " align="center">&nbsp;&nbsp;&nbsp;Ent&nbsp;&nbsp;&nbsp;</th>
+             <th title="LPAR: recommended number of Virtual Processors / POOL: recommended number of CPU cores in the pool" 
+                 align="center">&nbsp;&nbsp;&nbsp;VP&nbsp;&nbsp;&nbsp;</th></tr> 
+             </thead><tbody>
+<tr><td nowrap >No data has been generated yet, probably it is too early after installation, wait an hour ...</td></tr>
+</tbody></table>
+</div>
+
+<div id="fragment-1">
+  <table><tr>
+	         <td>Change is</td>
+                 <td title="this change saves CPU entitlement" bgcolor="#40FF40"> <b>noted</b></td>
+                 <td title="this change could bring some speed up" bgcolor="#FFFF80"> <b>recommended</b></td>
+	         <td title="this change probably brings speed up" bgcolor="#FFAAAA"> <b>strongly recommended</b></td>
+	         <td title="this change definitely brings speed up" bgcolor="#FF4040"><b> a must</b></td></tr></table> 
+<table width="100%"><tr><td><font size="-1">(last week without last day) <a href="cpu_config_advisor_weekly.csv"><div class="csvexport">CSV</div></a></font></td><td  valign="top" nowrap align="right"><font size="-1"> 
+                      <a href="http://www.lpar2rrd.com/cpu_configuration_advisor.html" target="_blank" valign="center">How it works</a></font></td></tr></table>
+<TABLE class="tabadvisor tablesorter" SUMMARY="MAX CPU error last week">
+<thead><tr><th title="LPAR / POOL / Shared POOL " 
+                        rowspan="2" valign="center" class="sortable">Type&nbsp;&nbsp;&nbsp;&nbsp;</th>
+	     <th rowspan="2" valign="center" class="sortable">Name&nbsp;&nbsp;&nbsp;&nbsp;</th>
+	     <th rowspan="2" valign="center" class="sortable">Server&nbsp;&nbsp;&nbsp;&nbsp;</th>
+             <th colspan="4" align="center">CPU cores</th>
+	     <th title="Virtual processor / Entitlement ratio" 
+                 align="center" rowspan="2" valign="center">&nbsp;VP:Ent&nbsp;<br>ratio</th>
+             <th title="Maximal CPU peak in given period / Entitlement ratio " 
+                 align="center" rowspan="2" valign="center">&nbsp;Max:Ent&nbsp;<br>ratio</th>
+             <th title="Average CPU load in given period / Entitlement ratio " 
+                 align="center" rowspan="2" valign="center">&nbsp;Avg:Ent&nbsp;<br>ratio</th>
+             <th title="LPAR2RRD recommendation for changes " 
+                 align="center" colspan="2">&nbsp;&nbsp;Recommended&nbsp;&nbsp;</th></tr><tr>
+
+ 	     <th title="Maximal CPU peak in given time period " align="center">&nbsp;&nbsp;&nbsp;Max&nbsp;&nbsp;&nbsp;</th>
+             <th title="LPAR: configured Virtual Processors / POOL: configured CPU cores in the pool" 
+                 align="center">&nbsp;&nbsp;&nbsp;VP&nbsp;&nbsp;&nbsp;</th>
+             <th title="Average CPU load in given time period " align="center">&nbsp;&nbsp;&nbsp;Avg&nbsp;&nbsp;&nbsp;</th>
+	     <th title="LPAR: configured CPU entitlement / POOL: configured reserved CPU pool units" 
+                 align="center">&nbsp;&nbsp;&nbsp;Ent&nbsp;&nbsp;&nbsp;</th>
+             <th title="Recommended CPU entitlement " align="center">&nbsp;&nbsp;&nbsp;Ent&nbsp;&nbsp;&nbsp;</th>
+             <th title="LPAR: recommended number of Virtual Processors / POOL: recommended number of CPU cores in the pool" 
+                 align="center">&nbsp;&nbsp;&nbsp;VP&nbsp;&nbsp;&nbsp;</th></tr> 
+             </thead><tbody>
+<tr><td nowrap >No data has been generated yet, probably it is too early after installation, wait an hour ...</td></tr>
+</tbody></table>
+
+</div>
+
+<div id="fragment-2">
+  <table><tr>
+	         <td>Change is</td>
+                 <td title="this change saves CPU entitlement" bgcolor="#40FF40"> <b>noted</b></td>
+                 <td title="this change could bring some speed up" bgcolor="#FFFF80"> <b>recommended</b></td>
+	         <td title="this change probably brings speed up" bgcolor="#FFAAAA"> <b>strongly recommended</b></td>
+	         <td title="this change definitely brings speed up" bgcolor="#FF4040"><b> a must</b></td></tr></table> 
+<table width="100%"><tr><td><font size="-1">(last month without last week) <a href="cpu_config_advisor_monthly.csv"><div class="csvexport">CSV</div></a></font></td><td  valign="top" nowrap align="right"><font size="-1"> 
+                      <a href="http://www.lpar2rrd.com/cpu_configuration_advisor.html" target="_blank" valign="center">How it works</a></font></td></tr></table>
+<TABLE class="tabadvisor tablesorter" SUMMARY="MAX CPU error last month">
+<thead><tr><th title="LPAR / POOL / Shared POOL " 
+                        rowspan="2" valign="center" class="sortable">Type&nbsp;&nbsp;&nbsp;&nbsp;</th>
+	     <th rowspan="2" valign="center" class="sortable">Name&nbsp;&nbsp;&nbsp;&nbsp;</th>
+	     <th rowspan="2" valign="center" class="sortable">Server&nbsp;&nbsp;&nbsp;&nbsp;</th>
+             <th colspan="4" align="center">CPU cores</th>
+	     <th title="Virtual processor / Entitlement ratio" 
+                 align="center" rowspan="2" valign="center">&nbsp;VP:Ent&nbsp;<br>ratio</th>
+             <th title="Maximal CPU peak in given period / Entitlement ratio " 
+                 align="center" rowspan="2" valign="center">&nbsp;Max:Ent&nbsp;<br>ratio</th>
+             <th title="Average CPU load in given period / Entitlement ratio " 
+                 align="center" rowspan="2" valign="center">&nbsp;Avg:Ent&nbsp;<br>ratio</th>
+             <th title="LPAR2RRD recommendation for changes " 
+                 align="center" colspan="2">&nbsp;&nbsp;Recommended&nbsp;&nbsp;</th></tr><tr>
+
+ 	     <th title="Maximal CPU peak in given time period " align="center">&nbsp;&nbsp;&nbsp;Max&nbsp;&nbsp;&nbsp;</th>
+             <th title="LPAR: configured Virtual Processors / POOL: configured CPU cores in the pool" 
+                 align="center">&nbsp;&nbsp;&nbsp;VP&nbsp;&nbsp;&nbsp;</th>
+             <th title="Average CPU load in given time period " align="center">&nbsp;&nbsp;&nbsp;Avg&nbsp;&nbsp;&nbsp;</th>
+	     <th title="LPAR: configured CPU entitlement / POOL: configured reserved CPU pool units" 
+                 align="center">&nbsp;&nbsp;&nbsp;Ent&nbsp;&nbsp;&nbsp;</th>
+             <th title="Recommended CPU entitlement " align="center">&nbsp;&nbsp;&nbsp;Ent&nbsp;&nbsp;&nbsp;</th>
+             <th title="LPAR: recommended number of Virtual Processors / POOL: recommended number of CPU cores in the pool" 
+                 align="center">&nbsp;&nbsp;&nbsp;VP&nbsp;&nbsp;&nbsp;</th></tr> 
+             </thead><tbody>
+<tr><td nowrap >No data has been generated yet, probably it is too early after installation, wait an hour ...</td></tr>
+</tbody></table>
+</div>
+
+<div id="fragment-3">
+  <table><tr>
+	         <td>Change is</td>
+                 <td title="this change saves memory" bgcolor="#40FF40"> <b>noted</b></td>
+                 <td title="this reports warning" bgcolor="#FFFF80"> <b>recommended</b></td>
+	         <td title="this recomends memory increase" bgcolor="#FFAAAA"> <b>strongly recommended</b></td>
+	         <td title="memory must be increased" bgcolor="#FF4040"><b> a must</b></td></tr></table> 
+<table width="100%"><tr><td><font size="-1">(last day) <!-- <a href="cpu_config_advisor_daily.csv">CSV</a> --> <br>It requires <a href ="http://lpar2rrd.com/agent.htm" target="_blank">OS agent</a> v4.X running on all LPARs</font></td><td  valign="top" nowrap align="right"><font size="-1"> 
+                      <a href="http://www.lpar2rrd.com/cpu_configuration_advisor.html" target="_blank" valign="center">How it works</a></font></td></tr></table>
+<TABLE class="tabadvisor tablesorter" SUMMARY="Memory last day">
+<thead><tr>
+	     <th rowspan="2" valign="center" class="sortable">LPAR&nbsp;&nbsp;&nbsp;&nbsp;</th>
+	     <th rowspan="2" valign="center" class="sortable">Server&nbsp;&nbsp;&nbsp;&nbsp;</th>
+	     <th align="center" rowspan="2" valign="center">&nbsp;&nbsp;Memory&nbsp;&nbsp;<br><font size="-1">[GB]</th>
+	     <th align="center" rowspan="2" valign="center">&nbsp;&nbsp;Paging&nbsp;&nbsp;<br><font size="-1">[GB]</th>
+             <th align="center" rowspan="2" >&nbsp;&nbsp;Paging&nbsp;&nbsp;<br>&nbsp;&nbsp;space&nbsp;&nbsp;<br> <font size="-1">[%]</font></th>
+             <th align="center" colspan="2" >&nbsp;&nbsp;Paging&nbsp;rate&nbsp;&nbsp;<br><font size="-1"> [kBps]</font></th>
+             <th align="center" colspan="2" >&nbsp;&nbsp;Memory&nbsp;usage&nbsp;&nbsp;<br> <font size="-1">[%]</font></th>
+             <th align="center" rowspan="2" >&nbsp;&nbsp;Advise&nbsp;&nbsp;<br><font size="-1">[GB]</font></th>
+             <th align="center" rowspan="2" class="sortable" >&nbsp;&nbsp;&nbsp;&nbsp;Diff&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;<font size="-1">[GB]&nbsp;&nbsp;&nbsp;&nbsp;</th></font></tr><tr>
+             <th align="center" >AVG</th>
+             <th align="center" >MAX</th>
+             <th align="center" >AVG</th>
+             <th align="center" >MAX</th></tr>
+             </thead><tbody>
+<tr><td nowrap >No data has been generated yet, probably it is too early after installation, wait an hour ...</td></tr>
+</tbody></table>
+</div>
+
+<div id="fragment-4">
+  <table><tr>
+	         <td>Change is</td>
+                 <td title="this change saves memory" bgcolor="#40FF40"> <b>noted</b></td>
+                 <td title="this reports warning" bgcolor="#FFFF80"> <b>recommended</b></td>
+	         <td title="this recomends memory increase" bgcolor="#FFAAAA"> <b>strongly recommended</b></td>
+	         <td title="memory must be increased" bgcolor="#FF4040"><b> a must</b></td></tr></table> 
+<table width="100%"><tr><td><font size="-1">(last week without last day) <!-- <a href="cpu_config_advisor_weekly.csv">CSV</a> --> <br>It requires <a href ="http://lpar2rrd.com/agent.htm" target="_blank">OS agent</a> v4.X running on all LPAR </font></td><td  valign="top" nowrap align="right"><font size="-1"> 
+                      <a href="http://www.lpar2rrd.com/cpu_configuration_advisor.html" target="_blank" valign="center">How it works</a></font></td></tr></table>
+<TABLE class="tabadvisor tablesorter" SUMMARY="MAX CPU error last week">
+<thead><tr>
+	     <th rowspan="2" valign="center" class="sortable">LPAR&nbsp;&nbsp;&nbsp;&nbsp;</th>
+	     <th rowspan="2" valign="center" class="sortable">Server&nbsp;&nbsp;&nbsp;&nbsp;</th>
+	     <th align="center" rowspan="2" valign="center">&nbsp;&nbsp;Memory&nbsp;&nbsp;<br><font size="-1">[GB]</th>
+	     <th align="center" rowspan="2" valign="center">&nbsp;&nbsp;Paging&nbsp;&nbsp;<br><font size="-1">[GB]</th>
+             <th align="center" rowspan="2" >&nbsp;&nbsp;Paging&nbsp;&nbsp;<br>&nbsp;&nbsp;space&nbsp;&nbsp;<br> <font size="-1">[%]</font></th>
+             <th align="center" colspan="2" >&nbsp;&nbsp;Paging&nbsp;rate&nbsp;&nbsp;<br><font size="-1"> [kBps]</font></th>
+             <th align="center" colspan="2" >&nbsp;&nbsp;Memory&nbsp;usage&nbsp;&nbsp;<br> <font size="-1">[%]</font></th>
+             <th align="center" rowspan="2" >&nbsp;&nbsp;Advise&nbsp;&nbsp;<br><font size="-1">[GB]</font></th>
+             <th align="center" rowspan="2" class="sortable" >&nbsp;&nbsp;&nbsp;&nbsp;Diff&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;<font size="-1">[GB]&nbsp;&nbsp;&nbsp;&nbsp;</th></font></tr><tr>
+             <th align="center" >AVG</th>
+             <th align="center" >MAX</th>
+             <th align="center" >AVG</th>
+             <th align="center" >MAX</th></tr>
+             </thead><tbody>
+<tr><td nowrap >No data has been generated yet, probably it is too early after installation, wait an hour ...</td></tr>
+</tbody></table>
+
+</div>
+
+<div id="fragment-5">
+  <table><tr>
+	         <td>Change is</td>
+                 <td title="this change saves memory" bgcolor="#40FF40"> <b>noted</b></td>
+                 <td title="this reports warning" bgcolor="#FFFF80"> <b>recommended</b></td>
+	         <td title="this recomends memory increase" bgcolor="#FFAAAA"> <b>strongly recommended</b></td>
+	         <td title="memory must be increased" bgcolor="#FF4040"><b> a must</b></td></tr></table> 
+<table width="100%"><tr><td><font size="-1">(last month without last week) <!-- <a href="cpu_config_advisor_monthly.csv">CSV</a> --> <br>It requires <a href ="http://lpar2rrd.com/agent.htm" target="_blank">OS agent</a> v4.X running on all LPARs </font></td><td  valign="top" nowrap align="right"><font size="-1"> 
+                      <a href="http://www.lpar2rrd.com/cpu_configuration_advisor.html" target="_blank" valign="center">How it works</a></font></td></tr></table>
+<TABLE class="tabadvisor tablesorter" SUMMARY="MAX CPU error last month">
+<thead><tr>
+	     <th rowspan="2" valign="center" class="sortable">LPAR&nbsp;&nbsp;&nbsp;&nbsp;</th>
+	     <th rowspan="2" valign="center" class="sortable">Server&nbsp;&nbsp;&nbsp;&nbsp;</th>
+	     <th align="center" rowspan="2" valign="center">&nbsp;&nbsp;Memory&nbsp;&nbsp;<br><font size="-1">[GB]</th>
+	     <th align="center" rowspan="2" valign="center">&nbsp;&nbsp;Paging&nbsp;&nbsp;<br><font size="-1">[GB]</th>
+             <th align="center" rowspan="2" >&nbsp;&nbsp;Paging&nbsp;&nbsp;<br>&nbsp;&nbsp;space&nbsp;&nbsp;<br> <font size="-1">[%]</font></th>
+             <th align="center" colspan="2" >&nbsp;&nbsp;Paging&nbsp;rate&nbsp;&nbsp;<br><font size="-1"> [kBps]</font></th>
+             <th align="center" colspan="2" >&nbsp;&nbsp;Memory&nbsp;usage&nbsp;&nbsp;<br> <font size="-1">[%]</font></th>
+             <th align="center" rowspan="2" >&nbsp;&nbsp;Advise&nbsp;&nbsp;<br><font size="-1">[GB]</font></th>
+             <th align="center" rowspan="2" class="sortable" >&nbsp;&nbsp;&nbsp;&nbsp;Diff&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;<font size="-1">[GB]&nbsp;&nbsp;&nbsp;&nbsp;</th></font></tr><tr>
+             <th align="center" >AVG</th>
+             <th align="center" >MAX</th>
+             <th align="center" >AVG</th>
+             <th align="center" >MAX</th></tr>
+             </thead><tbody>
+<tr><td nowrap >No data has been generated yet, probably it is too early after installation, wait an hour ...</td></tr>
+</tbody></table>
+</div>
+
+<div id="fragment-6">
+  <table><tr>
+                 <td title="Warning" bgcolor="#FFFF80"> <b>warning</b></td>
+	         <td title="Strong warning, there could be a IO problem" bgcolor="#FFAAAA"> <b>strong warning</b></td>
+	         <td title="There is a IO problem and is necessary to fix it" bgcolor="#FF4040"><b>critical</b></td></tr></table> 
+<table width="100%"><tr><td><font size="-1">(last day) <!-- <a href="cpu_config_advisor_daily.csv">CSV</a> --> <br>It requires <a href ="http://lpar2rrd.com/agent.htm" target="_blank">OS agent</a> v4.X running on all LPARs</font></td><td  valign="top" nowrap align="right"><font size="-1"> 
+                      <a href="http://www.lpar2rrd.com/cpu_configuration_advisor.html" target="_blank" valign="center">How it works</a></font></td></tr></table>
+<TABLE class="tabadvisor tablesorter" SUMMARY="IO last day">
+<thead><tr>
+	     <th valign="center" class="sortable">LPAR&nbsp;&nbsp;&nbsp;&nbsp;</th>
+	     <th valign="center" class="sortable">Server&nbsp;&nbsp;&nbsp;&nbsp;</th>
+             <th align="center"  class="sortable">&nbsp;&nbsp;&nbsp;&nbsp;IO wait peak [%]&nbsp;&nbsp;&nbsp;&nbsp;</th>
+             <th align="center"  class="sortable">&nbsp;&nbsp;&nbsp;&nbsp;IO wait avrg [%]&nbsp;&nbsp;&nbsp;&nbsp;</th></tr>
+             </thead><tbody>
+<tr><td nowrap >No data has been generated yet, probably it is too early after installation, wait an hour ...</td></tr>
+</tbody></table>
+</div>
+
+<div id="fragment-7">
+  <table><tr>
+                 <td title="Warning" bgcolor="#FFFF80"> <b>warning</b></td>
+	         <td title="Strong warning, there could be a IO problem" bgcolor="#FFAAAA"> <b>strong warning</b></td>
+	         <td title="There is a IO problem and is necessary to fix it" bgcolor="#FF4040"><b>critical</b></td></tr></table> 
+<table width="100%"><tr><td><font size="-1">(last week without last day) <!-- <a href="cpu_config_advisor_weekly.csv">CSV</a> --> <br>It requires <a href ="http://lpar2rrd.com/agent.htm" target="_blank">OS agent</a> v4.X running on all LPAR </font></td><td  valign="top" nowrap align="right"><font size="-1"> 
+                      <a href="http://www.lpar2rrd.com/cpu_configuration_advisor.html" target="_blank" valign="center">How it works</a></font></td></tr></table>
+<TABLE class="tabadvisor tablesorter" SUMMARY="IO last week">
+<thead><tr>
+	     <th valign="center" class="sortable">LPAR&nbsp;&nbsp;&nbsp;&nbsp;</th>
+	     <th valign="center" class="sortable">Server&nbsp;&nbsp;&nbsp;&nbsp;</th>
+             <th align="center"  class="sortable">&nbsp;&nbsp;&nbsp;&nbsp;IO wait peak [%]&nbsp;&nbsp;&nbsp;&nbsp;</th>
+             <th align="center"  class="sortable">&nbsp;&nbsp;&nbsp;&nbsp;IO wait avrg [%]&nbsp;&nbsp;&nbsp;&nbsp;</th></tr>
+             </thead><tbody>
+<tr><td nowrap >No data has been generated yet, probably it is too early after installation, wait an hour ...</td></tr>
+</tbody></table>
+
+</div>
+
+<div id="fragment-8">
+  <table><tr>
+                 <td title="Warning" bgcolor="#FFFF80"> <b>warning</b></td>
+	         <td title="Strong warning, there could be a IO problem" bgcolor="#FFAAAA"> <b>strong warning</b></td>
+	         <td title="There is a IO problem and is necessary to fix it" bgcolor="#FF4040"><b>critical</b></td></tr></table> 
+<table width="100%"><tr><td><font size="-1">(last month without last week) <!-- <a href="cpu_config_advisor_monthly.csv">CSV</a> --> <br>It requires <a href ="http://lpar2rrd.com/agent.htm" target="_blank">OS agent</a> v4.X running on all LPARs </font></td><td  valign="top" nowrap align="right"><font size="-1"> 
+                      <a href="http://www.lpar2rrd.com/cpu_configuration_advisor.html" target="_blank" valign="center">How it works</a></font></td></tr></table>
+<TABLE class="tabadvisor tablesorter" SUMMARY="IO last month">
+<thead><tr>
+	     <th valign="center" class="sortable">LPAR&nbsp;&nbsp;&nbsp;&nbsp;</th>
+	     <th valign="center" class="sortable">Server&nbsp;&nbsp;&nbsp;&nbsp;</th>
+             <th align="center"  class="sortable">&nbsp;&nbsp;&nbsp;&nbsp;IO wait peak [%]&nbsp;&nbsp;&nbsp;&nbsp;</th>
+             <th align="center"  class="sortable">&nbsp;&nbsp;&nbsp;&nbsp;IO wait avrg [%]&nbsp;&nbsp;&nbsp;&nbsp;</th></tr>
+             </thead><tbody> 
+<tr><td nowrap >No data has been generated yet, probably it is too early after installation, wait an hour ...</td></tr>
+</tbody></table>
+</div>
+</div>
+<br><font size="-1">Report has been created at: <br></font>
+<br><ul><li><font size="-1"><b>CPU:</b> There are listed only those LPARs or CPU pools where at least one 10 MIN peak in given time period has been higher or equal of their entitlement.<br>
+There are also listed LPARs or CPU pools which have unnecessary high CPU entitlement.</font><br></li>
+<br><li><font size="-1"><b>MEM:</b> There are listed only those LPARs where seems to be lack of memory or where memory can be reduced</font></li></ul><br>

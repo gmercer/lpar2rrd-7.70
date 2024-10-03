@@ -1,0 +1,249 @@
+[
+   {
+      "tabs" : [
+         {
+            "health_status" : "Health status"
+         }
+      ],
+      "folder_frontpage" : "true",
+      "uuid_in_url" : "true",
+      "subsystem" :  ["HOST"],
+      "singleton" : "false",
+      "url_base" : "/lpar2rrd-cgi/health-status.sh",
+      "type" : "healthstatus",
+      "platform" : "DB2",
+      "title" : "Health status"
+   },
+   {
+      "tabs" : [
+         {
+           "main" : "Main"
+         },
+         {
+           "size" : "Tablespace"
+         },
+         {
+           "member" : "Members"
+         }
+      ],
+      "folder_frontpage" : "true",
+      "uuid_in_url" : "true",
+      "subsystem" :  ["HOST","DB"],
+      "singleton" : "false",
+      "url_base" : "/lpar2rrd-cgi/detail.sh",
+      "type" : "configuration_Cluster",
+      "platform" : "DB2",
+      "title" : "Configuration"
+   },
+   {
+      "tabs" : [
+         {
+            "_io_read" : "Read"
+         },
+         {
+            "_io_write" : "Write"
+         }
+      ],
+      "folder_frontpage" : "true",
+      "uuid_in_url" : "true",
+      "subsystem" :  ["HOST","DB"],
+      "singleton" : "false",
+      "url_base" : "/lpar2rrd-cgi/detail.sh",
+      "type" : "IO",
+      "platform" : "DB2",
+      "title" : "IO"
+   },
+   {
+      "tabs" : [
+         {
+            "_latency_direct" : "Direct"
+         },
+         {
+            "_latency_pool" : "Pool"
+         },
+         {
+            "_latency_log" : "Log"
+         }
+      ],
+      "folder_frontpage" : "true",
+      "uuid_in_url" : "true",
+      "subsystem" :  ["HOST","DB"],
+      "singleton" : "false",
+      "url_base" : "/lpar2rrd-cgi/detail.sh",
+      "type" : "Latency",
+      "platform" : "DB2",
+      "title" : "Latency"
+   },
+   {
+      "tabs" : [
+         {
+            "_rows_t" : "Total"
+         },
+         {
+            "_rows_int" : "Internal"
+         },
+         {
+            "_rows_fed" : "FED"
+         }
+      ],
+      "folder_frontpage" : "true",
+      "uuid_in_url" : "true",
+      "subsystem" :  ["HOST","DB"],
+      "singleton" : "false",
+      "url_base" : "/lpar2rrd-cgi/detail.sh",
+      "type" : "Rows",
+      "platform" : "DB2",
+      "title" : "Rows"
+   },
+   {
+      "tabs" : [
+         {
+            "_session" : "Session"
+         }
+      ],
+      "folder_frontpage" : "true",
+      "uuid_in_url" : "true",
+      "subsystem" :  ["HOST","DB"],
+      "singleton" : "false",
+      "url_base" : "/lpar2rrd-cgi/detail.sh",
+      "type" : "Session",
+      "platform" : "DB2",
+      "title" : "Session"
+   },
+   {
+      "tabs" : [
+         {
+            "_network_remote" : "Remote"
+         },
+         {
+            "_network_local" : "Local clients"
+         },
+         {
+            "_network_fcm" : "FCM"
+         }
+      ],
+      "folder_frontpage" : "true",
+      "uuid_in_url" : "true",
+      "subsystem" :  ["HOST","DB"],
+      "singleton" : "false",
+      "url_base" : "/lpar2rrd-cgi/detail.sh",
+      "type" : "Network",
+      "platform" : "DB2",
+      "title" : "Network"
+   },
+   {
+      "tabs" : [
+         {
+            "_sql_txn" : "Transaction"
+         },
+         {
+            "_sql_comp" : "Compilation"
+         }
+      ],
+      "folder_frontpage" : "true",
+      "uuid_in_url" : "true",
+      "subsystem" :  ["HOST","DB"],
+      "singleton" : "false",
+      "url_base" : "/lpar2rrd-cgi/detail.sh",
+      "type" : "SQL_query",
+      "platform" : "DB2",
+      "title" : "SQL query"
+   },
+   {
+      "tabs" : [
+         {
+            "_wait_total" : "Total"
+         },
+         {
+            "_wait_io" : "IO wait"
+         },
+         {
+            "_wait_net" : "network"
+         },
+         {
+            "_wait_msc" : "Misc"
+         }
+      ],
+      "folder_frontpage" : "true",
+      "uuid_in_url" : "true",
+      "subsystem" :  ["HOST","DB"],
+      "singleton" : "false",
+      "url_base" : "/lpar2rrd-cgi/detail.sh",
+      "type" : "Waits",
+      "platform" : "DB2",
+      "title" : "Waits"
+   },
+   {
+      "tabs" : [
+         {
+            "_Agents" : "Agents"
+         }
+      ],
+      "folder_frontpage" : "true",
+      "uuid_in_url" : "true",
+      "subsystem" :  ["HOST","DB"],
+      "singleton" : "false",
+      "url_base" : "/lpar2rrd-cgi/detail.sh",
+      "type" : "Agents",
+      "platform" : "DB2",
+      "title" : "Agents"
+   },
+   {
+      "tabs" : [
+         {
+            "_Locks" : "Locks"
+         },
+         {
+            "_Deadlocks" : "Deadlocks"
+         }
+      ],
+      "folder_frontpage" : "true",
+      "uuid_in_url" : "true",
+      "subsystem" :  ["HOST","DB"],
+      "singleton" : "false",
+      "url_base" : "/lpar2rrd-cgi/detail.sh",
+      "type" : "Locks",
+      "platform" : "DB2",
+      "title" : "Locks"
+   },
+   {
+      "tabs" : [
+         {
+            "_ratio" : "Ratio"
+         }
+      ],
+      "folder_frontpage" : "true",
+      "uuid_in_url" : "true",
+      "subsystem" :  ["HOST","DB"],
+      "singleton" : "false",
+      "url_base" : "/lpar2rrd-cgi/detail.sh",
+      "type" : "Ratio",
+      "platform" : "DB2",
+      "title" : "Ratio"
+   },
+   {
+      "tabs" : [
+         {
+            "_io_read" : "IO Read"
+         },
+         {
+            "_io_write" : "IO Write"
+         },
+         {
+            "_latency_direct" : "Latency Direct"
+         },
+         {
+            "_latency_pool" : "Latency Pool"
+         },
+         {
+            "_ratio" : "Ratio"
+         }
+      ],
+      "uuid_in_url" : true,
+      "subsystem" :  ["BUFFERPOOL"],
+      "singleton" : false,
+      "url_base" : "/lpar2rrd-cgi/detail.sh",
+      "type" : "BUFFERPOOL",
+      "platform" : "DB2"
+   }
+]

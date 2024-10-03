@@ -1,0 +1,101 @@
+[
+    {
+      "tabs" : [
+      {
+        "CPU_Util" : "CPU"
+      },
+      {
+        "MEM_Usage" : "MEM"
+      }
+      ],
+      "folder_frontpage" : "true",
+      "uuid_in_url" : "true",
+      "url_base" : "/lpar2rrd-cgi/detail.sh",
+      "platform" : "Solaris",
+      "type" : "SOLARIS_TOTAL",
+      "title" : "Total",
+      "subsystem" : "SOLARIS_TOTAL",
+      "singleton" : true
+   },
+
+   {
+      "tabs" : [],
+      "url_params" : [],
+      "url_base" : "/lpar2rrd-cgi/detail.sh",
+      "platform" : "Solaris",
+      "type" : "CDOM",
+      "title" : "Totals",
+      "uuid_in_url" : true,
+      "subsystem" : "CDOM",
+      "singleton" : true
+   },
+
+   {
+      "tabs" : [],
+      "url_params" : [],
+      "url_base" : "/lpar2rrd-cgi/detail.sh",
+      "platform" : "Solaris",
+      "type" : "LDOM",
+      "title" : "Totals",
+      "uuid_in_url" : true,
+      "subsystem" : "LDOM",
+      "singleton" : true
+   },
+
+   {
+      "tabs" : [],
+      "url_params" : [],
+      "url_base" : "/lpar2rrd-cgi/detail.sh",
+      "platform" : "Solaris",
+      "type" : "STANDALONE_LDOM",
+      "title" : "Totals",
+      "uuid_in_url" : true,
+      "subsystem" : "STANDALONE_LDOM",
+      "singleton" : true
+   },
+
+   {
+      "tabs" : [],
+      "url_params" : [],
+      "url_base" : "/lpar2rrd-cgi/detail.sh",
+      "platform" : "Solaris",
+      "type" : "STANDALONE_ZONE_L10",
+      "uuid_in_url" : true,
+      "subsystem" : "STANDALONE_ZONE_L10",
+      "singleton" : false
+   },
+
+   {
+      "tabs" : [],
+      "url_params" : [],
+      "url_base" : "/lpar2rrd-cgi/detail.sh",
+      "platform" : "Solaris",
+      "type" : "STANDALONE_ZONE_L11",
+      "uuid_in_url" : true,
+      "subsystem" : "STANDALONE_ZONE_L11",
+      "singleton" : false
+   },
+
+   {
+      "tabs" : [],
+      "url_params" : [],
+      "url_base" : "/lpar2rrd-cgi/detail.sh",
+      "platform" : "Solaris",
+      "type" : "ZONE_C",
+      "uuid_in_url" : true,
+      "subsystem" : "ZONE_C",
+      "singleton" : false
+   },
+
+   {
+      "tabs" : [],
+      "url_params" : [],
+      "url_base" : "/lpar2rrd-cgi/detail.sh",
+      "platform" : "Solaris",
+      "type" : "ZONE_L",
+      "uuid_in_url" : true,
+      "subsystem" : "ZONE_L",
+      "singleton" : false
+   }
+]
+

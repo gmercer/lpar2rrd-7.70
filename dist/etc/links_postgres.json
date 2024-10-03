@@ -1,0 +1,212 @@
+[
+   {
+      "tabs" : [
+         {
+            "health_status" : "Health status"
+         }
+      ],
+      "folder_frontpage" : "true",
+      "uuid_in_url" : "true",
+      "subsystem" :  "POSTGRES",
+      "singleton" : "false",
+      "url_base" : "/lpar2rrd-cgi/health-status.sh",
+      "type" : "healthstatus",
+      "platform" : "PostgreSQL",
+      "title" : "Health status"
+   },
+   {
+      "tabs" : [
+        {
+           "last_day":"Last day"
+        },
+        {
+           "last_week":"Last week"
+        },
+        {
+           "last_month":"Last month"
+        },
+        {
+           "last_year":"Last year"
+        }
+      ],
+      "folder_frontpage" : true,
+      "uuid_in_url" : true,
+      "subsystem" : "POSTGRES",
+      "singleton" : true,
+      "url_base" : "/lpar2rrd-cgi/detail.sh",
+      "type" : "topten_postgres",
+      "platform" : "PostgreSQL",
+      "title" : "DB TOP"
+   },
+   {
+      "tabs" : [
+         {
+            "main_info" : "Main"
+         }
+      ],
+      "folder_frontpage" : "true",
+      "uuid_in_url" : "true",
+      "subsystem" :  "HOST",
+      "singleton" : "false",
+      "url_base" : "/lpar2rrd-cgi/detail.sh",
+      "type" : "configuration_Cluster",
+      "platform" : "PostgreSQL",
+      "title" : "Configuration"
+   },
+   {
+      "tabs" : [
+         {
+            "_size" : "Size"
+         },{
+            "_relations" : "Relations"
+         }
+      ],
+      "folder_frontpage" : "true",
+      "uuid_in_url" : "true",
+      "subsystem" :  "DB",
+      "singleton" : "false",
+      "url_base" : "/lpar2rrd-cgi/detail.sh",
+      "type" : "configuration",
+      "platform" : "PostgreSQL",
+      "title" : "Size"
+   },
+   {
+      "tabs" : [
+         {
+            "_blocks" : "Blocks"
+         },
+         {
+            "_tuples" : "Tuples"
+         },
+         {
+            "_temp" : "Temp"
+         }
+      ],
+      "folder_frontpage" : "false",
+      "uuid_in_url" : "true",
+      "subsystem" : "DB",
+      "singleton" : "false",
+      "url_base" : "/lpar2rrd-cgi/detail.sh",
+      "type" : "Throughput",
+      "platform" : "PostgreSQL",
+      "title" : "Throughput"
+   },
+   {
+      "tabs" : [
+         {
+            "_sessions" : "Sessions"
+         }
+      ],
+      "folder_frontpage" : "false",
+      "uuid_in_url" : "true",
+      "subsystem" : "DB",
+      "singleton" : "false",
+      "url_base" : "/lpar2rrd-cgi/detail.sh",
+      "type" : "Sessions",
+      "platform" : "PostgreSQL",
+      "title" : "Sessions"
+   },
+   {
+      "tabs" : [
+         {
+            "_buffers" : "Buffers"
+         },
+         {
+            "_checkpoints" : "Checkpoints"
+         }
+      ],
+      "folder_frontpage" : "false",
+      "uuid_in_url" : "true",
+      "subsystem" : "HOST",
+      "singleton" : "false",
+      "url_base" : "/lpar2rrd-cgi/detail.sh",
+      "type" : "Buffers",
+      "platform" : "PostgreSQL",
+      "title" : "BG writer"
+   },
+   {
+      "tabs" : [
+         {
+            "_held" : "Held"
+         },
+         {
+            "_awaited" : "Awaited"
+         },
+         {
+            "_deadlocks" : "Deadlocks"
+         }
+      ],
+      "folder_frontpage" : "false",
+      "uuid_in_url" : "true",
+      "subsystem" : "DB",
+      "singleton" : "false",
+      "url_base" : "/lpar2rrd-cgi/detail.sh",
+      "type" : "Locks",
+      "platform" : "PostgreSQL",
+      "title" : "Locks"
+   },
+
+   {
+      "tabs" : [
+         {
+            "_user" : "User"
+         },
+         {
+            "_cursors" : "Cursors"
+         }
+      ],
+      "folder_frontpage" : "false",
+      "uuid_in_url" : "true",
+      "subsystem" : "DB",
+      "singleton" : "false",
+      "url_base" : "/lpar2rrd-cgi/detail.sh",
+      "type" : "SQL_query",
+      "platform" : "PostgreSQL",
+      "title" : "SQL query"
+   },
+   {
+      "tabs" : [
+         {
+            "_we_type" : "Type"
+         },
+         {
+            "_LWLockNamed" : "LWLockNamed"
+         },
+         {
+            "_LWLockTranche" : "LWLockTranche"
+         },
+         {
+            "_Lock" : "Lock"
+         },
+         {
+            "_BufferPin" : "BufferPin"
+         }
+      ],
+      "folder_frontpage" : "false",
+      "uuid_in_url" : "true",
+      "subsystem" : "DB",
+      "singleton" : "false",
+      "url_base" : "/lpar2rrd-cgi/detail.sh",
+      "type" : "Wait_event",
+      "platform" : "PostgreSQL",
+      "title" : "Wait events"
+   },
+   {
+      "tabs" : [
+         {
+            "_cache" : "Cache"
+         },
+         {
+            "_commit" : "Commit"
+         }
+      ],
+      "folder_frontpage" : "false",
+      "uuid_in_url" : "true",
+      "subsystem" : "DB",
+      "singleton" : "false",
+      "url_base" : "/lpar2rrd-cgi/detail.sh",
+      "type" : "Ratio",
+      "platform" : "PostgreSQL",
+      "title" : "Ratio"
+   }
+]

@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=0.7">
+<meta http-equiv="pragma" content="no-cache">
+<meta http-equiv="expires" content="-1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta charset="UTF-8">
+<title>LPAR2RRD</title>
+<link rel="shortcut icon" href="favicon.ico">
+<!--link rel="stylesheet" type="text/css" href="css/jquery.mobile-1.4.5.min.css"-->
+<link rel="stylesheet/less" type="text/css" href="css/styles.less">
+<script type="text/javascript" src="jquery/libs.min.js"></script>
+<script type="text/javascript" src="jquery/main.js"></script>
+</head>
+
+<body>
+<div id="header">
+	<div id="subheader">
+		<div id="nmonsw" class="ui-button">
+			<input type="radio" name="nmon" id="nmr1" value="0" style="display: none" checked="checked"><label for="nmr1" title="Show data from LPAR2RRD agent"><span>OS Agent</span></label>
+			<input type="radio" name="nmon" id="nmr2" value="1" style="display: none"><label for="nmr2" title="Show NMON data"><span>NMON</span></label>
+		</div>
+		<div id="confsw">
+			<input type="radio" name="conf" id="cfg1" value="0" style="display: none" checked="checked"><label for="cfg1" title="Show summary configuration"><span>Summary</span></label>
+			<input type="radio" name="conf" id="cfg2" value="1" style="display: none"><label for="cfg2" title="Show detailed configuration"><span>Detail</span></label>
+		</div>
+		<form id="savecontent" action="/lpar2rrd-cgi/genjson.sh" method="post" style="display: none">
+			<input type="hidden" name="jsontype" value="dump">
+			<input type="hidden" name="tosave" id="tosave">
+			<input type="submit" title="Save HTML code of main section to a file" value="DEBUG: Dump"><input id="wipecookies" type="button" title="Wipe all cookies from this website (host.domain/path)" value="Wipe Cookies"><input id="envdump" type="button" title="Dump ENV values" value="ENV dump">
+		</form>
+		<div id='toprightbar'>
+			<div id="uid" class="fas fa-user"></div>
+			<div id="amenu" class="fas fa-cog" title="Click to open settings...">
+			</div>
+			<div id="gsearch" class="fas fa-search"></div>
+			<input id="globalSearchbox" placeholder="Search..." />
+		</div>
+		<!--
+		<form id="lparsearch" method="GET" action="/stor2rrd-cgi/volume-search.sh">
+			<input type="text" id="lsrchfld" placeholder="Search..." name="LPAR"><input id="lparsrch" type="submit" name="Volume search" value="">
+		</form>
+		-->
+	</div>
+</div>
+
+<div id="sidebar">
+	<div id="toolbar" class="ui-widget-header ui-corner-all">
+	<button id="collapseall">Collapse All</button><button id="expandall">Expand All</button><input type="text" placeholder='Filter...' id="menu-filter"><button id="filter">Apply Filter</button><button id="clrsrch">Clear Filter</button>
+	</div>
+	<div id="side-menu">
+	</div>
+	<div id="footer">
+		<p id="copyright"></p>
+	</div>
+</div>
+<div id="resizer"></div>
+
+<div id="econtent">
+	<div id="inner">
+		<div id="conttitle">
+			<div id="datasrc" title="" class="none"></div>
+			<h2 id="title"></h2>
+			<div id="pdf"><img src="css/images/pdf.png" title="Create PDF report" alt="Create PDF report"></div>
+			<div id="xls"><img src="css/images/xls.png" title="Export to Excel" alt="Export to Excel"></div>
+		</div>
+		<div id="content">
+		</div>
+	</div>
+</div>
+</div>
+<ul id="adminmenu">
+	<li class="nobfu ui-widget-header"><div>Platform</div></li>
+	<li class="nobfu msublevel ui-widget-header"><div>Server</div></li>
+	<li class="nobfu msublevel"><div><a href="/lpar2rrd-cgi/hosts.sh?cmd=form&platform=ibm" data-abbr="hosts-ibm" title="IBM Power Systems configuration">IBM Power Systems</a></div></li>
+	<!--
+	<li class="nobfu msublevel"><div><a href="/lpar2rrd-cgi/hosts.sh?cmd=form&platform=cmc" data-abbr="hosts-cmc" title="IBM Power CMC configuration">IBM Power CMC</a></div></li> 
+	-->
+	<li class="nobfu msublevel"><div><a href="/lpar2rrd-cgi/hosts.sh?cmd=form&platform=vmware" data-abbr="hosts-vmware" title="VMware configuration">VMware</a></div></li> 
+	<li class="nobfu msublevel"><div><a href="/lpar2rrd-cgi/hosts.sh?cmd=form&platform=nutanix" data-abbr="hosts-nutanix" title="Nutanix configuration">Nutanix</a></div></li>
+	<li class="nobfu msublevel"><div><a href="/lpar2rrd-cgi/hosts.sh?cmd=form&platform=proxmox" data-abbr="hosts-proxmox" title="Proxmox configuration">Proxmox</a></div></li>
+	<li class="nobfu msublevel"><div><a href="/lpar2rrd-cgi/hosts.sh?cmd=form&platform=fusioncompute" data-abbr="hosts-fusioncompute" title="Huawei FusionCompute configuration">Huawei FusionCompute</a></div></li>
+	<li class="nobfu msublevel"><div><a href="/lpar2rrd-cgi/hosts.sh?cmd=form&platform=ovirt" data-abbr="hosts-ovirt" title="RHV / OLVM / oVirt configuration">RHV / OLVM / oVirt</a></div></li> 
+	<li class="nobfu msublevel"><div><a href="/lpar2rrd-cgi/hosts.sh?cmd=form&platform=xen" data-abbr="hosts-xen" title="XenServer configuration">XenServer</a></div></li> 
+	<li class="nobfu msublevel"><div><a href="hostcfg-hyperv.html" data-abbr="hosts-hyperv" title="Hyper-V configuration">Windows / Hyper-V</a></div></li> 
+	<li class="nobfu msublevel"><div><a href="hostcfg-solaris.html" data-abbr="hosts-solaris" title="Solaris configuration">Oracle Solaris</a></div></li> 
+	<li class="nobfu msublevel"><div><a href="/lpar2rrd-cgi/hosts.sh?cmd=form&platform=oraclevm" data-abbr="hosts-oraclevm" title="Oracle VM configuration">Oracle VM</a></div></li> 
+	<li class="nobfu msublevel"><div><a href="hostcfg-blade.html" data-abbr="hosts-blade" title="Hitachi Compute Blade configuration">Hitachi Compute Blade</a></div></li> 
+	<li class="nobfu msublevel"><div><a href="hostcfg-linux.html" data-abbr="hosts-linux" title="Linux configuration">Linux</a></div></li> 
+	<li class="nobfu msublevel ui-widget-header"><div>Database</div></li>
+	<li class="nobfu msublevel"><div><a href="/lpar2rrd-cgi/hosts.sh?cmd=form&platform=oracledb" data-abbr="hosts-oracledb" title="Oracle Database configuration">Oracle</a></div></li> 
+	<li class="nobfu msublevel"><div><a href="/lpar2rrd-cgi/hosts.sh?cmd=form&platform=postgres" data-abbr="hosts-postgres" title="PostgreSQL configuration">PostgreSQL</a></div></li>
+	<li class="nobfu msublevel"><div><a href="/lpar2rrd-cgi/hosts.sh?cmd=form&platform=sqlserver" data-abbr="hosts-sqlserver" title="Microsoft SQL Server configuration">Microsoft SQL Server</a></div></li>
+	<li class="nobfu msublevel"><div><a href="/lpar2rrd-cgi/hosts.sh?cmd=form&platform=db2" data-abbr="hosts-db2" title="IBM Db2 configuration">IBM Db2</a></div></li>
+	<li class="nobfu msublevel ui-widget-header"><div>Container</div></li>
+	<li class="nobfu msublevel"><div><a href="/lpar2rrd-cgi/hosts.sh?cmd=form&platform=kubernetes" data-abbr="hosts-kubernetes" title="Kubernetes configuration">Kubernetes</a></div></li>
+	<li class="nobfu msublevel"><div><a href="/lpar2rrd-cgi/hosts.sh?cmd=form&platform=openshift" data-abbr="hosts-openshift" title="Red Hat OpenShift configuration">Red Hat OpenShift</a></div></li>
+	<li class="nobfu msublevel"><div><a href="hostcfg-docker.html" data-abbr="hosts-docker" title="Docker configuration">Docker</a></div></li>
+	<!--li><div><a href="hostcfg-kvm.html" data-abbr="hosts-kvm" title="KVM configuration">KVM</a></div></li--> 
+	<li class="nobfu msublevel ui-widget-header"><div>Cloud</div></li>
+	<li class="nobfu msublevel"><div><a href="/lpar2rrd-cgi/hosts.sh?cmd=form&platform=aws" data-abbr="hosts-aws" title="AWS configuration">Amazon Web Services</a></div></li>
+	<li class="nobfu msublevel"><div><a href="/lpar2rrd-cgi/hosts.sh?cmd=form&platform=azure" data-abbr="hosts-azure" title="Azure configuration">Microsoft Azure</a></div></li>
+	<li class="nobfu msublevel"><div><a href="/lpar2rrd-cgi/hosts.sh?cmd=form&platform=gcloud" data-abbr="hosts-gcloud" title="GCloud configuration">Google Cloud</a></div></li>
+	<li class="nobfu msublevel"><div><a href="/lpar2rrd-cgi/hosts.sh?cmd=form&platform=cloudstack" data-abbr="hosts-cloudstack" title="Apache CloudStack configuration">Apache CloudStack</a></div></li>
+	<li class="ui-widget-header"><div>Configuration</div></li> 
+	<li class="msublevel"><div><a href="/lpar2rrd-cgi/users.sh?cmd=form" data-abbr="users" title="User management">User</a></div></li> 
+	<li class="nobfu msublevel"><div><a href="/lpar2rrd-cgi/cgrps.sh" data-abbr="custom" title="Custom group configuration">Custom group</a></div> 
+	<li class="nobfu msublevel"><div><a href="/lpar2rrd-cgi/alcfg.sh?cmd=form" data-abbr="alerts" title="Alerting configuration">Alerting</a></div> 
+	<li class="ui-widget-header"><div>Utilities</div></li> 
+	<li class="msublevel"><div><a href="gui-help.html" data-abbr="docu" title="Documentation">Documentation</a></div></li> 
+	<li class="nobfu msublevel"><div><a href="/lpar2rrd-cgi/detail.sh?host=&server=&lpar=cod&item=data_check" data-abbr="check" title="Data check">Data check</a></div></li> 
+	<li class="nobfu msublevel"><div><a href="gui-log.html" data-abbr="logs" title="Log">Log</a></div></li>
+	<li class="imageonly nobfu msublevel"><div><a href="/lpar2rrd-cgi/upgrade.sh?cmd=form" data-abbr="upgrade" title="Application upgrade">Application upgrade</a></div></li> 
+	<li>-</li> 
+	<li class="msublevel notinfull"><div><a href="support.html" class="support" title="Support questions">Support</a></div></li> 
+	<li class="msublevel"><div><a href="" class="feedback" title="Use this link if you want to pass us any feedback.">Feedback</a></div></li> 
+	<li class="msublevel"><div><a href="" class="ng-info" title="Information about Next Gen Xormon">Xormon NG</a></div></li> 
+	<li class="msublevel"><div><a href="" class="about" title="About...">About...</a></div></li> 
+</ul>
+<div id="beta-notice" title="Notice"></div>
+<div id="cgcfg-help" title="LPAR2RRD Custom Groups configuration help"></div>
+</body>
+</html>

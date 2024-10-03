@@ -1,0 +1,58 @@
+#!/bin/ksh
+#
+# LPAR2RRD Nagios plugin
+#
+
+# check if this reflects actuall LPAR2RRD working dir
+LPAR2RRD_HOME=/home/lpar2rrd/lpar2rrd
+
+# do not change this
+LPAR2RRD_NAGIOS_DIR="nagios"
+DEBUG=1
+DEBUG_OUT=/tmp/lpar2rrd_alrt.log
+
+type=$1 	# POOL or LPAR
+server=$2
+lpar=$3
+
+if [ "$type"x = "x" ]; then
+  echo "no parameters pased to nagios lpar2rrd plug in"
+  exit 3
+fi
+if [ "$server"x = "x" ]; then
+  echo "Server name was not passed to the nagios lpar2rrd plug in"
+  exit 3
+fi
+if [ "$lpar"x = "x" ]; then
+  echo "lpar or pool name of server: $server was not passed to the nagios lpar2rrd plug in" 
+  exit 3
+fi
+
+file="$LPAR2RRD_HOME/$LPAR2RRD_NAGIOS_DIR/$server/$type-$lpar"
+
+if [ ! -f "$file" ]; then
+  echo "OK"
+  exit 0
+else
+  if [ $DEBUG -eq 1 ]; then
+    echo "$1 $2" > $DEBUG_OUT
+    ls -l "$file" >>$DEBUG_OUT
+    cat "$file" >>  $DEBUG_OUT
+  fi
+  # critical/warning to do --PH
+  egrep "CPU Critical alert" "$file" 2>/dev/null 1>&2
+  if [ $? -eq 0 ]; then
+    # Critical alert
+    ret=2
+  else
+    ret=1
+  fi
+
+  cat "$file"
+  rm -f "$file"
+  if [ $DEBUG -eq 1 ]; then
+    ls -l "$file" >> $DEBUG_OUT 2>&1
+    echo "return: $ret" >> $DEBUG_OUT
+  fi
+  exit $ret
+fi

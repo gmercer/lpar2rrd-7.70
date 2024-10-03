@@ -1,0 +1,127 @@
+<center>
+	<div id="hiw">
+		<a href="http://www.lpar2rrd.com/cpu_workload_estimator.html" target="_blank" class="nowrap"><img src="css/images/help-browser.gif" alt="How it works?" title="How it works?"></img></a>
+	</div>
+	<div style="font-size: 0.8em;">
+		<label for="from">From</label>
+		<input type="text" id="from" size="14">
+		<label for="to">to</label>
+		<input type="text" id="to" size="14">
+	</div>
+	<form method="post" action="/lpar2rrd-cgi/lpar-list-cgi.sh" id="formestimator">
+		<input type="hidden" name="start-hour" id="start-hour" size="3" value="12">
+		<input type="hidden" name="start-day" id="start-day" size="3">
+		<input type="hidden" name="start-mon" id="start-mon" size="3">
+		<input type="hidden" name="start-yr" id="start-yr" size="3">
+		<input type="hidden" name="end-hour" id="end-hour" size="3" value="12">
+		<input type="hidden" name="end-day" id="end-day" size="3">
+		<input type="hidden" name="end-mon" id="end-mon" size="3">
+		<input type="hidden" name="end-yr" id="end-yr" size="3">
+		<input type="hidden" name="type" id="type" size="3" value="m">
+		<table border="0" cellspacing="5" summary="CPU Workload Estimator">
+			<tbody>
+			<tr>
+				<td colspan="2">
+					<table align="center">
+						<tbody>
+						<tr>
+							<td style="font-size: 0.8em;">Graph resolution <input type="text" name="HEIGHT" value="150" size="1"> x <input type="text" name="WIDTH" value="700" size="1"></td>
+
+							<td style="font-size: 0.8em;" align="left">&nbsp;&nbsp; Y-axis 
+								<select name="yaxis">
+									<option value="r" selected>
+									rPerf
+									</option>
+
+									<option value="w">
+									CPW
+									</option>
+
+									<option value="c">
+									CPU core
+									</option>
+							</select></td>
+						</tr>
+						</tbody>
+					</table>
+				</td>
+			</tr>
+
+			<tr>
+				<td colspan="2" align="center">
+					<input type="hidden" name="sort" value="server"> <input type="hidden" name="gui" value="1">
+
+					<table border="0">
+						<tbody>
+						<tr>
+							<td colspan="2">
+								<p style="font-size: 0.8em; float: left; margin-top: 5px;">LPAR(s) for migration&nbsp;&nbsp;</p>
+								<div id="radiosrc">
+									<!--input type="radio" name="lparset" id="radios1" value="0" checked="checked"><label for="radios1">Recent</label-->
+									<input type="checkbox" name="lparset" id="radios2"><label for="radios2" title="Toggle HMC selection level">HMC Info</label>
+								</div>
+							</td>
+							<td colspan="2">
+								<p style="font-size: 0.8em; float: left; margin-top: 5px;">Target server:&nbsp;&nbsp;</p>
+								<div id="radio">
+									<input type="radio" name="newsrv" id="radio1" value="0"><label for="radio1">Existing</label>
+									<input type="radio" name="newsrv" id="radio2" value="1" checked="checked"><label for="radio2">New</label>
+								</div>
+							</td>
+						</tr>
+						<tr valign="top">
+							<td>
+								<fieldset class="estimator" id="lparfieldset">
+									<legend><span>Server | LPAR</span> <label><input type='checkbox' class="allcheck" name="alllpars" value='outdata'>all&nbsp;</label><label style="margin-left: 40px;"><input type="checkbox" name="srcfix" id="srcfix" value="1"><abbr title="FIX for Spectre and Meltdown (CVE-2017-5715, CVE-2017-5753 and CVE-2017-5754) or POWER9 and newer">Fix</abbr></label></legend>
+									<input type="text" id="srvlparfilter" placeholder="Filter...">
+									<div id="lpartree" name="selLpars" class="seltree">
+									</div>
+								</fieldset>
+							</td>
+							<td>
+								<div class="rightarr">
+								</div>
+							</td>
+							<td>
+								<div id="existserver">
+									<fieldset class="estimator">
+										<legend>Server | Pool<label style="margin-left: 40px;"><input type="checkbox" name="dstfix" id="dstfix" value="1"><abbr title="Check this if fixes for Spectre and Meltdown (CVE-2017-5715, CVE-2017-5753 and CVE-2017-5754) are applied or it is POWER9 and newer">Fix</abbr></label></legend>
+										<div id="pooltree" name="selPool" class="seltree">
+										</div>
+									</fieldset>
+								</div>
+							</td>
+							<td>
+								<div id="newserver">
+									<fieldset class="estimator">
+										<legend>New server type</legend>
+										<div id="drtree" class="seltree">
+											<table id="treetable">
+												<colgroup>
+													<col width="120px"></col>
+													<col width="50px"></col>
+													<col width="50px"></col>
+													<col width="60px"></col>
+													<col width="44px"></col>
+												</colgroup>
+												<thead>
+													<tr><th>&nbsp;Platform/Model</th><th>Type</th><th>CPU</th><th>GHz</th><th><abbr title="Check this if fixes for Spectre and Meltdown (CVE-2017-5715, CVE-2017-5753 and CVE-2017-5754) are applied or it is POWER9 and newer">Fix</abbr></th></tr>
+												</thead>
+												<tbody>
+												<tr><td></td><td></td><td></td><td></td><td></td></tr>
+												</tbody>
+											</table>
+										</div>
+									</fieldset>
+								</div>
+							</td>
+						</tr>
+						</tbody>
+					</table>
+					<input type="submit" style="font-weight: bold" name="Report" value="Generate Report" alt="Generate Report">
+				</td>
+			</tr>
+			</tbody>
+		</table>
+	</form>
+</center>

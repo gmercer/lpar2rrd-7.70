@@ -1,0 +1,261 @@
+[
+   {
+      "tabs":[],
+      "uuid_in_url":false,
+      "url_base":"heatmap-ovirt.html",
+      "platform":"oVirt",
+      "type":"heatmap",
+      "title":"Heatmap",
+      "subsystem":"OVIRT",
+      "acl_capable" : true,
+      "singleton":true,
+      "folder_frontpage":false
+   },
+   {
+      "tabs":[
+         {
+            "host_conf":"Host"
+         },
+         {
+            "vm_conf":"VM"
+         },
+         {
+            "storage_domain_conf":"Storage Domain"
+         },
+         {
+            "storage_vm_conf":"Storage-VM"
+         },
+         {
+            "vm_disk_conf":"VM-Disk"
+         }
+      ],
+      "uuid_in_url":false,
+      "url_base":"/lpar2rrd-cgi/detail.sh",
+      "platform":"oVirt",
+      "type":"configuration",
+      "title":"Configuration",
+      "subsystem":"OVIRT",
+      "singleton":true
+   },
+   {
+      "tabs":[
+         {
+            "last_day":"Last day"
+         },
+         {
+            "last_week":"Last week"
+         },
+         {
+            "last_month":"Last month"
+         },
+         {
+            "last_year":"Last year"
+         }
+      ],
+      "uuid_in_url" : false,
+      "url_base" : "/lpar2rrd-cgi/detail.sh",
+      "platform" : "oVirt",
+      "type" : "topten_ovirt",
+      "title" : "VM TOP",
+      "subsystem" : "OVIRT",
+      "singleton" : true,
+      "folder_frontpage" : false
+   },
+   {
+      "tabs":[
+         {
+            "data":"Data"
+         },
+         {
+            "latency":"Latency"
+         },
+         {
+            "iops":"IOPS"
+         }
+      ],
+      "uuid_in_url":false,
+      "url_base":"/lpar2rrd-cgi/detail.sh",
+      "platform":"oVirt",
+      "type":"storage_domains_total_aggr",
+      "title":"Storage domains",
+      "subsystem":"OVIRT",
+      "singleton":true,
+      "folder_frontpage":false
+   },
+   {
+      "tabs":[
+         {
+            "host_cpu_core":"CPU"
+         },
+         {
+            "host_cpu_percent":"CPU %"
+         },
+         {
+            "host_mem_used":"MEM used"
+         },
+         {
+            "host_mem_free":"MEM free"
+         },
+         {
+            "host_mem_used_percent":"MEM used %"
+         },
+         {
+            "vm_cpu_core":"VM CPU"
+         },
+         {
+            "vm_cpu_percent":"VM CPU %"
+         },
+         {
+            "vm_mem_used":"VM MEM used"
+         },
+         {
+            "vm_mem_free":"VM MEM free"
+         },
+         {
+            "vm_mem_used_percent":"VM MEM used %"
+         }
+      ],
+      "uuid_in_url":true,
+      "url_base":"/lpar2rrd-cgi/detail.sh",
+      "platform":"oVirt",
+      "type":"cluster_aggr",
+      "title":"Totals",
+      "subsystem":"CLUSTER",
+      "singleton":true,
+      "folder_frontpage":true
+   },
+   {
+      "tabs":[
+         {
+            "cpu_core":"CPU"
+         },
+         {
+            "cpu_percent":"CPU %"
+         },
+         {
+            "mem":"MEM"
+         },
+         {
+            "aggr_vm_cpu_core":"VM CPU"
+         },
+         {
+            "aggr_vm_mem_used":"VM MEM used"
+         },
+         {
+            "aggr_vm_mem_free":"VM MEM free"
+         }
+      ],
+      "uuid_in_url":true,
+      "url_base":"/lpar2rrd-cgi/detail.sh",
+      "platform":"oVirt",
+      "type":"host",
+      "subsystem":"HOST",
+      "singleton":true,
+      "folder_frontpage":true
+   },
+   {
+      "tabs":[
+         {
+            "cpu_core":"CPU"
+         },
+         {
+            "cpu_percent":"CPU %"
+         },
+         {
+            "mem":"MEM"
+         },
+         {
+            "aggr_net":"Net"
+         },
+         {
+            "aggr_data":"Data"
+         },
+         {
+            "aggr_latency":"Latency"
+         },
+         {
+            "aggr_iops":"IOPS"
+         }
+      ],
+      "uuid_in_url":true,
+      "url_base":"/lpar2rrd-cgi/detail.sh",
+      "platform":"oVirt",
+      "type":"vm",
+      "subsystem":"VM",
+      "singleton":false
+   },
+   {
+      "tabs":[
+         {
+            "net":"Net"
+         }
+      ],
+      "uuid_in_url":true,
+      "url_base":"/lpar2rrd-cgi/detail.sh",
+      "platform":"oVirt",
+      "type":"host_nic_aggr",
+      "title":"LAN totals",
+      "subsystem":"HOST_NIC",
+      "singleton":true,
+      "folder_frontpage":false
+   },
+   {
+      "tabs":[
+         {
+            "net":"Net"
+         }
+      ],
+      "uuid_in_url":true,
+      "url_base":"/lpar2rrd-cgi/detail.sh",
+      "platform":"oVirt",
+      "type":"host_nic",
+      "subsystem":"HOST_NIC",
+      "singleton":false
+   },
+   {
+      "tabs":[
+         {
+            "space":"Space"
+         },
+         {
+            "aggr_data":"Data"
+         },
+         {
+            "aggr_latency":"Latency"
+         },
+         {
+            "aggr_iops":"IOPS"
+         }
+      ],
+      "uuid_in_url":true,
+      "url_base":"/lpar2rrd-cgi/detail.sh",
+      "platform":"oVirt",
+      "type":"storage_domain",
+      "title":"Totals",
+      "subsystem":"STORAGE_DOMAIN",
+      "singleton":true,
+      "folder_frontpage":true
+   },
+   {
+      "tabs":[
+         {
+            "data":"Data"
+         },
+         {
+            "latency":"Latency"
+         },
+         {
+            "iops":"IOPS"
+         },
+         {
+            "space":"Used space"
+         }
+      ],
+      "uuid_in_url":true,
+      "url_base":"/lpar2rrd-cgi/detail.sh",
+      "platform":"oVirt",
+      "type":"disk",
+      "subsystem":"DISK",
+      "singleton":false
+   }
+]

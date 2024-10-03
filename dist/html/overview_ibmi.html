@@ -1,0 +1,29 @@
+<div class="overview_form" style="font-size: 0.8em">
+	<label for="overview_src">Source: </label>
+	<select id="overview_src" data-platform="ibmi"></select>
+	<!--
+	 <label for="overview_item">Item: </label>
+	 <select id="overview_item"></select>
+	-->
+	<label for="overview_time">Time range: </label>
+	<select id="overview_time">
+		<option value="">--- choose one ---</option>
+		<optgroup label="Previous">
+			<option value="prevHour">Previous hour</option>
+			<option value="prevDay">Previous day</option>
+			<option value="prevWeek">Previous week</option>
+		</optgroup>
+		<optgroup label="Last">
+			<option value="lastHour">Last 60 minutes</option>
+			<option value="lastDay">Last 24 hours</option>
+			<option value="lastWeek">Last 7 days</option>
+		</optgroup>
+		<option value="custom"><b>Custom range</b></option>
+	</select>
+
+	<label for="fromRange" class="customrange">From</label>
+	<input type="text" id="fromRange" size="14" class="customrange">
+	<label for="toRange" class="customrange">to</label>
+	<input type="text" id="toRange" size="14" class="customrange">
+	<button id="customoverview" class="customrange">Go</button>
+</div>

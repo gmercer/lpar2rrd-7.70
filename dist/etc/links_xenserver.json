@@ -1,0 +1,250 @@
+[
+   {
+      "tabs" : [
+         {
+            "cpu_cores" : "CPU"
+         },
+         {
+            "cpu_percent" : "CPU %"
+         },
+         {
+            "vm_cpu_cores" : "VM CPU"
+         },
+         {
+            "vm_cpu_percent" : "VM CPU %"
+         },
+         {
+            "memory_used" : "MEM used"
+         },
+         {
+            "memory_free" : "MEM free"
+         },
+         {
+            "memory_used" : "VM MEM used"
+         },
+         {
+            "memory_free" : "VM MEM free"
+         }
+      ],
+      "uuid_in_url" : true,
+      "url_base" : "/lpar2rrd-cgi/detail.sh",
+      "platform" : "XenServer",
+      "type" : "pool-aggr",
+      "title" : "Totals",
+      "subsystem" : "POOL",
+      "singleton" : true,
+      "folder_frontpage" : true
+   },
+   {
+      "tabs" : [
+         {
+            "storage" : "Data"
+         },
+         {
+            "iops" : "IOPS"
+         },
+         {
+            "latency" : "Latency"
+         }
+      ],
+      "uuid_in_url" : true,
+      "url_base" : "/lpar2rrd-cgi/detail.sh",
+      "platform" : "XenServer",
+      "type" : "pool-storage-aggr",
+      "title" : "Storage totals",
+      "subsystem" : "POOL",
+      "singleton" : true,
+      "folder_frontpage" : false
+   },
+   {
+      "tabs" : [
+         {
+            "cpu_cores" : "CPU"
+         },
+         {
+            "cpu_percent" : "CPU %"
+         },
+         {
+            "vm_cpu_cores" : "VM CPU"
+         },
+         {
+            "vm_cpu_percent" : "VM CPU %"
+         },
+         {
+            "memory" : "MEM"
+         },
+         {
+            "memory_used" : "VM MEM used"
+         },
+         {
+            "memory_free" : "VM MEM free"
+         }
+      ],
+      "uuid_in_url" : true,
+      "url_base" : "/lpar2rrd-cgi/detail.sh",
+      "platform" : "XenServer",
+      "type" : "host",
+      "subsystem" : "HOST",
+      "singleton" : true,
+      "folder_frontpage" : true
+   },
+   {
+      "tabs" : [
+         {
+            "net" : "Net"
+         }
+      ],
+      "uuid_in_url" : true,
+      "url_base" : "/lpar2rrd-cgi/detail.sh",
+      "platform" : "XenServer",
+      "type" : "net-aggr",
+      "title" : "LAN totals",
+      "subsystem" : "LAN",
+      "singleton" : true,
+      "folder_frontpage" : false
+   },
+   {
+      "tabs" : [
+         {
+            "net" : "Net"
+         }
+      ],
+      "uuid_in_url" : true,
+      "url_base" : "/lpar2rrd-cgi/detail.sh",
+      "platform" : "XenServer",
+      "type" : "net",
+      "subsystem" : "LAN",
+      "singleton" : false
+   },
+   {
+      "tabs" : [
+         {
+            "storage" : "Data"
+         },
+         {
+            "iops" : "IOPS"
+         },
+         {
+            "latency" : "Latency"
+         }
+      ],
+      "uuid_in_url" : true,
+      "url_base" : "/lpar2rrd-cgi/detail.sh",
+      "platform" : "XenServer",
+      "type" : "storage-aggr",
+      "title" : "Storage totals",
+      "subsystem" : "STORAGE",
+      "singleton" : true,
+      "folder_frontpage" : false
+   },
+   {
+      "tabs" : [
+         {
+            "storage" : "Data"
+         },
+         {
+            "iops" : "IOPS"
+         },
+         {
+            "latency" : "Latency"
+         }
+      ],
+      "uuid_in_url" : true,
+      "url_base" : "/lpar2rrd-cgi/detail.sh",
+      "platform" : "XenServer",
+      "type" : "storage",
+      "subsystem" : "STORAGE",
+      "singleton" : false
+   },
+   {
+      "tabs" : [
+         {
+            "cpu_cores" : "CPU"
+         },
+         {
+            "cpu_percent" : "CPU %"
+         },
+         {
+            "memory" : "MEM"
+         },
+         {
+            "storage" : "Data"
+         },
+         {
+            "iops" : "IOPS"
+         },
+         {
+            "latency" : "Latency"
+         },
+         {
+            "net" : "Net"
+         }
+      ],
+      "uuid_in_url" : true,
+      "url_base" : "/lpar2rrd-cgi/detail.sh",
+      "platform" : "XenServer",
+      "type" : "vm",
+      "subsystem" : "VM",
+      "singleton" : false
+   },
+   {
+      "tabs" : [],
+      "uuid_in_url" : false,
+      "url_base" : "heatmap-xen.html",
+      "platform" : "XenServer",
+      "type" : "heatmap",
+      "title" : "Heatmap",
+      "subsystem" : "XENSERVER",
+      "acl_capable" : true,
+      "singleton" : true,
+      "folder_frontpage" : false
+   },
+   {
+      "tabs":[
+         {
+            "last_day":"Last day"
+         },
+         {
+            "last_week":"Last week"
+         },
+         {
+            "last_month":"Last month"
+         },
+         {
+            "last_year":"Last year"
+         }
+      ],
+      "uuid_in_url" : false,
+      "url_base" : "/lpar2rrd-cgi/detail.sh",
+      "platform" : "XenServer",
+      "type" : "topten_xenserver",
+      "title" : "VM TOP",
+      "subsystem" : "XENSERVER",
+      "singleton" : true,
+      "folder_frontpage" : false
+   },
+   {
+      "tabs" : [
+         {
+            "hosts" : "Host"
+         },
+         {
+            "vms" : "VM"
+         },
+         {
+            "storage" : "Storage"
+         },
+         {
+            "storage_vm" : "Storage-VM"
+         }
+      ],
+      "uuid_in_url" : false,
+      "url_base" : "/lpar2rrd-cgi/detail.sh",
+      "platform" : "XenServer",
+      "type" : "configuration",
+      "title" : "Configuration",
+      "subsystem" : "XENSERVER",
+      "singleton" : true,
+      "folder_frontpage" : false
+   }
+]

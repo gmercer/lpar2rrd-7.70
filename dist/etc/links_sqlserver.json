@@ -1,0 +1,281 @@
+[
+   {
+      "tabs" : [
+         {
+            "health_status" : "Health status"
+         }
+      ],
+      "folder_frontpage" : "true",
+      "uuid_in_url" : "true",
+      "subsystem" :  "SQLSERVER",
+      "singleton" : "false",
+      "url_base" : "/lpar2rrd-cgi/health-status.sh",
+      "type" : "healthstatus",
+      "platform" : "SQLServer",
+      "title" : "Health status"
+   },
+   {
+      "tabs" : [
+        {
+           "last_day":"Last day"
+        },
+        {
+           "last_week":"Last week"
+        },
+        {
+           "last_month":"Last month"
+        },
+        {
+           "last_year":"Last year"
+        }
+      ],
+      "folder_frontpage" : true,
+      "uuid_in_url" : true,
+      "subsystem" : "SQLSERVER",
+      "singleton" : true,
+      "url_base" : "/lpar2rrd-cgi/detail.sh",
+      "type" : "topten_microsql",
+      "platform" : "SQLServer",
+      "title" : "DB TOP"
+   },
+   {
+      "tabs" : [
+         {
+           "main_info" : "Main" 
+         }
+      ],
+      "folder_frontpage" : "true",
+      "uuid_in_url" : "true",
+      "subsystem" :  "HOST",
+      "singleton" : "false",
+      "url_base" : "/lpar2rrd-cgi/detail.sh",
+      "type" : "configuration_Cluster",
+      "platform" : "SQLServer",
+      "title" : "Configuration"
+   },
+   {
+      "tabs" : [
+         {
+            "_memory" : "Memory"
+         }
+      ],
+      "folder_frontpage" : "true",
+      "uuid_in_url" : "true",
+      "subsystem" :  "HOST",
+      "singleton" : "false",
+      "url_base" : "/lpar2rrd-cgi/detail.sh",
+      "type" : "Memory",
+      "platform" : "SQLServer",
+      "title" : "Memory"
+   },
+   {
+      "tabs" : [
+         {
+            "_buffer" : "Buffer"
+         },
+         {
+            "_readahead" : "Readahead"
+         },
+         {
+            "_page_rw" : "Page R/W"
+         },
+         {
+            "_pags" : "Pages"
+         }
+      ],
+      "folder_frontpage" : "true",
+      "uuid_in_url" : "true",
+      "subsystem" :  "HOST",
+      "singleton" : "false",
+      "url_base" : "/lpar2rrd-cgi/detail.sh",
+      "type" : "Buffers",
+      "platform" : "SQLServer",
+      "title" : "Buffers"
+   },
+   {
+      "tabs" : [
+         {
+            "_sessions" : "Sessions"
+         }
+      ],
+      "folder_frontpage" : "true",
+      "uuid_in_url" : "true",
+      "subsystem" :  "HOST",
+      "singleton" : "false",
+      "url_base" : "/lpar2rrd-cgi/detail.sh",
+      "type" : "Sessions",
+      "platform" : "SQLServer",
+      "title" : "Sessions"
+   },
+   {
+      "tabs" : [
+         {
+            "_latches_io" : "IO"
+         },
+         {
+            "_latches_bfr" : "Buffer"
+         },
+         {
+            "_latches_nonbfr" : "Non Buffer"
+         }
+      ],
+      "folder_frontpage" : "true",
+      "uuid_in_url" : "true",
+      "subsystem" :  "HOST",
+      "singleton" : "false",
+      "url_base" : "/lpar2rrd-cgi/detail.sh",
+      "type" : "Latches",
+      "platform" : "SQLServer",
+      "title" : "Latches"
+   },
+   {
+      "tabs" : [
+         {
+            "_events" : "Events"
+         },
+         {
+            "_lock_events" : "Locks events"
+         }
+      ],
+      "folder_frontpage" : "true",
+      "uuid_in_url" : "true",
+      "subsystem" :  "HOST",
+      "singleton" : "false",
+      "url_base" : "/lpar2rrd-cgi/detail.sh",
+      "type" : "Wait_events",
+      "platform" : "SQLServer",
+      "title" : "Wait events"
+   },
+   {
+      "tabs" : [
+         {
+            "_size" : "Size"
+         },
+         {
+            "_datafiles2" : "Relations"
+         },
+         {
+            "_flgrps" : "Filegroups"
+         }
+      ],
+      "folder_frontpage" : "true",
+      "uuid_in_url" : "true",
+      "subsystem" :  "DB",
+      "singleton" : "false",
+      "url_base" : "/lpar2rrd-cgi/detail.sh",
+      "type" : "configuration_Capacity",
+      "platform" : "SQLServer",
+      "title" : "Capacity"
+   },
+   {
+      "tabs" : [
+         {
+            "_io_total" : "Total"
+         },
+         {
+            "_io_rw" : "Read/Write"
+         }
+      ],
+      "folder_frontpage" : "true",
+      "uuid_in_url" : "true",
+      "subsystem" :  "DB",
+      "singleton" : "false",
+      "url_base" : "/lpar2rrd-cgi/detail.sh",
+      "type" : "IO",
+      "platform" : "SQLServer",
+      "title" : "IO"
+   },
+   {
+      "tabs" : [
+         {
+            "_data_total" : "Total"
+         },
+         {
+            "_data_rw" : "Read/Write"
+         }
+      ],
+      "folder_frontpage" : "true",
+      "uuid_in_url" : "true",
+      "subsystem" :  "DB",
+      "singleton" : "false",
+      "url_base" : "/lpar2rrd-cgi/detail.sh",
+      "type" : "Data",
+      "platform" : "SQLServer",
+      "title" : "Data"
+   },
+   {
+      "tabs" : [
+         {
+            "_latency_total" : "Total"
+         },
+         {
+            "_latency_rw" : "Read/Write"
+         }
+      ],
+      "folder_frontpage" : "true",
+      "uuid_in_url" : "true",
+      "subsystem" :  "DB",
+      "singleton" : "false",
+      "url_base" : "/lpar2rrd-cgi/detail.sh",
+      "type" : "Latency",
+      "platform" : "SQLServer",
+      "title" : "Latency"
+   },
+   {
+      "tabs" : [
+         {
+            "_locks" : "Locks"
+         },
+         {
+            "_deadlocks" : "Deadlocks"
+         }
+      ],
+      "folder_frontpage" : "true",
+      "uuid_in_url" : "true",
+      "subsystem" :  "DB",
+      "singleton" : "false",
+      "url_base" : "/lpar2rrd-cgi/detail.sh",
+      "type" : "Locks",
+      "platform" : "SQLServer",
+      "title" : "Locks"
+   },
+   {
+      "tabs" : [
+         {
+            "_transactions" : "Transactions"
+         },
+         {
+            "_cursors" : "Cursors"
+         }
+      ],
+      "folder_frontpage" : "true",
+      "uuid_in_url" : "true",
+      "subsystem" :  "DB",
+      "singleton" : "false",
+      "url_base" : "/lpar2rrd-cgi/detail.sh",
+      "type" : "SQL_query",
+      "platform" : "SQLServer",
+      "title" : "SQL query"
+   },
+   {
+      "tabs" : [
+         {
+            "_cache_hit" : "Cache hit"
+         },
+         {
+            "_buffer_cache_hit" : "Buffer Cache hit"
+         },
+         {
+            "_log_cache_hit" : "Log Cache hit"
+         }
+      ],
+      "folder_frontpage" : "true",
+      "uuid_in_url" : "true",
+      "subsystem" :  "DB",
+      "singleton" : "false",
+      "url_base" : "/lpar2rrd-cgi/detail.sh",
+      "type" : "Ratio",
+      "platform" : "SQLServer",
+      "title" : "Ratio"
+   }
+]
